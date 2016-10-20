@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -25,7 +25,8 @@
                                             <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Líneales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4E-H7-kov">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Líneales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4E-H7-kov">
+                                                    <frame key="frameInset" minX="19" minY="12" width="63" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -41,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="108" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yzm-hU-CUY" id="lBf-Zn-eYU">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuaráticas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7so-u8-Rq5">
@@ -106,7 +107,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Ecuaciones Polinomiales" id="IPv-AK-yLg">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="XI2-EC-Tck"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="XI2-EC-Tck">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="xcx-Tb-Mep"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="H9s-Il-C3I">
                             <connections>
                                 <segue destination="oJu-ot-CFs" kind="show" id="v9n-Qw-PcG"/>
@@ -129,20 +134,11 @@
                         <sections>
                             <tableViewSection headerTitle="Header Title" id="Nvu-b6-ec4">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WFL-ET-IFP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="B4D-ov-BHF">
                                         <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFL-ET-IFP" id="F0N-6M-nGs">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60368474920000004" green="0.989730679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="B4D-ov-BHF">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B4D-ov-BHF" id="jcb-9X-Liy">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Líneales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCo-3Q-sCe">
@@ -160,7 +156,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WKA-3J-I0l">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WKA-3J-I0l" id="bVJ-62-oDk">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -180,7 +176,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dLZ-5a-IDy">
-                                        <rect key="frame" x="0.0" y="224" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="180" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dLZ-5a-IDy" id="hLp-pc-Zoi">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -197,7 +193,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Yar-8J-avN">
-                                        <rect key="frame" x="0.0" y="268" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="224" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yar-8J-avN" id="0ie-4K-K6K">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -225,7 +221,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Ecuaciones Logaritmicas" id="B6v-MT-dWI">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="cR3-PW-uHi"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="cR3-PW-uHi">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="AfI-w6-wcs"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="kzh-Lb-ZAo">
                             <connections>
                                 <segue destination="p6T-Rf-qb2" kind="show" id="wnX-aD-zhw"/>
@@ -333,7 +333,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Ecuaciones Exponenciales" id="j0W-wB-ltO">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="iwE-6Q-oJX"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="iwE-6Q-oJX">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="DYg-hI-JKJ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="9bD-lM-1Lv">
                             <connections>
                                 <segue destination="Rls-JT-67h" kind="show" id="cXt-5y-7Yw"/>
@@ -453,7 +457,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Ecuaciones Radicales" id="NCi-Fx-W1j">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="2T2-KO-SR2"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="2T2-KO-SR2">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="504-Iu-VGX"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="lFi-q9-aME">
                             <connections>
                                 <segue destination="qmk-Ob-PCE" kind="show" id="o3p-ca-au7"/>
@@ -799,4 +807,7 @@
             <point key="canvasLocation" x="-887" y="937"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="504-Iu-VGX"/>
+    </inferredMetricsTieBreakers>
 </document>
