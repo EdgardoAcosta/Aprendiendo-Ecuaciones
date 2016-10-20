@@ -15,6 +15,10 @@
 		E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8333A241DB8483A00DF0ACF /* LaunchScreen.storyboard */; };
 		E8333A311DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A301DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift */; };
 		E8333A3C1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */; };
+		E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */; };
+		E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */; };
+		E8F282801DB8866F005CFE6E /* ExponencialesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */; };
+		E8F282821DB88687005CFE6E /* RadicalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E8333A371DB8483B00DF0ACF /* Aprendiendo-EcuacionesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aprendiendo-EcuacionesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aprendiendo_EcuacionesUITests.swift; sourceTree = "<group>"; };
 		E8333A3D1DB8483B00DF0ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolinomialesTableViewController.swift; sourceTree = "<group>"; };
+		E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogaritmicasTableViewController.swift; sourceTree = "<group>"; };
+		E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExponencialesTableViewController.swift; sourceTree = "<group>"; };
+		E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadicalesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 			children = (
 				E8333A191DB8483A00DF0ACF /* AppDelegate.swift */,
 				E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */,
+				E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */,
 				E8333A1D1DB8483A00DF0ACF /* SecondViewController.swift */,
+				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
+				E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */,
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
+				E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */,
 				E8333A221DB8483A00DF0ACF /* Assets.xcassets */,
 				E8333A241DB8483A00DF0ACF /* LaunchScreen.storyboard */,
 				E8333A271DB8483A00DF0ACF /* Info.plist */,
@@ -263,8 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
+				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
 				E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */,
+				E8F282821DB88687005CFE6E /* RadicalesTableViewController.swift in Sources */,
 				E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */,
+				E8F282801DB8866F005CFE6E /* ExponencialesTableViewController.swift in Sources */,
+				E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 				E8333A421DB8483B00DF0ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8333A431DB8483B00DF0ACF /* Build configuration list for PBXNativeTarget "Aprendiendo-EcuacionesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				E8333A451DB8483B00DF0ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8333A461DB8483B00DF0ACF /* Build configuration list for PBXNativeTarget "Aprendiendo-EcuacionesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				E8333A481DB8483B00DF0ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
