@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -104,7 +104,7 @@
                     <navigationItem key="navigationItem" title="Ecuaciones Polinomiales" id="IPv-AK-yLg">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="XI2-EC-Tck">
                             <connections>
-                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="xcx-Tb-Mep"/>
+                                <action selector="botonBack:" destination="Gnb-WL-ni4" id="GFy-Kk-FHJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="H9s-Il-C3I">
@@ -176,7 +176,7 @@
                     <navigationItem key="navigationItem" title="Ecuaciones Logaritmicas" id="B6v-MT-dWI">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="cR3-PW-uHi">
                             <connections>
-                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="AfI-w6-wcs"/>
+                                <action selector="botonBack:" destination="d8h-EG-Ycm" id="ZqH-06-iDl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="kzh-Lb-ZAo">
@@ -248,7 +248,7 @@
                     <navigationItem key="navigationItem" title="Ecuaciones Exponenciales" id="j0W-wB-ltO">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="iwE-6Q-oJX">
                             <connections>
-                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="DYg-hI-JKJ"/>
+                                <action selector="botonBack:" destination="fae-Tp-0xY" id="A5J-sn-Szt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="9bD-lM-1Lv">
@@ -265,7 +265,7 @@
         <!--Ecuaciones Radicales-->
         <scene sceneID="dEc-SX-xHM">
             <objects>
-                <tableViewController id="BtU-Ii-8kK" sceneMemberID="viewController">
+                <tableViewController id="BtU-Ii-8kK" customClass="RadicalesTableViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jMc-6m-oRx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
                     <navigationItem key="navigationItem" title="Ecuaciones Radicales" id="NCi-Fx-W1j">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="2T2-KO-SR2">
                             <connections>
-                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="504-Iu-VGX"/>
+                                <action selector="botonBack:" destination="BtU-Ii-8kK" id="QbO-54-jve"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="lFi-q9-aME">
@@ -624,7 +624,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.25487169980000002" blue="0.31627548220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.9820677638053894" green="0.44788843393325806" blue="0.51192766427993774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-v8-blC">
                                 <frame key="frameInset" minY="150" width="375" height="172"/>
@@ -1064,6 +1064,7 @@
             <point key="canvasLocation" x="4088.8000000000002" y="7.6461769115442282"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <resources>
         <image name="cuadratica1" width="753" height="534"/>
         <image name="cubica1" width="744" height="513"/>
@@ -1075,4 +1076,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="xcx-Tb-Mep"/>
     </inferredMetricsTieBreakers>
+=======
+>>>>>>> origin/master
 </document>
