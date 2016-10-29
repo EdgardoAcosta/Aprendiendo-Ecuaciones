@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3975858A1DC45C9B00DE10BB /* polinomialesPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585891DC45C9B00DE10BB /* polinomialesPageVC.swift */; };
 		59150D791DB89F3D002FB669 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59150D781DB89F3D002FB669 /* Questions.storyboard */; };
 		84DF8E011DB88CA200D5851E /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF8E001DB88CA200D5851E /* Initial.storyboard */; };
 		84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF8E021DB890C200D5851E /* InitialViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		397585891DC45C9B00DE10BB /* polinomialesPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = polinomialesPageVC.swift; sourceTree = "<group>"; };
 		59150D781DB89F3D002FB669 /* Questions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
 		84DF8E001DB88CA200D5851E /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		84DF8E021DB890C200D5851E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
 				E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */,
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
+				397585891DC45C9B00DE10BB /* polinomialesPageVC.swift */,
 				59150D781DB89F3D002FB669 /* Questions.storyboard */,
 				84DF8E001DB88CA200D5851E /* Initial.storyboard */,
 				84DF8E021DB890C200D5851E /* InitialViewController.swift */,
@@ -287,6 +290,7 @@
 			files = (
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
 				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
+				3975858A1DC45C9B00DE10BB /* polinomialesPageVC.swift in Sources */,
 				E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */,
 				E8F282821DB88687005CFE6E /* RadicalesTableViewController.swift in Sources */,
 				E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */,
