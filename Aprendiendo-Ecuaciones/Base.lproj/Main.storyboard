@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -17,66 +17,8 @@
                         <sections>
                             <tableViewSection id="2HC-lS-Qo9">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4oI-bw-2Pq">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4oI-bw-2Pq" id="IP5-i2-gas">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información: Lineales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-19-iTl">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="IXO-19-iTl" firstAttribute="top" secondItem="IP5-i2-gas" secondAttribute="top" constant="3" id="4ZV-EY-PpQ"/>
-                                                <constraint firstItem="IXO-19-iTl" firstAttribute="leading" secondItem="IP5-i2-gas" secondAttribute="leading" constant="19" id="Cea-cJ-UfZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="IXO-19-iTl" secondAttribute="bottom" constant="3" id="UV3-IR-RDb"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.54117647058823526" green="0.99215686274509807" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="91S-NM-Xhh" style="IBUITableViewCellStyleDefault" id="WZM-4w-ho9">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZM-4w-ho9" id="jKG-FV-nKB">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Información: Cuadráticas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="91S-NM-Xhh">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.54117647058823526" green="0.99215686274509807" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="D5U-JF-0D4" style="IBUITableViewCellStyleDefault" id="eDL-88-yh0">
-                                        <rect key="frame" x="0.0" y="152" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eDL-88-yh0" id="6cg-jR-JNo">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Información: Cúbicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D5U-JF-0D4">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.54117647058823526" green="0.99215686274509807" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.54117647058823526" green="0.99215686274509807" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="smN-Cg-hKF" style="IBUITableViewCellStyleDefault" id="4Qd-Q4-8Bo">
-                                        <rect key="frame" x="0.0" y="196" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qd-Q4-8Bo" id="lcs-oY-fif">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -129,26 +71,8 @@
                         <sections>
                             <tableViewSection id="PEQ-J4-44u">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="lus-Lc-yHM" style="IBUITableViewCellStyleDefault" id="AIL-hD-xfg">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AIL-hD-xfg" id="wRj-uw-gFp">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Información del Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lus-Lc-yHM">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60392156862745094" green="0.9882352941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="91O-IA-t8g" style="IBUITableViewCellStyleDefault" id="xaS-ba-M5b">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xaS-ba-M5b" id="plg-oR-AmR">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -201,26 +125,8 @@
                         <sections>
                             <tableViewSection id="kwz-j6-xAy">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="dBg-d7-3DR" style="IBUITableViewCellStyleDefault" id="EVv-4U-9Ou">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EVv-4U-9Ou" id="QrT-OZ-wUd">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Información del Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dBg-d7-3DR">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="1" blue="0.32156862745098042" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jEa-2L-fq7" style="IBUITableViewCellStyleDefault" id="GZ6-8A-rn4">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZ6-8A-rn4" id="p97-fT-zAP">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -273,26 +179,8 @@
                         <sections>
                             <tableViewSection id="Ij1-f0-dLh">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="dwb-3Q-8aR" style="IBUITableViewCellStyleDefault" id="edi-3I-jeh">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="edi-3I-jeh" id="stH-XI-S9G">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Información del Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dwb-3Q-8aR">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.98431372549019602" green="0.25882352941176473" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="K1c-Iq-9xD" style="IBUITableViewCellStyleDefault" id="Cnd-iu-X11">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cnd-iu-X11" id="yJg-HI-4IA">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -353,10 +241,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fab-YV-bv9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fab-YV-bv9">
                                 <frame key="frameInset" minX="16" minY="101" width="343" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Una función radical o irracional es en la que en su definición aparece un radical, o lo que es lo mismo una raíz. Tienen la forma de y= √ax+b</string>
+                                <string key="text">Una función radical o irracional es en la que en su definición aparece un radical, o lo que es lo mismo una raíz. Tienen la forma de y= √ax+b
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -374,7 +263,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v6J-Ya-3Tx">
                                 <frame key="frameInset" minX="16" minY="196" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-La función original parte del origen (0,0)-Existe un movimiento vertical si se suma o resta un número c a la raíz, la representación se traslada hacia arriba o hacia abajo respectivamente (y= √ax+b +c)-Existe un movimiento horizontal si al valor de b tiene un valor positivo o negativo, se traslada hacia la izquierda si es positivo y a la derecha si es negativo-Si el valor de x se multiplica por un valor mayor a 1 la gráfica se estirará y se comprimirá cuando el valor está entre 0 y 1-Existe un reflejo con el eje x si el signo de la raíz es negativo-Existe un reflejo con el eje y si el signo de x es negativo</mutableString>
+                                <string key="text">-La función original parte del origen (0,0)
+-Existe un movimiento vertical si se suma o resta un número c a la raíz, la representación se traslada hacia arriba o hacia abajo respectivamente (y= √ax+b +c)
+-Existe un movimiento horizontal si al valor de b tiene un valor positivo o negativo, se traslada hacia la izquierda si es positivo y a la derecha si es negativo
+-Si el valor de x se multiplica por un valor mayor a 1 la gráfica se estirará y se comprimirá cuando el valor está entre 0 y 1
+-Existe un reflejo con el eje x si el signo de la raíz es negativo
+-Existe un reflejo con el eje y si el signo de x es negativo
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -405,10 +300,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DWd-6m-iNs">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DWd-6m-iNs">
                                 <frame key="frameInset" minX="16" minY="101" width="343" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Se llama función exponencial de base “a” aquella cuya forma genérica es: y = ax, siendo “a” un número distinto de 0 o 1. También está la forma base “e” siendo éste el número de Euler =2.71828…</string>
+                                <string key="text">Se llama función exponencial de base “a” aquella cuya forma genérica es: y = ax, siendo “a” un número distinto de 0 o 1. También está la forma base “e” siendo éste el número de Euler =2.71828…
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -426,7 +322,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5II-ig-2YG">
                                 <frame key="frameInset" minX="16" minY="210" width="343" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-La función aplicada al valor cero es siempre igual a 1: y = a0 = 1. -La función exponencial de 1 es siempre igual a la base: y = a1 = a. -Todas las gráficas intersecan en el punto (0,1) y (1, a), cuando no hay constante sumando o restando a la función. Si a la función se le agrega una constante (y = ax +c), ésta solo provoca movimientos verticales -Siempre hay una asíntota horizontal en algún eje de las “x”-Hay un reflejo de espejo con el eje y si a &lt; 1 o si el signo del exponente x es negativo-Hay un reflejo de espejo con el eje x si a es negativo</mutableString>
+                                <string key="text">-La función aplicada al valor cero es siempre igual a 1: y = a0 = 1. 
+-La función exponencial de 1 es siempre igual a la base: y = a1 = a. 
+-Todas las gráficas intersecan en el punto (0,1) y (1, a), cuando no hay constante sumando o restando a la función. Si a la función se le agrega una constante (y = ax +c), ésta solo provoca movimientos verticales 
+-Siempre hay una asíntota horizontal en algún eje de las “x”
+-Hay un reflejo de espejo con el eje y si a &lt; 1 o si el signo del exponente x es negativo
+-Hay un reflejo de espejo con el eje x si a es negativo</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -457,10 +358,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-kI-PXo">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-kI-PXo">
                                 <frame key="frameInset" minX="16" minY="101" width="343" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Una función logarítmica es aquella que genéricamente se expresa como y = loga(x), siendo “a” la base de esta función, que ha de ser positiva y distinta de 1. El logaritmo es la función inversa de la exponencial por lo que también existe la variante del número de Euler que es el logaritmo natural y=ln(x)</string>
+                                <string key="text">Una función logarítmica es aquella que genéricamente se expresa como y = loga(x), siendo “a” la base de esta función, que ha de ser positiva y distinta de 1. El logaritmo es la función inversa de la exponencial por lo que también existe la variante del número de Euler que es el logaritmo natural y=ln(x)
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -478,7 +380,15 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bDl-Ei-kOE">
                                 <frame key="frameInset" minX="16" minY="228" width="343" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-La función logarítmica sólo existe para valores de x positivos, sin incluir el cero. -En el punto x = 1, la función logarítmica se anula, ya que loga (1) = 0, en cualquier base-Si solo aparece la función log (x) significa que es base 10 o a=10-La función logarítmica de la base es siempre igual a 1. -Siempre hay una asíntota vertical en algún eje de las “y”-Hay un reflejo de espejo con el eje x si 0&lt;a&lt; 1 o si el signo del logaritmo es negativo -Hay un reflejo de espejo con el eje y si el signo de x es negativo-Si a la función se le agrega una constante (y = loga (x) +c), ésta solo provoca movimientos verticales</mutableString>
+                                <string key="text">-La función logarítmica sólo existe para valores de x positivos, sin incluir el cero. 
+-En el punto x = 1, la función logarítmica se anula, ya que loga (1) = 0, en cualquier base
+-Si solo aparece la función log (x) significa que es base 10 o a=10
+-La función logarítmica de la base es siempre igual a 1. 
+-Siempre hay una asíntota vertical en algún eje de las “y”
+-Hay un reflejo de espejo con el eje x si 0&lt;a&lt; 1 o si el signo del logaritmo es negativo 
+-Hay un reflejo de espejo con el eje y si el signo de x es negativo
+-Si a la función se le agrega una constante (y = loga (x) +c), ésta solo provoca movimientos verticales
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -517,10 +427,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cRf-5S-IMG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cRf-5S-IMG">
                                 <frame key="frameInset" minX="16" minY="95" width="343" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Una función lineal tiene la forma y= f(x)= mx + b  y su gráfica es una Línea Recta.</string>
+                                <string key="text">Una función lineal tiene la forma y= f(x)= mx + b  y su gráfica es una Línea Recta.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -538,7 +449,16 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eie-X5-1l3">
                                 <frame key="frameInset" minX="16" minY="172" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-Su gráfica es una línea recta-Signo de “b” provoca un movimiento vertical-Signo de “m” provoca que la función sea creciente, decreciente o constante-La gráfica cruza al eje “y” en el punto (0,b), que es uno de los valores al origenLa gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al origen, es decir si y=0 entonces el valor de x es la solución de la ecuación                                         0=mx + b                                        -b=mx                                          x=-b / m-La pendiente de esta recta es m-Los extremos de su gráfica van en sentidos opuestos</mutableString>
+                                <string key="text">-Su gráfica es una línea recta
+-Signo de “b” provoca un movimiento vertical
+-Signo de “m” provoca que la función sea creciente, decreciente o constante
+-La gráfica cruza al eje “y” en el punto (0,b), que es uno de los valores al origen
+La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al origen, es decir si y=0 entonces el valor de x es la solución de la ecuación
+                                         0=mx + b
+                                        -b=mx
+                                          x=-b / m
+-La pendiente de esta recta es m
+-Los extremos de su gráfica van en sentidos opuestos</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -639,17 +559,20 @@
                                 <frame key="frameInset" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
+                                        <frame key="frameInset" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
-                                        <frame key="frameInset" minX="139" minY="65" width="96" height="21"/>
+                                        <frame key="frameInset" minX="139" minY="23" width="96" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
-                                        <frame key="frameInset" minX="171" minY="112" width="33" height="30"/>
+                                        <frame key="frameInset" minY="23" width="367" height="127"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Ver&gt;"/>
                                         <connections>
                                             <segue destination="byg-9R-lqU" kind="show" id="yvR-Rf-wia"/>
                                         </connections>
@@ -661,17 +584,20 @@
                                 <frame key="frameInset" minY="493" width="375" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-wm-KbI">
+                                        <frame key="frameInset" width="375" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radicales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izy-Au-NKS">
-                                        <frame key="frameInset" minX="150" minY="77" width="74" height="21"/>
+                                        <frame key="frameInset" minX="150" minY="19" width="74" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eib-hr-zeO">
-                                        <frame key="frameInset" minX="171" minY="136" width="33" height="30"/>
+                                        <frame key="frameInset" width="375" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Ver&gt;"/>
                                         <connections>
                                             <segue destination="ud0-p7-YR9" kind="presentation" id="e2r-Yq-G8g"/>
                                         </connections>
@@ -683,17 +609,20 @@
                                 <frame key="frameInset" minY="150" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-mI-BE8">
+                                        <frame key="frameInset" width="375" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logaritmicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-td-ngW">
-                                        <frame key="frameInset" minX="138" minY="76" width="99" height="21"/>
+                                        <frame key="frameInset" minX="138" minY="19" width="99" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIt-vY-EeG">
-                                        <frame key="frameInset" minX="171" minY="134" width="33" height="30"/>
+                                        <frame key="frameInset" width="367" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Ver&gt;"/>
                                         <connections>
                                             <segue destination="kHq-hA-uzO" kind="presentation" id="2Ce-va-8nh"/>
                                         </connections>
@@ -705,17 +634,20 @@
                                 <frame key="frameInset" minY="321" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-HQ-lPq">
+                                        <frame key="frameInset" width="375" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exponenciales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flr-Pc-9zg">
-                                        <frame key="frameInset" minX="132" minY="76" width="110" height="21"/>
+                                        <frame key="frameInset" minX="132" minY="18" width="110" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-1g-SqD">
-                                        <frame key="frameInset" minX="171" minY="134" width="33" height="30"/>
+                                        <frame key="frameInset" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Ver&gt;"/>
                                         <connections>
                                             <segue destination="Fu5-qK-3MV" kind="presentation" id="RLW-NI-bnz"/>
                                         </connections>
@@ -726,10 +658,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageExponecial" destination="D0M-HQ-lPq" id="Xmb-4L-gVu"/>
+                        <outlet property="imageLogaritmicas" destination="a7l-mI-BE8" id="0dy-U3-Mzh"/>
+                        <outlet property="imagePolinomial" destination="CDY-h8-f8S" id="rmg-Gy-d3x"/>
+                        <outlet property="imageRadical" destination="y5U-wm-KbI" id="8Hs-YO-aja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD5-yb-Ore" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887" y="937"/>
+            <point key="canvasLocation" x="-1351.2" y="323.38830584707648"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U0P-wm-ouI">
@@ -750,10 +688,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vWZ-cb-b1x">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vWZ-cb-b1x">
                                 <frame key="frameInset" minX="16" minY="101" width="343" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Una función cuadrática o de grado 2 tiene un número 2 en su exponente mayor. Tiene la forma y= f(x)= ax2 + bx + c y los extremos de su gráfica van hacia el mismo sentido.</string>
+                                <string key="text">Una función cuadrática o de grado 2 tiene un número 2 en su exponente mayor. Tiene la forma y= f(x)= ax2 + bx + c y los extremos de su gráfica van hacia el mismo sentido.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -771,7 +710,10 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-5M-lbw">
                                 <frame key="frameInset" minX="16" minY="189" width="343" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">-Su gráfica es una parábola en forma de “U”-Signo de “a” provoca que los extremos de la gráfica o “ramas” vayan hacia arriba o hacia abajo, entre mayor sea su valor más cerrada es la forma de la gráfica-La “b” afecta la ubicación de la parábola en el plano-La “c” es el cruce con el eje “y” e indica movimiento vertical</string>
+                                <string key="text">-Su gráfica es una parábola en forma de “U”
+-Signo de “a” provoca que los extremos de la gráfica o “ramas” vayan hacia arriba o hacia abajo, entre mayor sea su valor más cerrada es la forma de la gráfica
+-La “b” afecta la ubicación de la parábola en el plano
+-La “c” es el cruce con el eje “y” e indica movimiento vertical</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -803,10 +745,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-6W-X0y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-6W-X0y">
                                 <frame key="frameInset" minX="16" minY="101" width="343" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Una función polinomial de grado 3 es una función llamada cúbica por el número 3 de su exponente mayor. Tiene la forma y= f(x)= ax3 + bx2 + cx + d y los extremos de su gráfica van en sentidos opuestos.</string>
+                                <string key="text">Una función polinomial de grado 3 es una función llamada cúbica por el número 3 de su exponente mayor. Tiene la forma y= f(x)= ax3 + bx2 + cx + d y los extremos de su gráfica van en sentidos opuestos.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -824,7 +767,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ldr-FW-hMo">
                                 <frame key="frameInset" minX="16" minY="208" width="343" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">-Su gráfica puede tener un máximo, un mínimo y un punto de inflexión-Signo de “a” provoca que sea creciente o decreciente-La “b” afecta la ubicación y forma de la gráfica en el plano-La “c” afecta la ubicación y forma de la gráfica en el plano-La “d” es donde cruza en el eje y</string>
+                                <string key="text">-Su gráfica puede tener un máximo, un mínimo y un punto de inflexión
+-Signo de “a” provoca que sea creciente o decreciente
+-La “b” afecta la ubicación y forma de la gráfica en el plano
+-La “c” afecta la ubicación y forma de la gráfica en el plano
+-La “d” es donde cruza en el eje y
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -847,6 +795,6 @@
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xcx-Tb-Mep"/>
+        <segue reference="504-Iu-VGX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,9 +9,34 @@
 import UIKit
 
 class InitialViewController: UIViewController {
+    
+    
+    @IBOutlet weak var imagePolinomial: UIImageView!
+    
+    @IBOutlet weak var imageLogaritmicas: UIImageView!
+    
+    @IBOutlet weak var imageExponecial: UIImageView!
+    
+    @IBOutlet weak var imageRadical: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePolinomial.image = UIImage(named: "polinomial")
+        imagePolinomial.alpha = 0.7
+        
+        imageLogaritmicas.image = UIImage(named: "logaritmica")
+        imageLogaritmicas.alpha = 0.7
+        
+        imageExponecial.image = UIImage(named: "exponecial")
+        imageExponecial.alpha = 0.7
+        
+        imageRadical.image = UIImage(named: "radical")
+        imageRadical.alpha = 0.7
+        
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
