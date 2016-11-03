@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class Pregunta1ViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class Pregunta1ViewController: UIViewController {
     @IBOutlet weak var viewRespuesta3: UIView!
     @IBOutlet weak var viewRespuesta4: UIView!
     
+    @IBOutlet var vista: UIView!
     
     var arregloRespuestas : [UIImage] = []
     var arregloImagenes : [UIImageView] = []
@@ -182,11 +184,15 @@ class Pregunta1ViewController: UIViewController {
     @IBAction func tapImagen1(_ sender: AnyObject) {
         imageRespuesta1.alpha = 0.4
         if imagenRespuesta.image == imageRespuesta1.image{
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
 
             viewRespuesta1.backgroundColor = UIColor.green
             print("la 1 es la correcta")
         }
         else{
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
     
             viewRespuesta1.backgroundColor = UIColor.red
             print("esta no es 1")
@@ -201,9 +207,16 @@ class Pregunta1ViewController: UIViewController {
 
         if imagenRespuesta.image == imageRespuesta2.image{
             viewRespuesta1.backgroundColor = UIColor.green
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+
 
         }
         else{
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+            
+
             viewRespuesta2.backgroundColor = UIColor.red
         }
         disableTap()
@@ -215,10 +228,17 @@ class Pregunta1ViewController: UIViewController {
         if imagenRespuesta.image == imageRespuesta3.image{
         
             viewRespuesta3.backgroundColor = UIColor.green
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+
 
             print("la 3 es la correcta")
         }
         else{
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+            
+
             viewRespuesta3.backgroundColor = UIColor.red
 
             print("esta no es 3")
@@ -233,11 +253,16 @@ class Pregunta1ViewController: UIViewController {
         if imagenRespuesta.image == imageRespuesta4.image{
             
             viewRespuesta4.backgroundColor = UIColor.green
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+
 
             print("la 4 es la correcta")
         }
         else{
             viewRespuesta4.backgroundColor = UIColor.red
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
 
             print("esta no es 4")
         }

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5276E45D8F10658B105706 /* Pods_Aprendiendo_EcuacionesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */; };
 		3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */; };
 		59150D791DB89F3D002FB669 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59150D781DB89F3D002FB669 /* Questions.storyboard */; };
+		7C29B89249DF803A2D146C72 /* Pods_Aprendiendo_Ecuaciones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12C16031743E3A687CA60FA /* Pods_Aprendiendo_Ecuaciones.framework */; };
 		84DF8E011DB88CA200D5851E /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF8E001DB88CA200D5851E /* Initial.storyboard */; };
 		84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF8E021DB890C200D5851E /* InitialViewController.swift */; };
+		98BE4A193A59722CC8EB85C1 /* Pods_Aprendiendo_EcuacionesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */; };
 		E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A191DB8483A00DF0ACF /* AppDelegate.swift */; };
 		E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */; };
 		E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A1D1DB8483A00DF0ACF /* SecondViewController.swift */; };
@@ -44,10 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C5724D33A6CC3E14E9B8A0 /* Pods-Aprendiendo-EcuacionesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesUITests/Pods-Aprendiendo-EcuacionesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2519F9E3BCBC5B116B4D4F3A /* Pods-Aprendiendo-EcuacionesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesUITests/Pods-Aprendiendo-EcuacionesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		313A3CBEC3F3A6D59371F330 /* Pods-Aprendiendo-Ecuaciones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-Ecuaciones.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones.release.xcconfig"; sourceTree = "<group>"; };
 		3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = polinomialesPageVC.swift; sourceTree = "<group>"; };
+		48A7163F92954C0F649A0B38 /* Pods-Aprendiendo-Ecuaciones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-Ecuaciones.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones.debug.xcconfig"; sourceTree = "<group>"; };
 		59150D781DB89F3D002FB669 /* Questions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
+		74C178E3F2E664FDEC0FAE2F /* Pods-Aprendiendo-EcuacionesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84DF8E001DB88CA200D5851E /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		84DF8E021DB890C200D5851E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3823849D874EF6A780AF15 /* Pods-Aprendiendo-EcuacionesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8333A161DB8483A00DF0ACF /* Aprendiendo-Ecuaciones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aprendiendo-Ecuaciones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A191DB8483A00DF0ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 		E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogaritmicasTableViewController.swift; sourceTree = "<group>"; };
 		E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExponencialesTableViewController.swift; sourceTree = "<group>"; };
 		E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadicalesTableViewController.swift; sourceTree = "<group>"; };
+		F12C16031743E3A687CA60FA /* Pods_Aprendiendo_Ecuaciones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_Ecuaciones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C29B89249DF803A2D146C72 /* Pods_Aprendiendo_Ecuaciones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BE4A193A59722CC8EB85C1 /* Pods_Aprendiendo_EcuacionesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5276E45D8F10658B105706 /* Pods_Aprendiendo_EcuacionesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D6475C95B3241D6C7AEE017 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F12C16031743E3A687CA60FA /* Pods_Aprendiendo_Ecuaciones.framework */,
+				8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */,
+				8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF21721D93FEEBFBEC5745CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48A7163F92954C0F649A0B38 /* Pods-Aprendiendo-Ecuaciones.debug.xcconfig */,
+				313A3CBEC3F3A6D59371F330 /* Pods-Aprendiendo-Ecuaciones.release.xcconfig */,
+				74C178E3F2E664FDEC0FAE2F /* Pods-Aprendiendo-EcuacionesTests.debug.xcconfig */,
+				DE3823849D874EF6A780AF15 /* Pods-Aprendiendo-EcuacionesTests.release.xcconfig */,
+				13C5724D33A6CC3E14E9B8A0 /* Pods-Aprendiendo-EcuacionesUITests.debug.xcconfig */,
+				2519F9E3BCBC5B116B4D4F3A /* Pods-Aprendiendo-EcuacionesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8333A0D1DB8483A00DF0ACF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +139,8 @@
 				E8333A2F1DB8483B00DF0ACF /* Aprendiendo-EcuacionesTests */,
 				E8333A3A1DB8483B00DF0ACF /* Aprendiendo-EcuacionesUITests */,
 				E8333A171DB8483A00DF0ACF /* Products */,
+				BF21721D93FEEBFBEC5745CF /* Pods */,
+				2D6475C95B3241D6C7AEE017 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8333A401DB8483B00DF0ACF /* Build configuration list for PBXNativeTarget "Aprendiendo-Ecuaciones" */;
 			buildPhases = (
+				2A36C88093F7489C424F68C9 /* [CP] Check Pods Manifest.lock */,
 				E8333A121DB8483A00DF0ACF /* Sources */,
 				E8333A131DB8483A00DF0ACF /* Frameworks */,
 				E8333A141DB8483A00DF0ACF /* Resources */,
+				940187E261B0149A037529C9 /* [CP] Embed Pods Frameworks */,
+				D296D790D5A7597E425381E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8333A431DB8483B00DF0ACF /* Build configuration list for PBXNativeTarget "Aprendiendo-EcuacionesTests" */;
 			buildPhases = (
+				98103DEAFBF935FE8570A1B7 /* [CP] Check Pods Manifest.lock */,
 				E8333A281DB8483B00DF0ACF /* Sources */,
 				E8333A291DB8483B00DF0ACF /* Frameworks */,
 				E8333A2A1DB8483B00DF0ACF /* Resources */,
+				29D8741EC78012574BA8A6D6 /* [CP] Embed Pods Frameworks */,
+				D5B78BFBDAACEF9BFCA0E0E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8333A461DB8483B00DF0ACF /* Build configuration list for PBXNativeTarget "Aprendiendo-EcuacionesUITests" */;
 			buildPhases = (
+				033CC7B8A233AFE0006BA818 /* [CP] Check Pods Manifest.lock */,
 				E8333A331DB8483B00DF0ACF /* Sources */,
 				E8333A341DB8483B00DF0ACF /* Frameworks */,
 				E8333A351DB8483B00DF0ACF /* Resources */,
+				EE5F40A4AD3D11FE96C6B337 /* [CP] Embed Pods Frameworks */,
+				7F5FB7CF18AFA9039EB05159 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +334,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033CC7B8A233AFE0006BA818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29D8741EC78012574BA8A6D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A36C88093F7489C424F68C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F5FB7CF18AFA9039EB05159 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-EcuacionesUITests/Pods-Aprendiendo-EcuacionesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		940187E261B0149A037529C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98103DEAFBF935FE8570A1B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D296D790D5A7597E425381E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B78BFBDAACEF9BFCA0E0E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5F40A4AD3D11FE96C6B337 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aprendiendo-EcuacionesUITests/Pods-Aprendiendo-EcuacionesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8333A121DB8483A00DF0ACF /* Sources */ = {
@@ -448,6 +635,7 @@
 		};
 		E8333A411DB8483B00DF0ACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A7163F92954C0F649A0B38 /* Pods-Aprendiendo-Ecuaciones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
@@ -460,6 +648,7 @@
 		};
 		E8333A421DB8483B00DF0ACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 313A3CBEC3F3A6D59371F330 /* Pods-Aprendiendo-Ecuaciones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
@@ -472,6 +661,7 @@
 		};
 		E8333A441DB8483B00DF0ACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C178E3F2E664FDEC0FAE2F /* Pods-Aprendiendo-EcuacionesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +676,7 @@
 		};
 		E8333A451DB8483B00DF0ACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3823849D874EF6A780AF15 /* Pods-Aprendiendo-EcuacionesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +691,7 @@
 		};
 		E8333A471DB8483B00DF0ACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C5724D33A6CC3E14E9B8A0 /* Pods-Aprendiendo-EcuacionesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Aprendiendo-EcuacionesUITests/Info.plist";
@@ -513,6 +705,7 @@
 		};
 		E8333A481DB8483B00DF0ACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2519F9E3BCBC5B116B4D4F3A /* Pods-Aprendiendo-EcuacionesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Aprendiendo-EcuacionesUITests/Info.plist";
