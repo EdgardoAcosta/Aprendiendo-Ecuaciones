@@ -20,8 +20,11 @@ class Pregunta1ViewController: UIViewController {
     
     @IBOutlet weak var imageRespuesta4: UIImageView!
     
-    @IBOutlet weak var btRespuesta2: UIButton!
     
+    @IBOutlet weak var viewRespuesta1: UIView!
+    @IBOutlet weak var viewRespuesta2: UIView!
+    @IBOutlet weak var viewRespuesta3: UIView!
+    @IBOutlet weak var viewRespuesta4: UIView!
     
     
     var arregloRespuestas : [UIImage] = []
@@ -35,6 +38,7 @@ class Pregunta1ViewController: UIViewController {
     var Pregunta : String = ""
     var m : Int = 0
     var b : Int = 0
+    var imageClick : Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +47,7 @@ class Pregunta1ViewController: UIViewController {
         arregloRespuestas.append(UIImage(named: "linealR2")!)
         arregloRespuestas.append(UIImage(named: "linealR3")!)
         arregloRespuestas.append(UIImage(named: "linealR4")!)
-        arregloRespuestas.append(UIImage(named: "linealR5")!)
+        //arregloRespuestas.append(UIImage(named: "linealR5")!)
         
         arregloImagenes.append(imageRespuesta1)
         arregloImagenes.append(imageRespuesta2)
@@ -51,9 +55,6 @@ class Pregunta1ViewController: UIViewController {
         arregloImagenes.append(imageRespuesta4)
         
         
-        
-
-
         
     
         m = RandomInt(min: -5, max: 5)
@@ -65,8 +66,6 @@ class Pregunta1ViewController: UIViewController {
         respuesta = verificarRespuesta()
         asignarImages()
 
-        
-        
         
         
         }
@@ -100,9 +99,6 @@ class Pregunta1ViewController: UIViewController {
         else if m == 0 && b > 0 {
             pos = 4
         }
-        else if m > 0 && b > 0{
-            pos = 5
-        }
         else if m < 0 && b < 0{
             ///FALTA IMAGEN DE ESTA GRAFICA
             pos = 3
@@ -119,14 +115,14 @@ class Pregunta1ViewController: UIViewController {
     }
     func asignarImages() {
         var a = 0
-        var arreglo = [0,1,2,3,4,5]
+        var arreglo = [0,1,2,3,4]
         var aux = 0
         var random : Int
         
         //Elige imagenes aleatoriamente
         while a < 4 {
             //Elejimos un numero de imagen
-            random = Int (arc4random_uniform(UInt32(5 - a)) )
+            random = Int (arc4random_uniform(UInt32(4 - a)) )
             
             //Obtenemos valor
             aux = arreglo[random]
@@ -135,10 +131,10 @@ class Pregunta1ViewController: UIViewController {
             arregloImagenes[a].image = arregloRespuestas[aux]
             
             //Swap del valor de la ultima posicion a la posicion obtenida por random
-            arreglo[random] = arreglo [5 - a]
+            arreglo[random] = arreglo [4 - a]
             
             //Asignar valor de random a la ultima posicion
-            arreglo[5 - a] = aux
+            arreglo[4 - a] = aux
             
             //Aumenta valor
             a = a + 1
@@ -184,51 +180,83 @@ class Pregunta1ViewController: UIViewController {
     }
     
     @IBAction func tapImagen1(_ sender: AnyObject) {
-        
+        imageRespuesta1.alpha = 0.4
         if imagenRespuesta.image == imageRespuesta1.image{
+
+            viewRespuesta1.backgroundColor = UIColor.green
             print("la 1 es la correcta")
         }
         else{
+    
+            viewRespuesta1.backgroundColor = UIColor.red
             print("esta no es 1")
         }
+        disableTap()
+       
     }
     
     
     @IBAction func tapImagen2(_ sender: AnyObject) {
+        imageRespuesta2.alpha = 0.4
 
         if imagenRespuesta.image == imageRespuesta2.image{
-            print("la 2 es la correcta")
+            viewRespuesta1.backgroundColor = UIColor.green
+
         }
         else{
-            print("esta no es 2")
+            viewRespuesta2.backgroundColor = UIColor.red
         }
+        disableTap()
     }
     
     @IBAction func tapImagen3(_ sender: AnyObject) {
-
+        imageRespuesta3.alpha = 0.4
+        
         if imagenRespuesta.image == imageRespuesta3.image{
+        
+            viewRespuesta3.backgroundColor = UIColor.green
+
             print("la 3 es la correcta")
         }
         else{
+            viewRespuesta3.backgroundColor = UIColor.red
+
             print("esta no es 3")
         }
+        disableTap()
+
     }
     
     @IBAction func tapImagen4(_ sender: AnyObject) {
+        imageRespuesta4.alpha = 0.4
+
         if imagenRespuesta.image == imageRespuesta4.image{
+            
+            viewRespuesta4.backgroundColor = UIColor.green
+
             print("la 4 es la correcta")
         }
         else{
+            viewRespuesta4.backgroundColor = UIColor.red
+
             print("esta no es 4")
         }
+        disableTap()
+
+    }
+    
+    
+    func disableTap()  {
+        imageRespuesta1.isUserInteractionEnabled = false
+        imageRespuesta2.isUserInteractionEnabled = false
+        imageRespuesta3.isUserInteractionEnabled = false
+        imageRespuesta4.isUserInteractionEnabled = false
+
+        
     }
     
 
-        
-        
     
-
-
     
     /*
     // MARK: - Navigation
