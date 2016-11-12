@@ -106,7 +106,7 @@ class Pregunta3ViewController: UIViewController {
     func asignarImagen(){
         
         var a = 0
-        var auxImagePosition : UIImageView
+        var auxImagePosition : UIImage
         
         var arreglo = [0, 1, 2, 3]
         var random : Int!
@@ -120,7 +120,6 @@ class Pregunta3ViewController: UIViewController {
             auxImagePosition = arregloImagenes[a]
             arregloImagenes[a] = arregloImagenes[aux]
             arregloImagenes[3 - a] = auxImagePosition
-            
             arreglo[random] = arreglo [3 - a]
             arreglo[3 - a] = aux
             
