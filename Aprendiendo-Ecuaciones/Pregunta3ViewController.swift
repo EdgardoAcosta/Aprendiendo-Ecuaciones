@@ -66,6 +66,8 @@ class Pregunta3ViewController: UIViewController {
             
         }
         
+        asignarImagen()
+        
         
     }
     
@@ -104,27 +106,40 @@ class Pregunta3ViewController: UIViewController {
     
     
     func asignarImagen(){
-        
+        //Iterador
         var a = 0
+        
+        //Aux para swap de imagen
         var auxImagePosition : UIImage
         
+        //Arreglo con valores de posiciones
         var arreglo = [0, 1, 2, 3]
+        
         var random : Int!
+        //Auxiliar para swap
         var aux : Int!
     
-        
-        
         while a < 4 {
             random = Int (arc4random_uniform(UInt32(3 - a)))
             aux = arreglo[random]
+            
+            //Swap imagenes
             auxImagePosition = arregloImagenes[a]
             arregloImagenes[a] = arregloImagenes[aux]
             arregloImagenes[3 - a] = auxImagePosition
+            
+            //Swap indices
             arreglo[random] = arreglo [3 - a]
             arreglo[3 - a] = aux
             
+            //Aumenta contador
             a = a + 1
+            
         }
+        for i in 0...3{
+            imageRespuestas[i].image = arregloImagenes[arreglo[i]]
+        }
+
 
     }
 
