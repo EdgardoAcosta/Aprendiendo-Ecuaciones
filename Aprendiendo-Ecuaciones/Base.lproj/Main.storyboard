@@ -561,34 +561,42 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Tz-iaK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Tz-iaK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
                                         <rect key="frame" x="139" y="23" width="96" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
-                                        <rect key="frame" x="0.0" y="23" width="367" height="127"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
+                                        <rect key="frame" x="0.0" y="15" width="367" height="135"/>
                                         <connections>
                                             <segue destination="byg-9R-lqU" kind="show" id="yvR-Rf-wia"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.53934360560000005" green="1" blue="0.52470946969999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FG7-lG-JIt" secondAttribute="bottom" id="0bJ-rS-B5L"/>
+                                    <constraint firstItem="FG7-lG-JIt" firstAttribute="leading" secondItem="hYV-Tz-iaK" secondAttribute="leading" id="6JY-hi-Uri"/>
+                                    <constraint firstItem="aDS-yf-PC3" firstAttribute="top" secondItem="hYV-Tz-iaK" secondAttribute="top" constant="23" id="BU1-rq-Z81"/>
+                                    <constraint firstItem="CDY-h8-f8S" firstAttribute="leading" secondItem="hYV-Tz-iaK" secondAttribute="leading" id="MSE-Sg-7kS"/>
+                                    <constraint firstAttribute="trailing" secondItem="CDY-h8-f8S" secondAttribute="trailing" id="SUu-yT-gfO"/>
+                                    <constraint firstAttribute="trailing" secondItem="FG7-lG-JIt" secondAttribute="trailing" constant="8" id="WTB-QS-odV"/>
+                                    <constraint firstAttribute="trailing" secondItem="aDS-yf-PC3" secondAttribute="trailing" constant="140" id="daG-Ni-3wJ"/>
+                                    <constraint firstItem="CDY-h8-f8S" firstAttribute="top" secondItem="hYV-Tz-iaK" secondAttribute="top" id="k4W-2l-9xK"/>
+                                    <constraint firstAttribute="bottom" secondItem="CDY-h8-f8S" secondAttribute="bottom" id="kxd-eF-qvL"/>
+                                    <constraint firstItem="aDS-yf-PC3" firstAttribute="leading" secondItem="hYV-Tz-iaK" secondAttribute="leading" constant="139" id="nNP-Gx-ECd"/>
+                                    <constraint firstItem="FG7-lG-JIt" firstAttribute="top" secondItem="aDS-yf-PC3" secondAttribute="bottom" constant="-29" id="zhl-N9-wx2"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-96-5oG">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-96-5oG">
                                 <rect key="frame" x="0.0" y="493" width="375" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-wm-KbI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
@@ -611,9 +619,8 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.25487169980000002" blue="0.31627548220000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-v8-blC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-v8-blC">
                                 <rect key="frame" x="0.0" y="150" width="375" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-mI-BE8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
@@ -636,9 +643,8 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </subviews>
                                 <color key="backgroundColor" red="0.60368474920000004" green="0.989730679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-Hg-X9I">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-Hg-X9I">
                                 <rect key="frame" x="0.0" y="321" width="375" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-HQ-lPq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
@@ -663,6 +669,23 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q4d-Hg-X9I" firstAttribute="top" secondItem="Can-Im-i2e" secondAttribute="top" constant="321" id="17Q-ah-SfH"/>
+                            <constraint firstItem="6FN-96-5oG" firstAttribute="top" secondItem="Can-Im-i2e" secondAttribute="top" constant="493" id="6vG-Ss-59C"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="trailing" secondItem="6FN-96-5oG" secondAttribute="trailing" id="Ey8-Vf-9eq"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="leading" secondItem="T4a-v8-blC" secondAttribute="leading" id="IDt-2r-Scb"/>
+                            <constraint firstItem="6FN-96-5oG" firstAttribute="bottom" secondItem="v5D-EK-jiq" secondAttribute="top" id="JCO-bx-A7u"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="top" secondItem="Can-Im-i2e" secondAttribute="top" id="KOR-Aw-dUv"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="trailing" secondItem="T4a-v8-blC" secondAttribute="trailing" id="PbS-NI-Sjf"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="leading" secondItem="Can-Im-i2e" secondAttribute="leading" id="QSs-LZ-3XU"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="trailing" secondItem="q4d-Hg-X9I" secondAttribute="trailing" id="UzU-xA-9OO"/>
+                            <constraint firstAttribute="bottom" secondItem="T4a-v8-blC" secondAttribute="bottom" constant="345" id="bST-Oh-W6L"/>
+                            <constraint firstAttribute="bottom" secondItem="hYV-Tz-iaK" secondAttribute="bottom" constant="517" id="kAH-w9-9wE"/>
+                            <constraint firstItem="T4a-v8-blC" firstAttribute="top" secondItem="hYV-Tz-iaK" secondAttribute="bottom" id="mgd-1I-jYw"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="leading" secondItem="6FN-96-5oG" secondAttribute="leading" id="oPA-Un-QUK"/>
+                            <constraint firstItem="hYV-Tz-iaK" firstAttribute="leading" secondItem="q4d-Hg-X9I" secondAttribute="leading" id="oRw-pT-bLh"/>
+                            <constraint firstItem="6FN-96-5oG" firstAttribute="top" secondItem="q4d-Hg-X9I" secondAttribute="bottom" id="pPo-aZ-F8U"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageExponecial" destination="D0M-HQ-lPq" id="Xmb-4L-gVu"/>
@@ -955,28 +978,28 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-1i-CNw">
-                                <rect key="frame" x="33" y="147" width="42" height="24"/>
+                                <rect key="frame" x="33" y="147" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcB-Lr-Gmt">
-                                <rect key="frame" x="33" y="252" width="42" height="24"/>
+                                <rect key="frame" x="33" y="252" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-f6-C3K">
-                                <rect key="frame" x="33" y="357" width="42" height="24"/>
+                                <rect key="frame" x="33" y="357" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbW-ZX-arx">
-                                <rect key="frame" x="33" y="466" width="42" height="24"/>
+                                <rect key="frame" x="33" y="466" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1017,19 +1040,19 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageEcuacion1" destination="UWg-Dt-OcG" id="Clk-yg-rOw"/>
-                        <outlet property="imageEcuacion2" destination="7g9-ll-zcp" id="1hY-XB-3rs"/>
-                        <outlet property="imageEcuacion3" destination="Mk7-Jw-gvc" id="X1E-RE-CR6"/>
-                        <outlet property="imageEcuacion4" destination="YlV-En-ydd" id="FQS-rQ-cuH"/>
-                        <outlet property="lbEcuacion1" destination="SjR-1i-CNw" id="4pf-l5-a38"/>
-                        <outlet property="lbEcuacion2" destination="PcB-Lr-Gmt" id="otO-uy-LHO"/>
-                        <outlet property="lbEcuacion3" destination="yg8-f6-C3K" id="wPH-fX-Rdv"/>
-                        <outlet property="lbEcuacion4" destination="IbW-ZX-arx" id="20s-a5-Hdn"/>
+                        <outletCollection property="lbPreguntas" destination="SjR-1i-CNw" collectionClass="NSMutableArray" id="z1L-HK-Qgb"/>
+                        <outletCollection property="lbPreguntas" destination="PcB-Lr-Gmt" collectionClass="NSMutableArray" id="b8T-mT-G2J"/>
+                        <outletCollection property="lbPreguntas" destination="yg8-f6-C3K" collectionClass="NSMutableArray" id="38V-lT-PPM"/>
+                        <outletCollection property="lbPreguntas" destination="IbW-ZX-arx" collectionClass="NSMutableArray" id="Dk0-Bk-Wx1"/>
+                        <outletCollection property="imageRespuestas" destination="UWg-Dt-OcG" collectionClass="NSMutableArray" id="oYq-Qa-8hE"/>
+                        <outletCollection property="imageRespuestas" destination="7g9-ll-zcp" collectionClass="NSMutableArray" id="UxD-Oq-mci"/>
+                        <outletCollection property="imageRespuestas" destination="Mk7-Jw-gvc" collectionClass="NSMutableArray" id="f8U-wM-84X"/>
+                        <outletCollection property="imageRespuestas" destination="YlV-En-ydd" collectionClass="NSMutableArray" id="UUo-Ix-fXc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id8-JB-DpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-842"/>
+            <point key="canvasLocation" x="2116" y="-842.42878560719646"/>
         </scene>
     </scenes>
     <resources>
@@ -1041,6 +1064,6 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DYg-hI-JKJ"/>
+        <segue reference="AfI-w6-wcs"/>
     </inferredMetricsTieBreakers>
 </document>
