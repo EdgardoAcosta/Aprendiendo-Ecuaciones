@@ -22,6 +22,7 @@
 		E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8333A241DB8483A00DF0ACF /* LaunchScreen.storyboard */; };
 		E8333A311DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A301DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift */; };
 		E8333A3C1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */; };
+		E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */; };
 		E8CE4B231DC55C0700C081D3 /* Pregunta1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */; };
 		E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */; };
 		E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */; };
@@ -73,6 +74,7 @@
 		E8333A371DB8483B00DF0ACF /* Aprendiendo-EcuacionesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aprendiendo-EcuacionesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aprendiendo_EcuacionesUITests.swift; sourceTree = "<group>"; };
 		E8333A3D1DB8483B00DF0ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3ViewController.swift; sourceTree = "<group>"; };
 		E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1ViewController.swift; sourceTree = "<group>"; };
 		E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolinomialesTableViewController.swift; sourceTree = "<group>"; };
 		E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogaritmicasTableViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */,
 				59150D781DB89F3D002FB669 /* Questions.storyboard */,
 				E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */,
+				E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */,
 				84DF8E001DB88CA200D5851E /* Initial.storyboard */,
 				84DF8E021DB890C200D5851E /* InitialViewController.swift */,
 				E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */,
@@ -348,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		29D8741EC78012574BA8A6D6 /* [CP] Embed Pods Frameworks */ = {
@@ -378,7 +381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7F5FB7CF18AFA9039EB05159 /* [CP] Copy Pods Resources */ = {
@@ -423,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D296D790D5A7597E425381E3 /* [CP] Copy Pods Resources */ = {
@@ -478,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */,
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
 				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
 				3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */,

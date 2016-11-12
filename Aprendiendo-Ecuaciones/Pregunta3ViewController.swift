@@ -9,6 +9,26 @@
 import UIKit
 
 class Pregunta3ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var lbEcuacion1: UILabel!
+    
+    @IBOutlet weak var lbEcuacion2: UILabel!
+    
+    @IBOutlet weak var lbEcuacion3: UILabel!
+    
+    @IBOutlet weak var lbEcuacion4: UILabel!
+    
+    @IBOutlet weak var imageEcuacion1: UIImageView!
+    
+    @IBOutlet weak var imageEcuacion2: UIImageView!
+    
+    @IBOutlet weak var imageEcuacion3: UIImageView!
+    
+    @IBOutlet weak var imageEcuacion4: UIImageView!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
