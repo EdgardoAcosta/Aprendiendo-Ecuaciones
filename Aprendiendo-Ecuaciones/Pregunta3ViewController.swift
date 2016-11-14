@@ -17,8 +17,6 @@ class Pregunta3ViewController: UIViewController {
     
     
     var Pregunta : String = ""
-    var m : Int = 0
-    var b : Int = 0
     
     var arrPreguntas  = [String]()
     var arrRespuesta = [Int]()
@@ -47,9 +45,10 @@ class Pregunta3ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func setPreguntas(){
-        
-        for i in 0...3{
+    func setPreguntas() {
+        var b, m : Int
+        var arreglo = [0, 1, 2, 3]
+        for i in 0...3 {
         
             m = RandomInt(min: -5, max: 5)
             b = RandomInt(min: -5, max: 5)
@@ -59,19 +58,21 @@ class Pregunta3ViewController: UIViewController {
             
             lbPreguntas[i].text = arrPreguntas[i]
             
-            
-            arrRespuesta.append( verificarRespuesta() )
+            arrRespuesta.append( verificarRespuesta(m: m,b: b) )
             
             imageRespuestas[i].image = arregloImagenes[arrRespuesta[i]]
             
         }
-        
-        asignarImagen()
-        
+        arreglo = revuelve(arr: arreglo)
+        var arrPregunta : [Pregunta]!
+        var count : Int = 0
+        for i in arreglo {
+            //let pregunta = Pregunta(label: lbPreguntas[i]!, posicion: count)
+        }
         
     }
     
-    func verificarRespuesta() -> Int {
+    func verificarRespuesta(m :Int ,b :Int) -> Int {
         
         var pos : Int = 0
         if m > 0 && b == 0 {
@@ -99,9 +100,25 @@ class Pregunta3ViewController: UIViewController {
             
         }
         
-        
         return pos
         
+    }
+    
+    func revuelve(arr: [Int]) -> [Int] {
+        var a = 0
+        var random, aux : Int
+        var arreglo = arr
+        while a < 4 {
+            random = Int (arc4random_uniform(UInt32(3 - a)))
+            aux = arreglo[random]
+            //Swap indices
+            arreglo[random] = arreglo[3 - a]
+            arreglo[3 - a] = aux
+            //Aumenta contador
+            a = a + 1
+        }
+        
+        return arreglo
     }
     
     
