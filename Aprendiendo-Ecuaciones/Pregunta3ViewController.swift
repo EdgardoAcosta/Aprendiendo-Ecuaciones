@@ -15,9 +15,6 @@ class Pregunta3ViewController: UIViewController {
     
     @IBOutlet var imageRespuestas: [UIImageView]!
     
-    
-    var Pregunta : String = ""
-    
     var arrPreguntas  = [String]()
     var arrRespuesta = [Int]()
     
@@ -48,28 +45,23 @@ class Pregunta3ViewController: UIViewController {
     func setPreguntas() {
         var b, m : Int
         var arreglo = [0, 1, 2, 3]
-        for i in 0...3 {
-        
-            m = RandomInt(min: -5, max: 5)
-            b = RandomInt(min: -5, max: 5)
-            
-        
-            arrPreguntas.append("Y = (\(m)x) + (\(b))" );
-            
-            lbPreguntas[i].text = arrPreguntas[i]
-            
-            arrRespuesta.append( verificarRespuesta(m: m,b: b) )
-            
-            imageRespuestas[i].image = arregloImagenes[arrRespuesta[i]]
-            
-        }
-        arreglo = revuelve(arr: arreglo)
-        var arrPregunta : [Pregunta]!
-        var count : Int = 0
-        for i in arreglo {
-            //let pregunta = Pregunta(label: lbPreguntas[i]!, posicion: count)
-        }
-        
+		arreglo = revuelve(arr: arreglo)
+		print("set")
+		for i in 0...3 {
+		
+			m = RandomInt(min: -5, max: 5)
+			b = RandomInt(min: -5, max: 5)
+			
+		
+			arrPreguntas.append("Y = (\(m)x) + (\(b))" );
+			
+			lbPreguntas[arreglo[i]].text = arrPreguntas[i]
+			
+			arrRespuesta.append( verificarRespuesta(m: m,b: b) )
+			print(arrRespuesta[i])
+			imageRespuestas[i].image = arregloImagenes[arrRespuesta[i]]
+			
+		}
     }
     
     func verificarRespuesta(m :Int ,b :Int) -> Int {
@@ -103,7 +95,8 @@ class Pregunta3ViewController: UIViewController {
         return pos
         
     }
-    
+	
+	//Metodo para revolver los valores de un arreglo aleatoriamente
     func revuelve(arr: [Int]) -> [Int] {
         var a = 0
         var random, aux : Int
