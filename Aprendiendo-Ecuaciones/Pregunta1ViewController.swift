@@ -44,11 +44,15 @@ class Pregunta1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        arregloRespuestas.append(UIImage(named: "linealR1")!)
-        arregloRespuestas.append(UIImage(named: "linealR0")!)
-        arregloRespuestas.append(UIImage(named: "linealR2")!)
-        arregloRespuestas.append(UIImage(named: "linealR3")!)
-        arregloRespuestas.append(UIImage(named: "linealR4")!)
+        arregloRespuestas.append(UIImage(named: "r1")!)//m > 0 && b == 0
+        arregloRespuestas.append(UIImage(named: "r2")!)//m > 0 && b < 0
+        arregloRespuestas.append(UIImage(named: "r3")!)// m < 0 && b == 0
+        arregloRespuestas.append(UIImage(named: "r4")!)//m < 0 && b < 0
+        arregloRespuestas.append(UIImage(named: "r5")!)//m == 0 && b > 0
+        arregloRespuestas.append(UIImage(named: "r6")!)// m == 0 && b < 0
+        arregloRespuestas.append(UIImage(named: "r7")!)//m > 0 && b > 0
+        arregloRespuestas.append(UIImage(named: "r8")!)//m < 0 && b > 0
+
         //arregloRespuestas.append(UIImage(named: "linealR5")!)
         
         arregloImagenes.append(imageRespuesta1)
@@ -87,27 +91,28 @@ class Pregunta1ViewController: UIViewController {
         
         var pos : Int = 0
         if m > 0 && b == 0 {
-            pos = 0
+            pos = 0//yes
         }
         else if m > 0 && b > 0{
-            pos = 1
+            pos = 6//yes
         }
         else if m > 0 && b < 0{
-            pos = 2
+            pos = 1//yes
         }
         else if m < 0 && b == 0{
-            pos = 3
+            pos = 2 //yes
         }
         else if m == 0 && b > 0 {
-            pos = 4
+            pos = 4 //yes
+        }
+        else if m == 0 && b < 0 {
+            pos = 5
         }
         else if m < 0 && b < 0{
-            ///FALTA IMAGEN DE ESTA GRAFICA
             pos = 3
         }
         else if m < 0 && b > 0 {
-            // FALTA IMAGEN DE ESTA GRAFICA
-            pos = 3
+            pos = 7
             
         }
         
