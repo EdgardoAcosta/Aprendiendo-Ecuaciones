@@ -11,12 +11,15 @@ import KVNProgress
 
 
 class Pregunta2ViewController: UIViewController {
-    
+    //Variable para la imagen que sera la pregunta
     @IBOutlet weak var imagePregunta: UIImageView!
     
+    //Arreglo para guardar las labels que seran las respuestas
     @IBOutlet var lbPreguntas: [UILabel]!
     
+    //View para feedback de respuesta
     @IBOutlet var vista: UIView!
+    
     
     var arrRespuesta = [Int]()
      var arregloImagenes : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
