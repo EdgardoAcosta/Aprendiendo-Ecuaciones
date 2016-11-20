@@ -23,6 +23,7 @@
 		E8333A311DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A301DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift */; };
 		E8333A3C1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */; };
 		E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */; };
+		E87CD1CF1DDE346900F13103 /* Pregunta2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */; };
 		E8B4E07E1DDA46210016A716 /* Pregunta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4E07D1DDA46210016A716 /* Pregunta.swift */; };
 		E8CE4B231DC55C0700C081D3 /* Pregunta1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */; };
 		E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */; };
@@ -76,6 +77,7 @@
 		E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aprendiendo_EcuacionesUITests.swift; sourceTree = "<group>"; };
 		E8333A3D1DB8483B00DF0ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3ViewController.swift; sourceTree = "<group>"; };
+		E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2ViewController.swift; sourceTree = "<group>"; };
 		E8B4E07D1DDA46210016A716 /* Pregunta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta.swift; sourceTree = "<group>"; };
 		E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1ViewController.swift; sourceTree = "<group>"; };
 		E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolinomialesTableViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
 				E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */,
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
+				E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */,
 				3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */,
 				59150D781DB89F3D002FB669 /* Questions.storyboard */,
 				E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */,
@@ -496,6 +499,7 @@
 				E8F282801DB8866F005CFE6E /* ExponencialesTableViewController.swift in Sources */,
 				E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */,
 				84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */,
+				E87CD1CF1DDE346900F13103 /* Pregunta2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,14 +21,14 @@
                             <tableViewSection id="2HC-lS-Qo9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="smN-Cg-hKF" style="IBUITableViewCellStyleDefault" id="4Qd-Q4-8Bo">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qd-Q4-8Bo" id="lcs-oY-fif">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="smN-Cg-hKF">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -75,14 +78,14 @@
                             <tableViewSection id="PEQ-J4-44u">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="91O-IA-t8g" style="IBUITableViewCellStyleDefault" id="xaS-ba-M5b">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xaS-ba-M5b" id="plg-oR-AmR">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="91O-IA-t8g">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -129,14 +132,14 @@
                             <tableViewSection id="kwz-j6-xAy">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jEa-2L-fq7" style="IBUITableViewCellStyleDefault" id="GZ6-8A-rn4">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZ6-8A-rn4" id="p97-fT-zAP">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jEa-2L-fq7">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -183,14 +186,14 @@
                             <tableViewSection id="Ij1-f0-dLh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="K1c-Iq-9xD" style="IBUITableViewCellStyleDefault" id="Cnd-iu-X11">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cnd-iu-X11" id="yJg-HI-4IA">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K1c-Iq-9xD">
-                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,11 +241,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radical1" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-II-eIx">
-                                <frame key="frameInset" minX="83" minY="494" width="209" height="138"/>
+                                <rect key="frame" x="83" y="494" width="209" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v6J-Ya-3Tx">
-                                <frame key="frameInset" minX="16" minY="252" width="343" height="217"/>
+                                <rect key="frame" x="16" y="252" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">-La función original parte del origen (0,0)
 -Existe un movimiento vertical si se suma o resta un número c a la raíz, la representación se traslada hacia arriba o hacia abajo respectivamente (y= √ax+b +c)
@@ -255,11 +258,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqv-6U-1R1">
-                                <frame key="frameInset" minY="64" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Radicales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz6-e4-xFh">
-                                        <frame key="frameInset" minX="101" minY="10" width="172" height="21"/>
+                                        <rect key="frame" x="101" y="10" width="172" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -269,7 +272,7 @@
                                 <color key="backgroundColor" red="1" green="0.25487169980000002" blue="0.31627548220000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fab-YV-bv9">
-                                <frame key="frameInset" minX="16" minY="126" width="343" height="74"/>
+                                <rect key="frame" x="16" y="126" width="343" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Una función radical o irracional es en la que en su definición aparece un radical, o lo que es lo mismo una raíz. Tienen la forma de y= √ax+b
 </string>
@@ -277,11 +280,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUg-Ga-QFM">
-                                <frame key="frameInset" minY="193" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="193" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h27-fh-Vj3">
-                                        <frame key="frameInset" minX="123" minY="12" width="129" height="16"/>
+                                        <rect key="frame" x="123" y="12" width="129" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -310,11 +313,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exponencial1" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-yw-zDE">
-                                <frame key="frameInset" minX="74" minY="480" width="214" height="148"/>
+                                <rect key="frame" x="74" y="480" width="214" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5II-ig-2YG">
-                                <frame key="frameInset" minX="16" minY="259" width="343" height="203"/>
+                                <rect key="frame" x="16" y="259" width="343" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">-La función aplicada al valor cero es siempre igual a 1: y = a0 = 1. 
 -La función exponencial de 1 es siempre igual a la base: y = a1 = a. 
@@ -326,7 +329,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DWd-6m-iNs">
-                                <frame key="frameInset" minX="16" minY="121" width="343" height="77"/>
+                                <rect key="frame" x="16" y="121" width="343" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Se llama función exponencial de base “a” aquella cuya forma genérica es: y = ax, siendo “a” un número distinto de 0 o 1. También está la forma base “e” siendo éste el número de Euler =2.71828…
 </string>
@@ -334,11 +337,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWo-cd-URW">
-                                <frame key="frameInset" minY="64" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Exponenciales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-W1-jvY">
-                                        <frame key="frameInset" minX="80" minY="10" width="214" height="21"/>
+                                        <rect key="frame" x="80" y="10" width="214" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -348,11 +351,11 @@
                                 <color key="backgroundColor" red="0.98095927350000001" green="1" blue="0.31674042140000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mx8-eg-Nzf">
-                                <frame key="frameInset" minY="206" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="206" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYl-qy-XMo">
-                                        <frame key="frameInset" minX="123" minY="12" width="129" height="16"/>
+                                        <rect key="frame" x="123" y="12" width="129" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -381,11 +384,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logaritmica1" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-Dw-52a">
-                                <frame key="frameInset" minX="69" minY="492" width="250" height="155"/>
+                                <rect key="frame" x="69" y="492" width="250" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bDl-Ei-kOE">
-                                <frame key="frameInset" minX="16" minY="253" width="343" height="231"/>
+                                <rect key="frame" x="16" y="253" width="343" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">-La función logarítmica sólo existe para valores de x positivos, sin incluir el cero. 
 -En el punto x = 1, la función logarítmica se anula, ya que loga (1) = 0, en cualquier base
@@ -400,11 +403,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Euk-xs-bv6">
-                                <frame key="frameInset" minY="64" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Logaritmicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS8-00-KLh">
-                                        <frame key="frameInset" minX="86" minY="10" width="202" height="21"/>
+                                        <rect key="frame" x="86" y="10" width="202" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -414,7 +417,7 @@
                                 <color key="backgroundColor" red="0.60392156860000001" green="0.98823529409999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-kI-PXo">
-                                <frame key="frameInset" minX="16" minY="109" width="343" height="105"/>
+                                <rect key="frame" x="16" y="109" width="343" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Una función logarítmica es aquella que genéricamente se expresa como y = loga(x), siendo “a” la base de esta función, que ha de ser positiva y distinta de 1. El logaritmo es la función inversa de la exponencial por lo que también existe la variante del número de Euler que es el logaritmo natural y=ln(x)
 </string>
@@ -422,11 +425,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-Qq-K1X">
-                                <frame key="frameInset" minY="211" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="211" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-aR-Y0S">
-                                        <frame key="frameInset" minX="123" minY="10" width="129" height="21"/>
+                                        <rect key="frame" x="123" y="10" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -448,7 +451,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vBc-ZR-U2u" customClass="polinomialesPageVC" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8z4-CD-0vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-192"/>
+            <point key="canvasLocation" x="1726" y="-43"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vHT-5z-gcf">
@@ -463,7 +466,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cRf-5S-IMG">
-                                <frame key="frameInset" minX="16" minY="70" width="343" height="40"/>
+                                <rect key="frame" x="16" y="70" width="343" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Una función lineal tiene la forma y= f(x)= mx + b  y su gráfica es una Línea Recta.
 </string>
@@ -471,13 +474,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineal1" translatesAutoresizingMaskIntoConstraints="NO" id="9yg-ri-g7j">
-                                <frame key="frameInset" minX="49" minY="434" width="276" height="178"/>
+                                <rect key="frame" x="49" y="434" width="276" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eie-X5-1l3">
-                                <frame key="frameInset" minX="16" minY="172" width="343" height="217"/>
+                                <rect key="frame" x="16" y="172" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-Su gráfica es una línea recta
+                                <string key="text">-Su gráfica es una línea recta
 -Signo de “b” provoca un movimiento vertical
 -Signo de “m” provoca que la función sea creciente, decreciente o constante
 -La gráfica cruza al eje “y” en el punto (0,b), que es uno de los valores al origen
@@ -486,21 +489,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                         -b=mx
                                           x=-b / m
 -La pendiente de esta recta es m
--Los extremos de su gráfica van en sentidos opuestos</mutableString>
+-Los extremos de su gráfica van en sentidos opuestos</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZA7-OT-Cdr">
-                                <frame key="frameInset" minX="67" minY="-26" width="228" height="46"/>
+                                <rect key="frame" x="67" y="-26" width="228" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-FX-ggd">
-                                <frame key="frameInset" minY="20" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Lineales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPo-uo-NBl">
-                                        <frame key="frameInset" minX="108" minY="12" width="159" height="21"/>
+                                        <rect key="frame" x="108" y="12" width="159" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -510,11 +513,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.99607843139999996" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-C2-bX5">
-                                <frame key="frameInset" minY="106" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-v5-LWo">
-                                        <frame key="frameInset" minX="123" minY="12" width="129" height="21"/>
+                                        <rect key="frame" x="123" y="12" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -529,7 +532,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5n-WH-mTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="-122.78860569715144"/>
+            <point key="canvasLocation" x="2542" y="-44"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IcT-8w-pCi">
@@ -616,14 +619,19 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Tz-iaK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
+                                        <rect key="frame" x="139" y="23" width="96" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
+                                        <rect key="frame" x="0.0" y="14.5" width="367" height="135.5"/>
                                         <connections>
                                             <segue destination="byg-9R-lqU" kind="show" id="yvR-Rf-wia"/>
                                         </connections>
@@ -645,20 +653,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-96-5oG">
+                                <rect key="frame" x="0.0" y="493" width="375" height="174"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-wm-KbI">
-                                        <frame key="frameInset" width="375" height="174"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radicales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izy-Au-NKS">
-                                        <frame key="frameInset" minX="150" minY="19" width="74" height="21"/>
+                                        <rect key="frame" x="150" y="19" width="74" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eib-hr-zeO">
-                                        <frame key="frameInset" width="375" height="174"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="ud0-p7-YR9" kind="presentation" id="e2r-Yq-G8g"/>
@@ -668,20 +677,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="1" green="0.25487169980000002" blue="0.31627548220000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-v8-blC">
+                                <rect key="frame" x="0.0" y="150" width="375" height="172"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-mI-BE8">
-                                        <frame key="frameInset" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logaritmicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-td-ngW">
-                                        <frame key="frameInset" minX="138" minY="19" width="99" height="21"/>
+                                        <rect key="frame" x="138" y="19" width="99" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIt-vY-EeG">
-                                        <frame key="frameInset" width="367" height="172"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="kHq-hA-uzO" kind="presentation" id="2Ce-va-8nh"/>
@@ -691,20 +701,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.60368474920000004" green="0.989730679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-Hg-X9I">
+                                <rect key="frame" x="0.0" y="321" width="375" height="172"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-HQ-lPq">
-                                        <frame key="frameInset" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exponenciales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flr-Pc-9zg">
-                                        <frame key="frameInset" minX="132" minY="18" width="110" height="21"/>
+                                        <rect key="frame" x="132" y="18" width="110" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGP-1g-SqD">
-                                        <frame key="frameInset" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="Fu5-qK-3MV" kind="presentation" id="RLW-NI-bnz"/>
@@ -757,7 +768,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vWZ-cb-b1x">
-                                <frame key="frameInset" minX="16" minY="83" width="343" height="72"/>
+                                <rect key="frame" x="16" y="83" width="343" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Una función cuadrática o de grado 2 tiene un número 2 en su exponente mayor. Tiene la forma y= f(x)= ax2 + bx + c y los extremos de su gráfica van hacia el mismo sentido.
 </string>
@@ -765,7 +776,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-5M-lbw">
-                                <frame key="frameInset" minX="16" minY="236" width="343" height="117"/>
+                                <rect key="frame" x="16" y="236" width="343" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">-Su gráfica es una parábola en forma de “U”
 -Signo de “a” provoca que los extremos de la gráfica o “ramas” vayan hacia arriba o hacia abajo, entre mayor sea su valor más cerrada es la forma de la gráfica
@@ -775,11 +786,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-Zn-pEq">
-                                <frame key="frameInset" minY="20" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Cuadráticas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJn-Gd-dIN">
-                                        <frame key="frameInset" minX="92" minY="12" width="190" height="21"/>
+                                        <rect key="frame" x="92" y="12" width="190" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -789,11 +800,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.99607843139999996" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-dv-pmt">
-                                <frame key="frameInset" minY="174" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="174" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoP-7F-jb7">
-                                        <frame key="frameInset" minX="123" minY="12" width="129" height="21"/>
+                                        <rect key="frame" x="123" y="12" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -803,7 +814,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.99607843139999996" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cuadratica1" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-1M-AXP">
-                                <frame key="frameInset" minX="49" minY="397" width="276" height="178"/>
+                                <rect key="frame" x="49" y="397" width="276" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -812,7 +823,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUV-0L-Rlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429.5999999999999" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="3223" y="-43"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="91T-3d-1Fk">
@@ -827,11 +838,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cubica1" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-bL-c1J">
-                                <frame key="frameInset" minX="49" minY="434" width="276" height="178"/>
+                                <rect key="frame" x="49" y="434" width="276" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ldr-FW-hMo">
-                                <frame key="frameInset" minX="16" minY="241" width="343" height="145"/>
+                                <rect key="frame" x="16" y="241" width="343" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">-Su gráfica puede tener un máximo, un mínimo y un punto de inflexión
 -Signo de “a” provoca que sea creciente o decreciente
@@ -843,11 +854,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-4f-BUO">
-                                <frame key="frameInset" minY="20" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Funciones Cúbicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59l-f0-mZ1">
-                                        <frame key="frameInset" minX="107" minY="12" width="161" height="21"/>
+                                        <rect key="frame" x="107" y="12" width="161" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -857,7 +868,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.99607843139999996" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-6W-X0y">
-                                <frame key="frameInset" minX="16" minY="84" width="343" height="70"/>
+                                <rect key="frame" x="16" y="84" width="343" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Una función polinomial de grado 3 es una función llamada cúbica por el número 3 de su exponente mayor. Tiene la forma y= f(x)= ax3 + bx2 + cx + d y los extremos de su gráfica van en sentidos opuestos.
 </string>
@@ -865,11 +876,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGM-YO-60Z">
-                                <frame key="frameInset" minY="170" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="170" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Características" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17u-uX-Ia5">
-                                        <frame key="frameInset" minX="123" minY="12" width="129" height="21"/>
+                                        <rect key="frame" x="123" y="12" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -884,7 +895,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="649-rz-dcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4136.8000000000002" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="3908" y="-45"/>
         </scene>
         <!--Pregunta1 View Controller-->
         <scene sceneID="QmC-P3-ePR">
@@ -899,7 +910,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ld-N4-31p">
-                                <frame key="frameInset" minX="148" minY="526" width="78" height="30"/>
+                                <rect key="frame" x="148" y="526" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente &gt;"/>
                                 <connections>
@@ -907,21 +918,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
-                                <frame key="frameInset" minX="296" minY="600" width="30" height="30"/>
+                                <rect key="frame" x="296" y="600" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Salir"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-JT-vB2">
-                                <frame key="frameInset" minX="34" minY="600" width="95" height="30"/>
+                                <rect key="frame" x="34" y="600" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Volver a inicio"/>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqD-O5-ihZ">
-                                <frame key="frameInset" minX="216" minY="339" width="143" height="126"/>
+                                <rect key="frame" x="216" y="339" width="143" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-xp-9p9">
-                                        <frame key="frameInset" width="143" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -932,11 +943,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2od-TP-yIQ">
-                                <frame key="frameInset" minX="34" minY="339" width="143" height="126"/>
+                                <rect key="frame" x="34" y="339" width="143" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3U-kh-Qb8">
-                                        <frame key="frameInset" width="143" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -947,11 +958,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjx-06-o41">
-                                <frame key="frameInset" minX="216" minY="151" width="143" height="126"/>
+                                <rect key="frame" x="216" y="151" width="143" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-ip-69I">
-                                        <frame key="frameInset" width="143" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -962,11 +973,11 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-lL-mLW">
-                                <frame key="frameInset" minX="34" minY="151" width="143" height="126"/>
+                                <rect key="frame" x="34" y="151" width="143" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szc-He-qRs">
-                                        <frame key="frameInset" width="143" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -977,14 +988,14 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-mL-45s">
-                                <frame key="frameInset" minY="20" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-xc-1rV">
-                                <frame key="frameInset" minY="56" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -1028,7 +1039,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1310" y="-842"/>
+            <point key="canvasLocation" x="1684" y="-842"/>
         </scene>
         <!--Pregunta3 View Controller-->
         <scene sceneID="V0k-zX-YOe">
@@ -1043,68 +1054,71 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Relacionar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-5w-9SM">
-                                <frame key="frameInset" minX="152" minY="28" width="80" height="21"/>
+                                <rect key="frame" x="152" y="28" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-1i-CNw">
-                                <frame key="frameInset" minX="33" minY="147" width="146" height="24"/>
+                                <rect key="frame" x="33" y="147" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcB-Lr-Gmt">
-                                <frame key="frameInset" minX="33" minY="252" width="146" height="24"/>
+                                <rect key="frame" x="33" y="252" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-f6-C3K">
-                                <frame key="frameInset" minX="33" minY="357" width="146" height="24"/>
+                                <rect key="frame" x="33" y="357" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbW-ZX-arx">
-                                <frame key="frameInset" minX="33" minY="466" width="146" height="24"/>
+                                <rect key="frame" x="33" y="466" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-Jw-gvc">
-                                <frame key="frameInset" minX="219" minY="332" width="124" height="75"/>
+                                <rect key="frame" x="219" y="332" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-ll-zcp">
-                                <frame key="frameInset" minX="219" minY="227" width="124" height="75"/>
+                                <rect key="frame" x="219" y="227" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWg-Dt-OcG">
-                                <frame key="frameInset" minX="219" minY="122" width="124" height="75"/>
+                                <rect key="frame" x="219" y="122" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlV-En-ydd">
-                                <frame key="frameInset" minX="219" minY="441" width="124" height="75"/>
+                                <rect key="frame" x="219" y="441" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDY-dj-WYp">
-                                <frame key="frameInset" minX="156" minY="530" width="78" height="30"/>
+                                <rect key="frame" x="156" y="530" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente &gt;"/>
+                                <connections>
+                                    <segue destination="LQ6-Rt-Rxb" kind="presentation" id="a1Y-in-Ux7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
-                                <frame key="frameInset" minX="304" minY="604" width="30" height="30"/>
+                                <rect key="frame" x="304" y="604" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Salir"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvJ-dm-NQB">
-                                <frame key="frameInset" minX="42" minY="604" width="95" height="30"/>
+                                <rect key="frame" x="42" y="604" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Volver a inicio"/>
                             </button>
@@ -1124,7 +1138,118 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id8-JB-DpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-842.42878560719646"/>
+            <point key="canvasLocation" x="2462" y="-842"/>
+        </scene>
+        <!--Pregunta2 View Controller-->
+        <scene sceneID="MP6-RO-9ZH">
+            <objects>
+                <viewController id="LQ6-Rt-Rxb" customClass="Pregunta2ViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FED-gJ-mY0"/>
+                        <viewControllerLayoutGuide type="bottom" id="t6v-Nc-bvF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hKo-n0-LcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HG-TN-p5I">
+                                <rect key="frame" x="67" y="51" width="253" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjV-O5-O20">
+                                <rect key="frame" x="22" y="336" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2l7-Xb-cAW" appends="YES" id="huS-bD-VB9"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-6O-Vfa">
+                                <rect key="frame" x="22" y="432" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dec-nX-Dcr" appends="YES" id="mo9-Mv-IsC"/>
+                                </connections>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-ru-u0W">
+                                <rect key="frame" x="155" y="524" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siguiente &gt;"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
+                                <rect key="frame" x="303" y="598" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salir"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-Py-agE">
+                                <rect key="frame" x="41" y="598" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver a inicio"/>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLD-LM-DAv">
+                                <rect key="frame" x="190" y="432" width="162" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bCS-67-7ld" appends="YES" id="cxN-I7-q6k"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-Fq-N6r">
+                                <rect key="frame" x="190" y="336" width="162" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G9T-Za-kPW" appends="YES" id="122-Uz-hYw"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagePregunta" destination="8HG-TN-p5I" id="mgL-lU-Udj"/>
+                        <outlet property="vista" destination="hKo-n0-LcO" id="PqJ-vN-Ko4"/>
+                        <outletCollection property="lbPreguntas" destination="EjV-O5-O20" collectionClass="NSMutableArray" id="TIk-yw-3ob"/>
+                        <outletCollection property="lbPreguntas" destination="JVc-Fq-N6r" collectionClass="NSMutableArray" id="QaR-mA-WcV"/>
+                        <outletCollection property="lbPreguntas" destination="rYc-6O-Vfa" collectionClass="NSMutableArray" id="iW0-6r-K5b"/>
+                        <outletCollection property="lbPreguntas" destination="sLD-LM-DAv" collectionClass="NSMutableArray" id="kiN-jU-c6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igf-66-9dM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2l7-Xb-cAW">
+                    <connections>
+                        <action selector="taplbRespuesta1:" destination="LQ6-Rt-Rxb" id="FlN-sa-tHR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="G9T-Za-kPW">
+                    <connections>
+                        <action selector="taplbRespuesta2:" destination="LQ6-Rt-Rxb" id="bK8-R7-e4j"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dec-nX-Dcr">
+                    <connections>
+                        <action selector="taplbRespuesta3:" destination="LQ6-Rt-Rxb" id="O7w-1g-KeA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bCS-67-7ld">
+                    <connections>
+                        <action selector="taplbRespuesta4:" destination="LQ6-Rt-Rxb" id="wLu-rD-ntv"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3276" y="-842.42878560719646"/>
         </scene>
     </scenes>
     <resources>

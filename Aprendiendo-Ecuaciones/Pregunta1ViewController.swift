@@ -91,19 +91,19 @@ class Pregunta1ViewController: UIViewController {
         
         var pos : Int = 0
         if m > 0 && b == 0 {
-            pos = 0//yes
+            pos = 0
         }
         else if m > 0 && b > 0{
-            pos = 6//yes
+            pos = 6
         }
         else if m > 0 && b < 0{
-            pos = 1//yes
+            pos = 1
         }
         else if m < 0 && b == 0{
-            pos = 2 //yes
+            pos = 2
         }
         else if m == 0 && b > 0 {
-            pos = 4 //yes
+            pos = 4
         }
         else if m == 0 && b < 0 {
             pos = 5
