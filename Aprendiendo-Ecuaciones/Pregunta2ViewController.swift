@@ -69,6 +69,7 @@ class Pregunta2ViewController: UIViewController {
         
         //Elige un indicie del arreglo de labels para la respuesta
         posRespuesta = Int (arc4random_uniform(UInt32(3)))
+        
         var aux : Int!
         
         //Se itera de 0 a 3 pues se tienen solo 4 opciones de respuesta

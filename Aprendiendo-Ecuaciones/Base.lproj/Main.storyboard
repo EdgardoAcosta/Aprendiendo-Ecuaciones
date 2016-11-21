@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1005,16 +1005,15 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageRespuesta1" destination="Szc-He-qRs" id="4w8-6L-vjJ"/>
-                        <outlet property="imageRespuesta2" destination="sRy-ip-69I" id="Fk6-Ar-H01"/>
-                        <outlet property="imageRespuesta3" destination="K3U-kh-Qb8" id="YDz-lG-QHk"/>
-                        <outlet property="imageRespuesta4" destination="Bt1-xp-9p9" id="ltK-Eu-mt5"/>
-                        <outlet property="tfPregunta" destination="0zc-xc-1rV" id="Llr-yD-HUS"/>
-                        <outlet property="viewRespuesta1" destination="xNY-lL-mLW" id="xzV-yb-c34"/>
-                        <outlet property="viewRespuesta2" destination="Pjx-06-o41" id="OQ3-o4-tzs"/>
-                        <outlet property="viewRespuesta3" destination="2od-TP-yIQ" id="b8H-tw-xCR"/>
-                        <outlet property="viewRespuesta4" destination="eqD-O5-ihZ" id="Lpi-JP-BEd"/>
                         <outlet property="vista" destination="Aed-aA-oyH" id="01p-UE-bkV"/>
+                        <outletCollection property="arregloImagenes" destination="sRy-ip-69I" collectionClass="NSMutableArray" id="s70-yD-blj"/>
+                        <outletCollection property="arregloViews" destination="xNY-lL-mLW" collectionClass="NSMutableArray" id="7rg-dW-N83"/>
+                        <outletCollection property="arregloImagenes" destination="Szc-He-qRs" collectionClass="NSMutableArray" id="jTT-a4-eiV"/>
+                        <outletCollection property="arregloViews" destination="Pjx-06-o41" collectionClass="NSMutableArray" id="QH0-FT-hjk"/>
+                        <outletCollection property="arregloViews" destination="2od-TP-yIQ" collectionClass="NSMutableArray" id="qJv-mp-Nzr"/>
+                        <outletCollection property="arregloImagenes" destination="K3U-kh-Qb8" collectionClass="NSMutableArray" id="rFj-mv-Wxx"/>
+                        <outletCollection property="arregloViews" destination="eqD-O5-ihZ" collectionClass="NSMutableArray" id="lWH-aN-Hv8"/>
+                        <outletCollection property="arregloImagenes" destination="Bt1-xp-9p9" collectionClass="NSMutableArray" id="UGN-iT-9dK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3p-Qc-foR" userLabel="First Responder" sceneMemberID="firstResponder"/>
