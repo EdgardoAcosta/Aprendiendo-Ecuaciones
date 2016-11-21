@@ -25,12 +25,10 @@ class Pregunta1ViewController: UIViewController {
     //Arreglo de imagenes escogidas para la vista principal
     @IBOutlet var arregloImagenes: [UIImageView]!
     
+    
     //Posicion de indice de la imagen respuesta
     //Indice dentro del pool de arreglo respuestas
     var respuesta :  Int!
-    
-    //Imagen respuesta
-    var imagenRespuesta : UIImageView!
     
     //Pregunta de la view
     @IBOutlet weak var lbPregunta: UILabel!
@@ -57,7 +55,7 @@ class Pregunta1ViewController: UIViewController {
         
         //Posicion del indice de la imagen respuesta
         respuesta = verificarRespuesta()
-        print("Indice de la imagen respuesta: \(respuesta)")
+        
         //Asigna imagenes a la view de forma aleatoria
         asignarImages()
     }
@@ -109,7 +107,7 @@ class Pregunta1ViewController: UIViewController {
     func asignarImages() {
         //Selecciona posicion aleatoria en la view para la imagen que sera la respuesta
         let posicionRespuesta = Int (arc4random_uniform(UInt32(3)))
-        print("Posicion de la respuesta: \(posicionRespuesta)")
+        
         //Auxiliar para guardar indices de las imagenes aleatorias
         //El indice corresponde al arregloRespuestas
         var aux : Int!
@@ -127,12 +125,11 @@ class Pregunta1ViewController: UIViewController {
                 pregunta = Pregunta(label: lbPregunta, posicion: aux)
             }
             respuestas.append(pregunta)
-            print("Imagen: \(i), posicion de imagen elegida: \(respuestas[i].posicionRespuesta)")
         }
     }
     
     @IBAction func tapImagen1(_ sender: AnyObject) {
-        arregloImagenes[1].alpha = 0.4
+        arregloImagenes[0].alpha = 0.4
         
         if respuestas[0].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
@@ -149,11 +146,8 @@ class Pregunta1ViewController: UIViewController {
             print("esta no es 1")
         }
         
-        //disableTap()
+        disableTap()
     }
-    
-    
-    
     
     @IBAction func tapImagen2(_ sender: AnyObject) {
         arregloImagenes[1].alpha = 0.4
@@ -171,7 +165,7 @@ class Pregunta1ViewController: UIViewController {
             arregloViews[1].backgroundColor = UIColor.red
         }
         
-        //disableTap()
+        disableTap()
     }
     
     @IBAction func tapImagen3(_ sender: AnyObject) {
@@ -182,17 +176,15 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[2].backgroundColor = UIColor.green
-            print("la 3 es la correcta")
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
             
             arregloViews[2].backgroundColor = UIColor.red
-            print("esta no es 3")
         }
         
-        //disableTap()
+        disableTap()
     }
     
     @IBAction func tapImagen4(_ sender: AnyObject) {
@@ -203,24 +195,21 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[3].backgroundColor = UIColor.green
-            print("la 4 es la correcta")
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
             
             arregloViews[3].backgroundColor = UIColor.red
-            print("esta no es 4")
         }
-        //disableTap()
+        disableTap()
     }
     
     //Disables tap in every image
     func disableTap()  {
-        arregloImagenes[0].isUserInteractionEnabled = false
-        arregloImagenes[1].isUserInteractionEnabled = false
-        arregloImagenes[2].isUserInteractionEnabled = false
-        arregloImagenes[3].isUserInteractionEnabled = false
+        for i in 0...3 {
+            arregloImagenes[i].isUserInteractionEnabled = false
+        }
     }
     
 

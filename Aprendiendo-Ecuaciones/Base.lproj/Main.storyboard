@@ -1005,15 +1005,16 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="lbPregunta" destination="0zc-xc-1rV" id="UNb-J1-dPg"/>
                         <outlet property="vista" destination="Aed-aA-oyH" id="01p-UE-bkV"/>
-                        <outletCollection property="arregloImagenes" destination="sRy-ip-69I" collectionClass="NSMutableArray" id="s70-yD-blj"/>
                         <outletCollection property="arregloViews" destination="xNY-lL-mLW" collectionClass="NSMutableArray" id="7rg-dW-N83"/>
-                        <outletCollection property="arregloImagenes" destination="Szc-He-qRs" collectionClass="NSMutableArray" id="jTT-a4-eiV"/>
                         <outletCollection property="arregloViews" destination="Pjx-06-o41" collectionClass="NSMutableArray" id="QH0-FT-hjk"/>
                         <outletCollection property="arregloViews" destination="2od-TP-yIQ" collectionClass="NSMutableArray" id="qJv-mp-Nzr"/>
-                        <outletCollection property="arregloImagenes" destination="K3U-kh-Qb8" collectionClass="NSMutableArray" id="rFj-mv-Wxx"/>
                         <outletCollection property="arregloViews" destination="eqD-O5-ihZ" collectionClass="NSMutableArray" id="lWH-aN-Hv8"/>
-                        <outletCollection property="arregloImagenes" destination="Bt1-xp-9p9" collectionClass="NSMutableArray" id="UGN-iT-9dK"/>
+                        <outletCollection property="arregloImagenes" destination="Szc-He-qRs" collectionClass="NSMutableArray" id="XWQ-LG-9mN"/>
+                        <outletCollection property="arregloImagenes" destination="sRy-ip-69I" collectionClass="NSMutableArray" id="se1-ez-vtI"/>
+                        <outletCollection property="arregloImagenes" destination="K3U-kh-Qb8" collectionClass="NSMutableArray" id="3r9-G3-jD1"/>
+                        <outletCollection property="arregloImagenes" destination="Bt1-xp-9p9" collectionClass="NSMutableArray" id="k6E-uR-PXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3p-Qc-foR" userLabel="First Responder" sceneMemberID="firstResponder"/>
