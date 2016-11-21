@@ -18,6 +18,9 @@ class Pregunta2ViewController: UIViewController {
     
     @IBOutlet var vista: UIView!
     
+    @IBOutlet weak var btSiguiente: UIButton!
+    
+    
     var arrRespuesta = [Int]()
      var arregloImagenes : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
 
@@ -30,6 +33,9 @@ class Pregunta2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        disableNext(boolean: false)
+        
+        btSiguiente.isEnabled = false
         
         m1 = RandomInt(min: -5, max: 5)
         b1 = RandomInt(min: -5, max: 5)
@@ -154,6 +160,7 @@ class Pregunta2ViewController: UIViewController {
             print("esta no es 1")
         }
         disableTap()
+        disableNext(boolean: true)
 
     }
     
@@ -173,8 +180,7 @@ class Pregunta2ViewController: UIViewController {
             print("esta no es 2")
         }
         disableTap()
-        
-
+        disableNext(boolean: true)
     }
     
     @IBAction func taplbRespuesta3(_ sender: UITapGestureRecognizer) {
@@ -182,8 +188,6 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-            
-            
             print("la 3 es la correcta")
         }
         else{
@@ -193,6 +197,7 @@ class Pregunta2ViewController: UIViewController {
             print("esta no es 3")
         }
         disableTap()
+        disableNext(boolean: true)
     }
     
     @IBAction func taplbRespuesta4(_ sender: UITapGestureRecognizer) {
@@ -211,20 +216,16 @@ class Pregunta2ViewController: UIViewController {
             print("esta no es 4")
         }
         disableTap()
-
+        disableNext(boolean: true)
+    }
+    func disableTap()  {
+        for i in 0...3 {
+            lbPreguntas[i].isUserInteractionEnabled = false
+        }
         
     }
-    
-    
-    
-    
-
-    
-    
-    
-    func disableTap()  {
-        //taplbRespuesta1.view.userInteractionEnabled = false
-        
+    func disableNext(boolean : Bool){
+        btSiguiente.isEnabled = boolean
     }
 
     

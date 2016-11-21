@@ -36,6 +36,9 @@ class Pregunta1ViewController: UIViewController {
     
     @IBOutlet weak var tfPregunta: UILabel!
     
+    @IBOutlet weak var btSiguiente: UIButton!
+    
+    
     
     var Pregunta : String = ""
     var m : Int = 0
@@ -44,6 +47,8 @@ class Pregunta1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        disableNext(boolean: false)
+        btSiguiente.isEnabled = false
         arregloRespuestas.append(UIImage(named: "r1")!)//m > 0 && b == 0
         arregloRespuestas.append(UIImage(named: "r2")!)//m > 0 && b < 0
         arregloRespuestas.append(UIImage(named: "r3")!)// m < 0 && b == 0
@@ -203,7 +208,7 @@ class Pregunta1ViewController: UIViewController {
             print("esta no es 1")
         }
         disableTap()
-       
+        disableNext(boolean: true)
     }
     
     
@@ -225,6 +230,8 @@ class Pregunta1ViewController: UIViewController {
             viewRespuesta2.backgroundColor = UIColor.red
         }
         disableTap()
+        disableNext(boolean: true)
+
     }
     
     @IBAction func tapImagen3(_ sender: AnyObject) {
@@ -249,6 +256,8 @@ class Pregunta1ViewController: UIViewController {
             print("esta no es 3")
         }
         disableTap()
+        disableNext(boolean: true)
+
 
     }
     
@@ -272,6 +281,7 @@ class Pregunta1ViewController: UIViewController {
             print("esta no es 4")
         }
         disableTap()
+        disableNext(boolean: true)
 
     }
     
@@ -281,8 +291,9 @@ class Pregunta1ViewController: UIViewController {
         imageRespuesta2.isUserInteractionEnabled = false
         imageRespuesta3.isUserInteractionEnabled = false
         imageRespuesta4.isUserInteractionEnabled = false
-
-        
+    }
+    func disableNext(boolean : Bool){
+        btSiguiente.isEnabled = boolean
     }
     
 

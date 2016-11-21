@@ -14,6 +14,8 @@
 		84DF8E011DB88CA200D5851E /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF8E001DB88CA200D5851E /* Initial.storyboard */; };
 		84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF8E021DB890C200D5851E /* InitialViewController.swift */; };
 		98BE4A193A59722CC8EB85C1 /* Pods_Aprendiendo_EcuacionesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */; };
+		E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */; };
+		E831992A1DE2798B008807E1 /* universo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E83199291DE2798B008807E1 /* universo.gif */; };
 		E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A191DB8483A00DF0ACF /* AppDelegate.swift */; };
 		E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */; };
 		E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A1D1DB8483A00DF0ACF /* SecondViewController.swift */; };
@@ -62,6 +64,8 @@
 		8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3823849D874EF6A780AF15 /* Pods-Aprendiendo-EcuacionesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inicioQuiz1ViewController.swift; sourceTree = "<group>"; };
+		E83199291DE2798B008807E1 /* universo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = universo.gif; sourceTree = "<group>"; };
 		E8333A161DB8483A00DF0ACF /* Aprendiendo-Ecuaciones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aprendiendo-Ecuaciones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A191DB8483A00DF0ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
 				E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */,
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
+				E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */,
+				E83199291DE2798B008807E1 /* universo.gif */,
 				E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */,
 				3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */,
 				59150D781DB89F3D002FB669 /* Questions.storyboard */,
@@ -320,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E831992A1DE2798B008807E1 /* universo.gif in Resources */,
 				E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */,
 				E8333A231DB8483A00DF0ACF /* Assets.xcassets in Resources */,
 				E8333A211DB8483A00DF0ACF /* Main.storyboard in Resources */,
@@ -489,6 +496,7 @@
 			files = (
 				E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */,
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
+				E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */,
 				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
 				3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */,
 				E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */,
