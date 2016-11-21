@@ -136,14 +136,12 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
 
             arregloViews[0].backgroundColor = UIColor.green
-            print("la 1 es la correcta")
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
     
             arregloViews[0].backgroundColor = UIColor.red
-            print("esta no es 1")
         }
         
         disableTap()
