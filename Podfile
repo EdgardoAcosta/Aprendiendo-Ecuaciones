@@ -6,8 +6,8 @@ target 'Aprendiendo-Ecuaciones' do
   use_frameworks!
 
   # Pods for Aprendiendo-Ecuaciones
-  pod 'KVNProgress'
-
+  pod 'KVNProgress' 
+  pod 'Gifu'	
   target 'Aprendiendo-EcuacionesTests' do
     inherit! :search_paths
     # Pods for testing

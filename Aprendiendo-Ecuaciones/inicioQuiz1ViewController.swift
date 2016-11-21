@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Gifu
 
 class inicioQuiz1ViewController: UIViewController {
 
@@ -19,7 +19,9 @@ class inicioQuiz1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        imageGif.image = UIImage(named: "universo.gif")
+       
+        let imageView = GIFImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
+        imageView.animate(withGIFNamed: "mugen")
         
         
         
