@@ -64,8 +64,6 @@ class Pregunta2ViewController: UIViewController {
             preguntasCorrectas = 0
         }
         
-        print("NumP \(numPregunta)")
-        
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
 
@@ -275,8 +273,6 @@ class Pregunta2ViewController: UIViewController {
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
-
-        
     }
     
 

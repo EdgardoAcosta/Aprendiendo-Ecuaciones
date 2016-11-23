@@ -45,8 +45,6 @@ class Pregunta3ViewController: UIViewController {
             preguntasCorrectas = 0
         }
         
-        print("NumP \(numPregunta)")
-        
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
     
@@ -81,7 +79,6 @@ class Pregunta3ViewController: UIViewController {
 			lbPreguntas[arreglo[i]].text = arrPreguntas[i]
 			
 			arrRespuesta.append( verificarRespuesta(m: m,b: b) )
-			print(arrRespuesta[i])
 			imageRespuestas[i].image = arregloImagenes[arrRespuesta[i]]
 			
 		}

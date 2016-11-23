@@ -38,6 +38,5 @@ class inicioQuiz1ViewController: UIViewController {
         let segueName = segues[index]
         self.performSegue(withIdentifier: segueName, sender: self)
     }
-
    
 }

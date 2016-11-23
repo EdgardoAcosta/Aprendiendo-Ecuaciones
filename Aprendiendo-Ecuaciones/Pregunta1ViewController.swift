@@ -283,8 +283,6 @@ class Pregunta1ViewController: UIViewController {
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
-
-        
     }
 
 }
