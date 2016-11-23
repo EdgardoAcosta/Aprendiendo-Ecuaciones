@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOZ-i0-7Eb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -236,7 +236,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v6J-Ya-3Tx">
                                 <rect key="frame" x="16" y="252" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">-La función original parte del origen (0,0)
+                                <string key="text">-La función deal parte del origen (0,0)
 -Existe un movimiento vertical si se suma o resta un número c a la raíz, la representación se traslada hacia arriba o hacia abajo respectivamente (y= √ax+b +c)
 -Existe un movimiento horizontal si al valor de b tiene un valor positivo o negativo, se traslada hacia la izquierda si es positivo y a la derecha si es negativo
 -Si el valor de x se multiplica por un valor mayor a 1 la gráfica se estirará y se comprimirá cuando el valor está entre 0 y 1
@@ -995,17 +995,15 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="btSiguiente" destination="0Ld-N4-31p" id="DlT-Uu-n17"/>
-                        <outlet property="imageRespuesta1" destination="Szc-He-qRs" id="4w8-6L-vjJ"/>
-                        <outlet property="imageRespuesta2" destination="sRy-ip-69I" id="Fk6-Ar-H01"/>
-                        <outlet property="imageRespuesta3" destination="K3U-kh-Qb8" id="YDz-lG-QHk"/>
-                        <outlet property="imageRespuesta4" destination="Bt1-xp-9p9" id="ltK-Eu-mt5"/>
-                        <outlet property="tfPregunta" destination="0zc-xc-1rV" id="Llr-yD-HUS"/>
-                        <outlet property="viewRespuesta1" destination="xNY-lL-mLW" id="xzV-yb-c34"/>
-                        <outlet property="viewRespuesta2" destination="Pjx-06-o41" id="OQ3-o4-tzs"/>
-                        <outlet property="viewRespuesta3" destination="2od-TP-yIQ" id="b8H-tw-xCR"/>
-                        <outlet property="viewRespuesta4" destination="eqD-O5-ihZ" id="Lpi-JP-BEd"/>
                         <outlet property="vista" destination="Aed-aA-oyH" id="01p-UE-bkV"/>
+                        <outletCollection property="arregloViews" destination="xNY-lL-mLW" collectionClass="NSMutableArray" id="7rg-dW-N83"/>
+                        <outletCollection property="arregloViews" destination="Pjx-06-o41" collectionClass="NSMutableArray" id="QH0-FT-hjk"/>
+                        <outletCollection property="arregloViews" destination="2od-TP-yIQ" collectionClass="NSMutableArray" id="qJv-mp-Nzr"/>
+                        <outletCollection property="arregloViews" destination="eqD-O5-ihZ" collectionClass="NSMutableArray" id="lWH-aN-Hv8"/>
+                        <outletCollection property="arregloImagenes" destination="Szc-He-qRs" collectionClass="NSMutableArray" id="XWQ-LG-9mN"/>
+                        <outletCollection property="arregloImagenes" destination="sRy-ip-69I" collectionClass="NSMutableArray" id="se1-ez-vtI"/>
+                        <outletCollection property="arregloImagenes" destination="K3U-kh-Qb8" collectionClass="NSMutableArray" id="3r9-G3-jD1"/>
+                        <outletCollection property="arregloImagenes" destination="Bt1-xp-9p9" collectionClass="NSMutableArray" id="k6E-uR-PXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3p-Qc-foR" userLabel="First Responder" sceneMemberID="firstResponder"/>

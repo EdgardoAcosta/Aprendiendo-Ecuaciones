@@ -11,87 +11,69 @@ import KVNProgress
 
 class Pregunta1ViewController: UIViewController {
     
+    //Arreglo de views que contienen las imagenes
+    //Detectan los taps a cada imagen
+    @IBOutlet var arregloViews: [UIView]!
     
-    
-    @IBOutlet weak var imageRespuesta1: UIImageView!
-    
-    @IBOutlet weak var imageRespuesta2: UIImageView!
-    
-    @IBOutlet weak var imageRespuesta3: UIImageView!
-    
-    @IBOutlet weak var imageRespuesta4: UIImageView!
-    
-    
-    @IBOutlet weak var viewRespuesta1: UIView!
-    @IBOutlet weak var viewRespuesta2: UIView!
-    @IBOutlet weak var viewRespuesta3: UIView!
-    @IBOutlet weak var viewRespuesta4: UIView!
-    
+    //Vista principal
     @IBOutlet var vista: UIView!
     
-    var arregloRespuestas : [UIImage] = []
-    var arregloImagenes : [UIImageView] = []
-    var respuesta :  Int!
-    var imagenRespuesta : UIImageView!
+    //Arreglo que contiene el pool de imagenes
+    //Todas las psoibles respuestas que se relacionan a ecuaciones
+    var arregloRespuestas : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
     
-    @IBOutlet weak var tfPregunta: UILabel!
+    //Arreglo de imagenes escogidas para la vista principal
+    @IBOutlet var arregloImagenes: [UIImageView]!
+    
+    
+    //Posicion de indice de la imagen respuesta
+    //Indice dentro del pool de arreglo respuestas
+    var respuesta :  Int!
     
     @IBOutlet weak var btSiguiente: UIButton!
+
+    //Pregunta de la view
+    @IBOutlet weak var lbPregunta: UILabel!
     
-    
-    
-    var Pregunta : String = ""
+    //Valores de la ecuacion
     var m : Int = 0
     var b : Int = 0
+    
+    //Bool para detectar cuando se hace tap a una imagen
     var imageClick : Bool = false
-
+    
+    //Arreglo de tipo pregunta para guardar posiciones de las imagenes seleccionadas
+    var respuestas : [Pregunta]! = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        disableNext(boolean: false)
-        btSiguiente.isEnabled = false
-        arregloRespuestas.append(UIImage(named: "r1")!)//m > 0 && b == 0
-        arregloRespuestas.append(UIImage(named: "r2")!)//m > 0 && b < 0
-        arregloRespuestas.append(UIImage(named: "r3")!)// m < 0 && b == 0
-        arregloRespuestas.append(UIImage(named: "r4")!)//m < 0 && b < 0
-        arregloRespuestas.append(UIImage(named: "r5")!)//m == 0 && b > 0
-        arregloRespuestas.append(UIImage(named: "r6")!)// m == 0 && b < 0
-        arregloRespuestas.append(UIImage(named: "r7")!)//m > 0 && b > 0
-        arregloRespuestas.append(UIImage(named: "r8")!)//m < 0 && b > 0
-
-        //arregloRespuestas.append(UIImage(named: "linealR5")!)
         
-        arregloImagenes.append(imageRespuesta1)
-        arregloImagenes.append(imageRespuesta2)
-        arregloImagenes.append(imageRespuesta3)
-        arregloImagenes.append(imageRespuesta4)
-        
-        
-        
-    
+        //Genera para la ecuacion de pregunta
         m = RandomInt(min: -5, max: 5)
         b = RandomInt(min: -5, max: 5)
         
-        Pregunta = "Y = (\(m)x) + (\(b))";
+        //Set de la ecuacion
+        lbPregunta.text = "Y = (\(m)x) + (\(b))"
         
-        tfPregunta.text = Pregunta
+        //Posicion del indice de la imagen respuesta
         respuesta = verificarRespuesta()
+        
+        //Asigna imagenes a la view de forma aleatoria
         asignarImages()
-
-        
-        
-        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /// Generates a random `Int` inside of the closed interval.
+    /// Genera un random `Int` dentro del intervalo especificado.
     func RandomInt(min: Int, max: Int) -> Int {
         if max < min { return min }
         return Int(arc4random_uniform(UInt32((max - min) + 1))) + min
     }
     
+    //Devuelve el indice de la imagen que corresponde a la respuesta de una ecuacion dados sus valores m y b
     func verificarRespuesta() -> Int {
         
         var pos : Int = 0
@@ -118,185 +100,126 @@ class Pregunta1ViewController: UIViewController {
         }
         else if m < 0 && b > 0 {
             pos = 7
-            
         }
-        
         
         return pos
-    
     }
+    
+    
     func asignarImages() {
-        var a = 0
-        var arreglo = [0,1,2,3,4]
-        var aux = 0
-        var random : Int
+        //Selecciona posicion aleatoria en la view para la imagen que sera la respuesta
+        let posicionRespuesta = Int (arc4random_uniform(UInt32(3)))
         
-        //Elige imagenes aleatoriamente
-        while a < 4 {
-            //Elejimos un numero de imagen
-            random = Int (arc4random_uniform(UInt32(4 - a)) )
-            
-            //Obtenemos valor
-            aux = arreglo[random]
-            
-            //Set a la imagen en la posicion a (0 - 3)
-            arregloImagenes[a].image = arregloRespuestas[aux]
-            
-            //Swap del valor de la ultima posicion a la posicion obtenida por random
-            arreglo[random] = arreglo [4 - a]
-            
-            //Asignar valor de random a la ultima posicion
-            arreglo[4 - a] = aux
-            
-            //Aumenta valor
-            a = a + 1
-        }
-        
-        //Varibale para detectar si la respuesta ya fue escogida
-        var flag : Bool = false
+        //Auxiliar para guardar indices de las imagenes aleatorias
+        //El indice corresponde al arregloRespuestas
+        var aux : Int!
+        //Label auxiliar
+        var pregunta : Pregunta!
         
         for i in 0...3 {
-            if arregloImagenes[i].image == arregloRespuestas[respuesta] {
-                imagenRespuesta = arregloImagenes[i]
-                flag = true
-                break
+            if i == posicionRespuesta {
+                arregloImagenes[i].image = arregloRespuestas[respuesta]
+                pregunta = Pregunta(label: lbPregunta, posicion: respuesta)
             }
-        }
-        
-        if !flag {
-            //Asignamos a ultima posicion la imagen correcta
-            arregloImagenes[3].image = arregloRespuestas[respuesta]
-            
-            //Guradamos imagen correcta para comparar
-            imagenRespuesta = arregloImagenes[3]
-        }
-
-        print(respuesta)
-        
-        
-        a = 0
-        var auxImagePosition : UIImageView
-        arreglo = [0, 1, 2, 3]
-        while a < 4 {
-            random = Int (arc4random_uniform(UInt32(3 - a)))
-            aux = arreglo[random]
-            auxImagePosition = arregloImagenes[a]
-            arregloImagenes[a] = arregloImagenes[aux]
-            arregloImagenes[3 - a] = auxImagePosition
-                
-            arreglo[random] = arreglo [3 - a]
-            arreglo[3 - a] = aux
-            
-            a = a + 1
+            else {
+                aux = Int (arc4random_uniform(UInt32(7)))
+                arregloImagenes[i].image = arregloRespuestas[aux]
+                pregunta = Pregunta(label: lbPregunta, posicion: aux)
+            }
+            respuestas.append(pregunta)
         }
     }
     
     @IBAction func tapImagen1(_ sender: AnyObject) {
-        imageRespuesta1.alpha = 0.4
-        if imagenRespuesta.image == imageRespuesta1.image{
+        arregloImagenes[0].alpha = 0.4
+        
+        if respuestas[0].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
 
-            viewRespuesta1.backgroundColor = UIColor.green
-            print("la 1 es la correcta")
+            arregloViews[0].backgroundColor = UIColor.green
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
     
-            viewRespuesta1.backgroundColor = UIColor.red
-            print("esta no es 1")
+            arregloViews[0].backgroundColor = UIColor.red
         }
+        
         disableTap()
         disableNext(boolean: true)
     }
     
-    
     @IBAction func tapImagen2(_ sender: AnyObject) {
-        imageRespuesta2.alpha = 0.4
-
-        if imagenRespuesta.image == imageRespuesta2.image{
-            viewRespuesta1.backgroundColor = UIColor.green
+        arregloImagenes[1].alpha = 0.4
+        
+        if respuestas[1].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-
-
+            
+            arregloViews[1].backgroundColor = UIColor.green
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
-            
 
-            viewRespuesta2.backgroundColor = UIColor.red
+            arregloViews[1].backgroundColor = UIColor.red
         }
+        
         disableTap()
         disableNext(boolean: true)
 
     }
     
     @IBAction func tapImagen3(_ sender: AnyObject) {
-        imageRespuesta3.alpha = 0.4
+        arregloImagenes[2].alpha = 0.4
         
-        if imagenRespuesta.image == imageRespuesta3.image{
-        
-            viewRespuesta3.backgroundColor = UIColor.green
+        if respuestas[2].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-
-
-            print("la 3 es la correcta")
+            
+            arregloViews[2].backgroundColor = UIColor.green
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
             
-
-            viewRespuesta3.backgroundColor = UIColor.red
-
-            print("esta no es 3")
+            arregloViews[2].backgroundColor = UIColor.red
         }
+        
         disableTap()
         disableNext(boolean: true)
-
-
     }
     
     @IBAction func tapImagen4(_ sender: AnyObject) {
-        imageRespuesta4.alpha = 0.4
+        arregloImagenes[3].alpha = 0.4
 
-        if imagenRespuesta.image == imageRespuesta4.image{
-            
-            viewRespuesta4.backgroundColor = UIColor.green
+        if respuestas[3].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-
-
-            print("la 4 es la correcta")
+            
+            arregloViews[3].backgroundColor = UIColor.green
         }
         else{
-            viewRespuesta4.backgroundColor = UIColor.red
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
-
-            print("esta no es 4")
+            
+            arregloViews[3].backgroundColor = UIColor.red
         }
         disableTap()
         disableNext(boolean: true)
-
     }
     
-    
+    //Disables tap in every image
     func disableTap()  {
-        imageRespuesta1.isUserInteractionEnabled = false
-        imageRespuesta2.isUserInteractionEnabled = false
-        imageRespuesta3.isUserInteractionEnabled = false
-        imageRespuesta4.isUserInteractionEnabled = false
+        for i in 0...3 {
+            arregloImagenes[i].isUserInteractionEnabled = false
+        }
     }
-    func disableNext(boolean : Bool){
+    
+    func disableNext(boolean : Bool) {
         btSiguiente.isEnabled = boolean
     }
-    
-
     
     
     /*
