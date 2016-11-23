@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Gifu
 
 class inicioQuiz1ViewController: UIViewController {
 
@@ -19,9 +18,6 @@ class inicioQuiz1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-       
-        let imageView = GIFImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
-        imageView.animate(withGIFNamed: "mugen")
         
         
         
@@ -31,6 +27,18 @@ class inicioQuiz1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func randomSegue(_ sender: UIButton) {
+        
+        
+        
+        let segues = ["quiz1", "quiz2", "quiz3"]
+        let index = Int(arc4random_uniform(UInt32(segues.count)))
+        let segueName = segues[index]
+        self.performSegue(withIdentifier: segueName, sender: self)
+
+        
+        
+    }
 
    
 }

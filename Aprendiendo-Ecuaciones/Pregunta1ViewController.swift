@@ -44,9 +44,37 @@ class Pregunta1ViewController: UIViewController {
     var m : Int = 0
     var b : Int = 0
     var imageClick : Bool = false
+    
+    let segues = ["quiz2", "quiz3"]
+    var indexSegue : Int!
+    var segueName : String!
+    var numPregunta : Int!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if numPregunta != nil {
+            numPregunta = numPregunta + 1
+        }
+        else {
+            numPregunta = 1
+        }
+        print("NumP \(numPregunta)")
+        
+        
+        
+        if numPregunta >= 6 {
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "inicio") as! inicioQuiz1ViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+            print("Entro")
+
+        }
+
+
+    
+        indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
+        segueName = segues[indexSegue]
+
         disableNext(boolean: false)
         btSiguiente.isEnabled = false
         arregloRespuestas.append(UIImage(named: "r1")!)//m > 0 && b == 0
@@ -296,17 +324,41 @@ class Pregunta1ViewController: UIViewController {
         btSiguiente.isEnabled = boolean
     }
     
+    func dismiss() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func randomSegue(_ sender: UIButton) {
+       
+              self.performSegue(withIdentifier: segueName, sender: self)
+        
 
+    }
     
     
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if( segue.identifier == "quiz2") {
+            let vista = segue.destination as! Pregunta2ViewController
+            
+            vista.numPregunta = numPregunta
+        }
+        else {
+            let vista = segue.destination as! Pregunta3ViewController
+            
+            vista.numPregunta = numPregunta
+        }
+        
+        
+        
+        
+        
     }
-    */
 
 }

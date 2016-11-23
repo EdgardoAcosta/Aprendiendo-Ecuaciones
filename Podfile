@@ -7,7 +7,7 @@ target 'Aprendiendo-Ecuaciones' do
 
   # Pods for Aprendiendo-Ecuaciones
   pod 'KVNProgress' 
-  pod 'Gifu'	
+	
   target 'Aprendiendo-EcuacionesTests' do
     inherit! :search_paths
     # Pods for testing
