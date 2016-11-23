@@ -9,6 +9,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Ecuaciones Polinomiales-->
+        <scene sceneID="lhc-a3-LcY">
+            <objects>
+                <tableViewController id="Gnb-WL-ni4" customClass="PolinomialesTableViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ARe-bO-oCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53934360560000005" green="1" blue="0.52470946969999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="2HC-lS-Qo9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="smN-Cg-hKF" style="IBUITableViewCellStyleDefault" id="4Qd-Q4-8Bo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qd-Q4-8Bo" id="lcs-oY-fif">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="smN-Cg-hKF">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.54117647058823526" green="0.99215686274509807" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Gnb-WL-ni4" id="d7d-kf-jMR"/>
+                            <outlet property="delegate" destination="Gnb-WL-ni4" id="5Mn-4z-6lQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ecuaciones Polinomiales" id="IPv-AK-yLg">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="XI2-EC-Tck"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="H9s-Il-C3I"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42C-ts-Lix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="-945"/>
+        </scene>
         <!--Ecuaciones Logaritmicas-->
         <scene sceneID="cQv-Lq-sVa">
             <objects>
@@ -190,7 +236,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v6J-Ya-3Tx">
                                 <rect key="frame" x="16" y="252" width="343" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">-La función original parte del origen (0,0)
+                                <string key="text">-La función deal parte del origen (0,0)
 -Existe un movimiento vertical si se suma o resta un número c a la raíz, la representación se traslada hacia arriba o hacia abajo respectivamente (y= √ax+b +c)
 -Existe un movimiento horizontal si al valor de b tiene un valor positivo o negativo, se traslada hacia la izquierda si es positivo y a la derecha si es negativo
 -Si el valor de x se multiplica por un valor mayor a 1 la gráfica se estirará y se comprimirá cuando el valor está entre 0 y 1
@@ -934,13 +980,6 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-mL-45s">
-                                <rect key="frame" x="0.0" y="20" width="375" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-xc-1rV">
                                 <rect key="frame" x="0.0" y="56" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -953,17 +992,17 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </view>
                     <navigationItem key="navigationItem" id="2SD-8P-NS7"/>
                     <connections>
-                        <outlet property="btSiguiente" destination="0Ld-N4-31p" id="DlT-Uu-n17"/>
-                        <outlet property="imageRespuesta1" destination="Szc-He-qRs" id="4w8-6L-vjJ"/>
-                        <outlet property="imageRespuesta2" destination="sRy-ip-69I" id="Fk6-Ar-H01"/>
-                        <outlet property="imageRespuesta3" destination="K3U-kh-Qb8" id="YDz-lG-QHk"/>
-                        <outlet property="imageRespuesta4" destination="Bt1-xp-9p9" id="ltK-Eu-mt5"/>
-                        <outlet property="tfPregunta" destination="0zc-xc-1rV" id="Llr-yD-HUS"/>
-                        <outlet property="viewRespuesta1" destination="xNY-lL-mLW" id="xzV-yb-c34"/>
-                        <outlet property="viewRespuesta2" destination="Pjx-06-o41" id="OQ3-o4-tzs"/>
-                        <outlet property="viewRespuesta3" destination="2od-TP-yIQ" id="b8H-tw-xCR"/>
-                        <outlet property="viewRespuesta4" destination="eqD-O5-ihZ" id="Lpi-JP-BEd"/>
+                        <outlet property="btSiguiente" destination="0Ld-N4-31p" id="41b-5y-Vfw"/>
+                        <outlet property="lbPregunta" destination="0zc-xc-1rV" id="LJj-tU-eMK"/>
                         <outlet property="vista" destination="Aed-aA-oyH" id="01p-UE-bkV"/>
+                        <outletCollection property="arregloViews" destination="xNY-lL-mLW" collectionClass="NSMutableArray" id="7rg-dW-N83"/>
+                        <outletCollection property="arregloViews" destination="Pjx-06-o41" collectionClass="NSMutableArray" id="QH0-FT-hjk"/>
+                        <outletCollection property="arregloViews" destination="2od-TP-yIQ" collectionClass="NSMutableArray" id="qJv-mp-Nzr"/>
+                        <outletCollection property="arregloViews" destination="eqD-O5-ihZ" collectionClass="NSMutableArray" id="lWH-aN-Hv8"/>
+                        <outletCollection property="arregloImagenes" destination="Szc-He-qRs" collectionClass="NSMutableArray" id="XWQ-LG-9mN"/>
+                        <outletCollection property="arregloImagenes" destination="sRy-ip-69I" collectionClass="NSMutableArray" id="se1-ez-vtI"/>
+                        <outletCollection property="arregloImagenes" destination="K3U-kh-Qb8" collectionClass="NSMutableArray" id="3r9-G3-jD1"/>
+                        <outletCollection property="arregloImagenes" destination="Bt1-xp-9p9" collectionClass="NSMutableArray" id="k6E-uR-PXj"/>
                         <segue destination="Kzv-Fn-Ooc" kind="presentation" identifier="quiz3" id="Kwb-nJ-seU"/>
                         <segue destination="LQ6-Rt-Rxb" kind="presentation" identifier="quiz2" id="JuJ-nQ-3XP"/>
                         <segue destination="k36-3K-2os" kind="presentation" identifier="inicio" id="ikl-xo-xux"/>
@@ -991,7 +1030,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-444" y="-2376"/>
+            <point key="canvasLocation" x="-879" y="-2809"/>
         </scene>
         <!--Pregunta3 View Controller-->
         <scene sceneID="V0k-zX-YOe">
@@ -1093,7 +1132,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id8-JB-DpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-1167"/>
+            <point key="canvasLocation" x="3481" y="-1483"/>
         </scene>
         <!--Pregunta2 View Controller-->
         <scene sceneID="MP6-RO-9ZH">
@@ -1241,10 +1280,10 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ikl-xo-xux"/>
+        <segue reference="6sz-5G-dHT"/>
+        <segue reference="JuJ-nQ-3XP"/>
+        <segue reference="Kwb-nJ-seU"/>
         <segue reference="DYg-hI-JKJ"/>
-        <segue reference="MH2-vl-ECA"/>
-        <segue reference="NkS-Lf-KiT"/>
-        <segue reference="2mA-XG-egq"/>
-        <segue reference="0Fz-Us-0CR"/>
     </inferredMetricsTieBreakers>
 </document>
