@@ -152,12 +152,6 @@ class Pregunta3ViewController: UIViewController {
 
 
     }
-
-    
-    
-    
-    
-    
     
     
     
