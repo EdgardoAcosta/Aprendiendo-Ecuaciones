@@ -13,18 +13,17 @@ class inicioQuiz1ViewController: UIViewController {
     
     @IBOutlet weak var imageGif: UIImageView!
 
-    @IBOutlet weak var lbnumRespuestas: UILabel!
+    @IBOutlet weak var lbCalificacion: UILabel!
+    var calificacion : Int!
     
-    var respuestaCorrecta : Int!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if respuestaCorrecta != nil {
-            lbnumRespuestas.text = "\(respuestaCorrecta!)"
+        if calificacion != nil {
+            lbCalificacion.text = "\(calificacion)"
         }
-        
-        
+        else {
+            lbCalificacion.text = "pendiente"
+        }
         
     }
     
@@ -33,15 +32,10 @@ class inicioQuiz1ViewController: UIViewController {
     }
     
     @IBAction func randomSegue(_ sender: UIButton) {
-        
-        
         let segues = ["quiz1", "quiz2", "quiz3"]
         let index = Int(arc4random_uniform(UInt32(segues.count)))
         let segueName = segues[index]
         self.performSegue(withIdentifier: segueName, sender: self)
-
-        
-        
     }
 
    

@@ -46,14 +46,13 @@ class Pregunta1ViewController: UIViewController {
     var indexSegue : Int!
     var segueName : String!
     var numPregunta : Int!
-    
-    var respuestaCorrecta : Int!
-
+    var preguntasCorrectas : Int!
 
 
     //Arreglo de tipo pregunta para guardar posiciones de las imagenes seleccionadas
     var respuestas : [Pregunta]! = []
     
+    // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,26 +62,10 @@ class Pregunta1ViewController: UIViewController {
         else {
             numPregunta = 1
         }
-        print("NumP \(numPregunta)")
         
-        
-        if respuestaCorrecta == nil {
-            respuestaCorrecta = 0
+        if preguntasCorrectas == nil {
+            preguntasCorrectas = 0
         }
-        
-        
-        
-        if numPregunta >= 6 {
-            
-            dismiss(animated: true, completion: nil)
-            //self.performSegue(withIdentifier: "inicio", sender: self)
-
-        
-            print("Entro")
-            
-        }
-        
-        
         
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
@@ -108,6 +91,8 @@ class Pregunta1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Controller functions
     
     /// Genera un random `Int` dentro del intervalo especificado.
     func RandomInt(min: Int, max: Int) -> Int {
@@ -172,6 +157,7 @@ class Pregunta1ViewController: UIViewController {
         }
     }
     
+    // MARK: - Gestures
     @IBAction func tapImagen1(_ sender: AnyObject) {
         arregloImagenes[0].alpha = 0.4
         
@@ -180,7 +166,7 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
 
             arregloViews[0].backgroundColor = UIColor.green
-            respuestaCorrecta = respuestaCorrecta + 1
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -200,8 +186,7 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
             arregloViews[1].backgroundColor = UIColor.green
-            respuestaCorrecta = respuestaCorrecta + 1
-
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -223,8 +208,7 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[2].backgroundColor = UIColor.green
-            respuestaCorrecta = respuestaCorrecta + 1
-
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -245,8 +229,7 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[3].backgroundColor = UIColor.green
-            respuestaCorrecta = respuestaCorrecta + 1
-
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -269,45 +252,38 @@ class Pregunta1ViewController: UIViewController {
         btSiguiente.isEnabled = boolean
     }
     
-       
+    // MARK: - Navigation
     @IBAction func randomSegue(_ sender: UIButton) {
-       
-              self.performSegue(withIdentifier: segueName, sender: self)
-        
+        if numPregunta == 5 {
+                self.performSegue(withIdentifier: "inicio", sender: self)
+        }
+        else {
+            self.performSegue(withIdentifier: segueName, sender: self)
+        }
 
     }
     
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if( segue.identifier == "quiz2") {
-            let vista = segue.destination as! Pregunta2ViewController
-            
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
+        if segue.identifier == "inicio" {
+            let viewDestino = segue.destination as! inicioQuiz1ViewController
+            viewDestino.calificacion = preguntasCorrectas!
         }
-        else if segue.identifier == "quiz3" {
-            let vista = segue.destination as! Pregunta3ViewController
-            
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
-
+        
+        else if segue.identifier == "quiz2" {
+            let viewDestino = segue.destination as! Pregunta2ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
         }
-        else if segue.identifier == "inicio"{
             
-            let vista = segue.destination as! inicioQuiz1ViewController
-            vista.respuestaCorrecta = respuestaCorrecta
+        else {
+            let viewDestino = segue.destination as! Pregunta3ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
         }
 
-        
-        
-        
-        
         
     }
 

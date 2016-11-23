@@ -48,10 +48,9 @@ class Pregunta2ViewController: UIViewController {
     var indexSegue : Int!
     var segueName : String!
     var numPregunta : Int!
+    var preguntasCorrectas : Int!
     
-    var respuestaCorrecta : Int!
-
-    
+    // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
         if numPregunta != nil {
@@ -60,22 +59,12 @@ class Pregunta2ViewController: UIViewController {
         else {
            numPregunta = 1
         }
+        
+        if preguntasCorrectas == nil {
+            preguntasCorrectas = 0
+        }
+        
         print("NumP \(numPregunta)")
-        
-        if respuestaCorrecta == nil {
-            respuestaCorrecta = 0
-        }
-        
-        
-        if numPregunta >= 6 {
-    
-            //self.performSegue(withIdentifier: "inicio", sender: self)
-            dismiss(animated: true, completion: nil)
-            print("Entro")
-            
-        }
-
-
         
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
@@ -102,6 +91,8 @@ class Pregunta2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Controller functions
     
     //Funcion para generar ecuaciones aleatorias
     //Set de las ecuaciones al arreglo de labels
@@ -182,15 +173,16 @@ class Pregunta2ViewController: UIViewController {
         return pos
     }
     
-    
+    // MARK: - Gestures
     @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
         
         if pregunta[0].posicionRespuesta ==  index  {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
+            preguntasCorrectas = preguntasCorrectas + 1
         }
-        else{
+        else {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showError()
         }
@@ -204,7 +196,7 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-            respuestaCorrecta = respuestaCorrecta + 1
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -219,8 +211,7 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-            respuestaCorrecta = respuestaCorrecta + 1
-
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -235,8 +226,7 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-            respuestaCorrecta = respuestaCorrecta + 1
-
+            preguntasCorrectas = preguntasCorrectas + 1
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -245,55 +235,47 @@ class Pregunta2ViewController: UIViewController {
         disableTap()
         disableNext(boolean: true)
     }
+    
     func disableTap()  {
         for i in 0...3 {
             lbPreguntas[i].isUserInteractionEnabled = false
         }
-        
     }
     
     func disableNext(boolean : Bool){
         btSiguiente.isEnabled = boolean
     }
     
-    @IBAction func randomSegue(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: segueName, sender: self)
-        
-        
-    }
-    
-    
-    
     // MARK: - Navigation
+    @IBAction func randomSegue(_ sender: UIButton) {
+        if numPregunta == 5 {
+            self.performSegue(withIdentifier: "inicio", sender: self)
+        }
+        else {
+            self.performSegue(withIdentifier: segueName, sender: self)
+        }
+    }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if( segue.identifier == "quiz1") {
-            let vista = segue.destination as! Pregunta1ViewController
-            
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
+        if segue.identifier == "inicio" {
+            let viewDestino = segue.destination as! inicioQuiz1ViewController
+            viewDestino.calificacion = preguntasCorrectas!
         }
-        else if segue.identifier == "quiz3" {
-            let vista = segue.destination as! Pregunta3ViewController
+        else if segue.identifier == "quiz1" {
+            let viewDestino = segue.destination as! Pregunta1ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
+        }
             
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
-
-        }  else if segue.identifier == "inicio"{
-            
-            let vista = segue.destination as! inicioQuiz1ViewController
-            vista.respuestaCorrecta = respuestaCorrecta
+        else {
+            let viewDestino = segue.destination as! Pregunta3ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
         }
 
-        
-        
-        
-        
         
     }
     

@@ -27,9 +27,9 @@ class Pregunta3ViewController: UIViewController {
     var indexSegue : Int!
     var segueName : String!
     var numPregunta : Int!
-    var respuestaCorrecta : Int!
-
+    var preguntasCorrectas: Int!
     
+    // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
         //btSiguiente.isEnabled = false
@@ -41,40 +41,29 @@ class Pregunta3ViewController: UIViewController {
             numPregunta = 1
         }
         
+        if preguntasCorrectas == nil {
+            preguntasCorrectas = 0
+        }
+        
         print("NumP \(numPregunta)")
-        
-        if respuestaCorrecta == nil {
-            respuestaCorrecta = 0
-        }
-        
-        
-        if numPregunta >= 6 {
-            dismiss(animated: true, completion: nil)
-            //self.performSegue(withIdentifier: "inicio", sender: self)
-            
-            print("Entro")
-            
-        }
-
         
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
     
         setPreguntas()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    /// Generates a random `Int` inside of the closed interval.
-    func RandomInt(min: Int, max: Int) -> Int {
-        if max < min { return min }
-        return Int(arc4random_uniform(UInt32((max - min) + 1))) + min
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Controller functions
+    
+    /// Generates a random `Int` inside of the closed interval.
+    func RandomInt(min: Int, max: Int) -> Int {
+        if max < min { return min }
+        return Int(arc4random_uniform(UInt32((max - min) + 1))) + min
     }
     
     func setPreguntas() {
@@ -180,17 +169,11 @@ class Pregunta3ViewController: UIViewController {
             a = a + 1
             
         }
+        
         for i in 0...3{
             imageRespuestas[i].image = arregloImagenes[arreglo[i]]
         }
-
-
     }
-
-    @IBAction func randomSegue(_ sender: Any) {
-             self.performSegue(withIdentifier: segueName, sender: self)
-    }
-    
     
     @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
         disableLabel()
@@ -224,54 +207,49 @@ class Pregunta3ViewController: UIViewController {
         disableImage()
     }
     
-    
-
     func disableLabel()  {
         for i in 0...3 {
             lbPreguntas[i].isEnabled = false
         }
     }
     
-    
     func disableImage() {
-        
         for i in 0...3 {
         imageRespuestas[i].isUserInteractionEnabled = false
             
         }
-        
     }
     
-
-    
-
     // MARK: - Navigation
+
+    @IBAction func randomSegue(_ sender: Any) {
+        if numPregunta == 5 {
+            self.performSegue(withIdentifier: "inicio", sender: self)
+        }
+            
+        else {
+            self.performSegue(withIdentifier: segueName, sender: self)
+        }
+    }
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "quiz1" {
-            let vista = segue.destination as! Pregunta1ViewController
+        if segue.identifier == "inicio" {
+            let viewDestino = segue.destination as! inicioQuiz1ViewController
+            viewDestino.calificacion = preguntasCorrectas!
+        }
             
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
+        else if( segue.identifier == "quiz1") {
+            let viewDestino = segue.destination as! Pregunta1ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
         }
-        else if segue.identifier == "quiz2" {
-            let vista = segue.destination as! Pregunta2ViewController
-            
-            vista.numPregunta = numPregunta
-            vista.respuestaCorrecta = respuestaCorrecta
-
+        else {
+            let viewDestino = segue.destination as! Pregunta2ViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
         }
-        else if segue.identifier == "inicio"{
-        
-            let vista = segue.destination as! inicioQuiz1ViewController
-            vista.respuestaCorrecta = respuestaCorrecta
-        }
-        
-        
     }
 
 }
