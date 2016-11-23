@@ -46,6 +46,9 @@ class Pregunta1ViewController: UIViewController {
     var indexSegue : Int!
     var segueName : String!
     var numPregunta : Int!
+    
+    var respuestaCorrecta : Int!
+
 
 
     //Arreglo de tipo pregunta para guardar posiciones de las imagenes seleccionadas
@@ -65,8 +68,11 @@ class Pregunta1ViewController: UIViewController {
         
         
         if numPregunta >= 6 {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "inicio") as! inicioQuiz1ViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+            
+            dismiss(animated: true, completion: nil)
+            //self.performSegue(withIdentifier: "inicio", sender: self)
+
+        
             print("Entro")
             
         }
@@ -169,6 +175,7 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
 
             arregloViews[0].backgroundColor = UIColor.green
+            respuestaCorrecta = respuestaCorrecta + 1
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -187,8 +194,9 @@ class Pregunta1ViewController: UIViewController {
         if respuestas[1].posicionRespuesta == respuesta {
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
-            
             arregloViews[1].backgroundColor = UIColor.green
+            respuestaCorrecta = respuestaCorrecta + 1
+
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -210,6 +218,8 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[2].backgroundColor = UIColor.green
+            respuestaCorrecta = respuestaCorrecta + 1
+
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -230,6 +240,8 @@ class Pregunta1ViewController: UIViewController {
             KVNProgress.showSuccess()
             
             arregloViews[3].backgroundColor = UIColor.green
+            respuestaCorrecta = respuestaCorrecta + 1
+
         }
         else{
             KVNProgress.show(withStatus: "", on: vista)
@@ -272,12 +284,21 @@ class Pregunta1ViewController: UIViewController {
             let vista = segue.destination as! Pregunta2ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
         }
-        else {
+        else if segue.identifier == "quiz3" {
             let vista = segue.destination as! Pregunta3ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
+
         }
+        else if segue.identifier == "inicio"{
+            
+            let vista = segue.destination as! inicioQuiz1ViewController
+            vista.respuestaCorrecta = respuestaCorrecta
+        }
+
         
         
         

@@ -19,12 +19,14 @@ class Pregunta3ViewController: UIViewController {
     var arrRespuesta = [Int]()
     
     var arregloImagenes : [UIImage] = [UIImage(named: "linealR1")!,UIImage(named: "linealR0")!,UIImage(named: "linealR2")!,UIImage(named: "linealR3")!,UIImage(named: "linealR4")!]
+    
 
     let segues = ["quiz1", "quiz2"]
     var indexSegue : Int!
     var segueName : String!
     var numPregunta : Int!
-    
+    var respuestaCorrecta : Int!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +41,10 @@ class Pregunta3ViewController: UIViewController {
         
         
         if numPregunta >= 6 {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "inicio") as! inicioQuiz1ViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+            dismiss(animated: true, completion: nil)
+            //self.performSegue(withIdentifier: "inicio", sender: self)
+            
+            
             print("Entro")
             
         }
@@ -194,19 +198,24 @@ class Pregunta3ViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if( segue.identifier == "quiz1") {
+        if segue.identifier == "quiz1" {
             let vista = segue.destination as! Pregunta1ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
         }
-        else {
+        else if segue.identifier == "quiz2" {
             let vista = segue.destination as! Pregunta2ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
+
         }
+        else if segue.identifier == "inicio"{
         
-        
-        
+            let vista = segue.destination as! inicioQuiz1ViewController
+            vista.respuestaCorrecta = respuestaCorrecta
+        }
         
         
     }

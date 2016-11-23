@@ -13,11 +13,13 @@ class inicioQuiz1ViewController: UIViewController {
     
     @IBOutlet weak var imageGif: UIImageView!
 
+    @IBOutlet weak var lbnumRespuestas: UILabel!
     
-    
+    var respuestaCorrecta : Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       lbnumRespuestas.text = "\(respuestaCorrecta!)"
         
         
         
@@ -28,7 +30,6 @@ class inicioQuiz1ViewController: UIViewController {
     }
     
     @IBAction func randomSegue(_ sender: UIButton) {
-        
         
         
         let segues = ["quiz1", "quiz2", "quiz3"]

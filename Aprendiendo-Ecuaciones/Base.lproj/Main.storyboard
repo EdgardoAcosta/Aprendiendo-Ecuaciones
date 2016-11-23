@@ -437,7 +437,7 @@
         <!--Inicio Quiz1 View Controller-->
         <scene sceneID="zMC-9T-STg">
             <objects>
-                <viewController id="k36-3K-2os" customClass="inicioQuiz1ViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicio" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k36-3K-2os" customClass="inicioQuiz1ViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bts-vB-6m6"/>
                         <viewControllerLayoutGuide type="bottom" id="4VD-bn-y3C"/>
@@ -458,6 +458,13 @@
                                 <rect key="frame" x="12" y="91" width="351" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Num Repuestas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-7n-s9s">
+                                <rect key="frame" x="76" y="469" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5236486548" green="0.85316486069999997" blue="0.62560953180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -470,6 +477,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageGif" destination="ypG-pY-jpw" id="p5E-28-Bqf"/>
+                        <outlet property="lbnumRespuestas" destination="aaU-7n-s9s" id="RcC-m1-P0x"/>
                         <segue destination="3BJ-sZ-xya" kind="presentation" identifier="quiz1" id="6sz-5G-dHT"/>
                         <segue destination="Kzv-Fn-Ooc" kind="presentation" identifier="quiz2" id="eLQ-0I-PYs"/>
                         <segue destination="LQ6-Rt-Rxb" kind="presentation" identifier="quiz3" id="Zsf-4W-k2u"/>
@@ -477,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Byv-yz-6iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1321" y="-1095"/>
+            <point key="canvasLocation" x="-1322.4000000000001" y="-1096.1019490254873"/>
         </scene>
         <!--Polinomiales PageVC-->
         <scene sceneID="Rgr-cW-2FF">
@@ -485,7 +493,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vBc-ZR-U2u" customClass="polinomialesPageVC" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8z4-CD-0vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-241"/>
+            <point key="canvasLocation" x="-251" y="-387"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vHT-5z-gcf">
@@ -1132,7 +1140,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id8-JB-DpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3481" y="-1483"/>
+            <point key="canvasLocation" x="314" y="-2076"/>
         </scene>
         <!--Pregunta2 View Controller-->
         <scene sceneID="MP6-RO-9ZH">
@@ -1250,7 +1258,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1410" y="-2869"/>
+            <point key="canvasLocation" x="281" y="-2858"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aYr-Mt-3dB">
@@ -1280,10 +1288,10 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ikl-xo-xux"/>
-        <segue reference="6sz-5G-dHT"/>
-        <segue reference="JuJ-nQ-3XP"/>
-        <segue reference="Kwb-nJ-seU"/>
+        <segue reference="0Fz-Us-0CR"/>
+        <segue reference="MH2-vl-ECA"/>
+        <segue reference="NkS-Lf-KiT"/>
+        <segue reference="Jrn-xI-16i"/>
         <segue reference="DYg-hI-JKJ"/>
     </inferredMetricsTieBreakers>
 </document>

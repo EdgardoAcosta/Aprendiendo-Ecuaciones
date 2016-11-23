@@ -49,6 +49,8 @@ class Pregunta2ViewController: UIViewController {
     var segueName : String!
     var numPregunta : Int!
     
+    var respuestaCorrecta : Int!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,8 +64,9 @@ class Pregunta2ViewController: UIViewController {
         
         
         if numPregunta >= 6 {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "inicio") as! inicioQuiz1ViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+    
+            //self.performSegue(withIdentifier: "inicio", sender: self)
+            dismiss(animated: true, completion: nil)
             print("Entro")
             
         }
@@ -197,6 +200,7 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
+            respuestaCorrecta = respuestaCorrecta + 1
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -211,6 +215,8 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
+            respuestaCorrecta = respuestaCorrecta + 1
+
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -225,6 +231,8 @@ class Pregunta2ViewController: UIViewController {
             
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
+            respuestaCorrecta = respuestaCorrecta + 1
+
         }
         else {
             KVNProgress.show(withStatus: "", on: vista)
@@ -264,12 +272,20 @@ class Pregunta2ViewController: UIViewController {
             let vista = segue.destination as! Pregunta1ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
         }
-        else {
+        else if segue.identifier == "quiz3" {
             let vista = segue.destination as! Pregunta3ViewController
             
             vista.numPregunta = numPregunta
+            vista.respuestaCorrecta = respuestaCorrecta
+
+        }  else if segue.identifier == "inicio"{
+            
+            let vista = segue.destination as! inicioQuiz1ViewController
+            vista.respuestaCorrecta = respuestaCorrecta
         }
+
         
         
         
