@@ -19,7 +19,10 @@ class inicioQuiz1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       lbnumRespuestas.text = "\(respuestaCorrecta!)"
+        
+        if respuestaCorrecta != nil {
+            lbnumRespuestas.text = "\(respuestaCorrecta!)"
+        }
         
         
         

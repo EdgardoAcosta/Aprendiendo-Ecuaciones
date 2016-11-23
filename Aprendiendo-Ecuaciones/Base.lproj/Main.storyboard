@@ -458,7 +458,7 @@
                                 <rect key="frame" x="12" y="91" width="351" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Num Repuestas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-7n-s9s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-7n-s9s">
                                 <rect key="frame" x="76" y="469" width="201" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1059,49 +1059,81 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-1i-CNw">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-1i-CNw">
                                 <rect key="frame" x="33" y="147" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hi7-S6-kls" appends="YES" id="QeT-tx-RdA"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcB-Lr-Gmt">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcB-Lr-Gmt">
                                 <rect key="frame" x="33" y="252" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HFY-X0-qK8" appends="YES" id="08E-A1-JAS"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-f6-C3K">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-f6-C3K">
                                 <rect key="frame" x="33" y="357" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SiB-nE-Yl8" appends="YES" id="Vek-5f-nLC"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbW-ZX-arx">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbW-ZX-arx">
                                 <rect key="frame" x="33" y="466" width="146" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lfZ-Cp-v15" appends="YES" id="hjY-Bl-rnF"/>
+                                </connections>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-Jw-gvc">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-Jw-gvc">
                                 <rect key="frame" x="219" y="332" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fuV-vy-hLK" appends="YES" id="FPe-qr-RPY"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-ll-zcp">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-ll-zcp">
                                 <rect key="frame" x="219" y="227" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cYr-gY-UdY" appends="YES" id="jbG-19-IgS"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWg-Dt-OcG">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWg-Dt-OcG">
                                 <rect key="frame" x="219" y="122" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tf4-Bc-o0b" appends="YES" id="RT4-yl-ihe"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlV-En-ydd">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlV-En-ydd">
                                 <rect key="frame" x="219" y="441" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8iF-u2-deU" appends="YES" id="YTJ-mL-w2B"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDY-dj-WYp">
                                 <rect key="frame" x="156" y="530" width="78" height="30"/>
@@ -1125,6 +1157,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btSiguiente" destination="WDY-dj-WYp" id="t2o-cZ-kkb"/>
                         <outletCollection property="lbPreguntas" destination="SjR-1i-CNw" collectionClass="NSMutableArray" id="z1L-HK-Qgb"/>
                         <outletCollection property="lbPreguntas" destination="PcB-Lr-Gmt" collectionClass="NSMutableArray" id="b8T-mT-G2J"/>
                         <outletCollection property="lbPreguntas" destination="yg8-f6-C3K" collectionClass="NSMutableArray" id="38V-lT-PPM"/>
@@ -1139,6 +1172,46 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id8-JB-DpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hi7-S6-kls">
+                    <connections>
+                        <action selector="taplbRespuesta1:" destination="Kzv-Fn-Ooc" id="rK1-po-OkH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HFY-X0-qK8">
+                    <connections>
+                        <action selector="taplbRespuesta2:" destination="Kzv-Fn-Ooc" id="Jpm-Mm-KDY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="SiB-nE-Yl8">
+                    <connections>
+                        <action selector="taplbRespuesta3:" destination="Kzv-Fn-Ooc" id="ylo-kz-18R"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lfZ-Cp-v15">
+                    <connections>
+                        <action selector="taplbRespuesta4:" destination="Kzv-Fn-Ooc" id="h7Y-pm-QsR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tf4-Bc-o0b">
+                    <connections>
+                        <action selector="tapImage1:" destination="Kzv-Fn-Ooc" id="ZdF-E6-5Pf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cYr-gY-UdY">
+                    <connections>
+                        <action selector="tapImage2:" destination="Kzv-Fn-Ooc" id="Vo2-uA-lXc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fuV-vy-hLK">
+                    <connections>
+                        <action selector="tapImage3:" destination="Kzv-Fn-Ooc" id="m98-hq-czx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8iF-u2-deU">
+                    <connections>
+                        <action selector="tapImage4:" destination="Kzv-Fn-Ooc" id="IVM-Ia-XfR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="314" y="-2076"/>
         </scene>
@@ -1289,9 +1362,9 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0Fz-Us-0CR"/>
-        <segue reference="MH2-vl-ECA"/>
-        <segue reference="NkS-Lf-KiT"/>
-        <segue reference="Jrn-xI-16i"/>
+        <segue reference="eLQ-0I-PYs"/>
+        <segue reference="6sz-5G-dHT"/>
+        <segue reference="Zsf-4W-k2u"/>
         <segue reference="DYg-hI-JKJ"/>
     </inferredMetricsTieBreakers>
 </document>

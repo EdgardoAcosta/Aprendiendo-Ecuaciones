@@ -15,6 +15,8 @@ class Pregunta3ViewController: UIViewController {
     
     @IBOutlet var imageRespuestas: [UIImageView]!
     
+    @IBOutlet weak var btSiguiente: UIButton!
+    
     var arrPreguntas  = [String]()
     var arrRespuesta = [Int]()
     
@@ -30,6 +32,8 @@ class Pregunta3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //btSiguiente.isEnabled = false
+        
         if numPregunta != nil {
             numPregunta = numPregunta + 1
         }
@@ -39,11 +43,14 @@ class Pregunta3ViewController: UIViewController {
         
         print("NumP \(numPregunta)")
         
+        if respuestaCorrecta == nil {
+            respuestaCorrecta = 0
+        }
+        
         
         if numPregunta >= 6 {
             dismiss(animated: true, completion: nil)
             //self.performSegue(withIdentifier: "inicio", sender: self)
-            
             
             print("Entro")
             
@@ -74,8 +81,7 @@ class Pregunta3ViewController: UIViewController {
         var b, m : Int
         var arreglo = [0, 1, 2, 3]
 		arreglo = revuelve(arr: arreglo)
-		print("set")
-		for i in 0...3 {
+        for i in 0...3 {
 		
 			m = RandomInt(min: -5, max: 5)
 			b = RandomInt(min: -5, max: 5)
@@ -183,13 +189,61 @@ class Pregunta3ViewController: UIViewController {
 
     @IBAction func randomSegue(_ sender: Any) {
              self.performSegue(withIdentifier: segueName, sender: self)
+    }
     
-
+    
+    @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
+        disableLabel()
+    }
+    
+    @IBAction func taplbRespuesta2(_ sender: UITapGestureRecognizer) {
+        disableLabel()
+    }
+    
+    @IBAction func taplbRespuesta3(_ sender: UITapGestureRecognizer) {
+        disableLabel()
+    }
+    
+    @IBAction func taplbRespuesta4(_ sender: UITapGestureRecognizer) {
+        disableLabel()
+    }
+    
+    @IBAction func tapImage1(_ sender: UITapGestureRecognizer) {
+        disableImage()
+    }
+    
+    @IBAction func tapImage2(_ sender: UITapGestureRecognizer) {
+        disableImage()
+    }
+    
+    @IBAction func tapImage3(_ sender: UITapGestureRecognizer) {
+        disableImage()
+    }
+    
+    @IBAction func tapImage4(_ sender: UITapGestureRecognizer) {
+        disableImage()
     }
     
     
 
+    func disableLabel()  {
+        for i in 0...3 {
+            lbPreguntas[i].isEnabled = false
+        }
+    }
+    
+    
+    func disableImage() {
+        
+        for i in 0...3 {
+        imageRespuestas[i].isUserInteractionEnabled = false
+            
+        }
+        
+    }
+    
 
+    
 
     // MARK: - Navigation
     

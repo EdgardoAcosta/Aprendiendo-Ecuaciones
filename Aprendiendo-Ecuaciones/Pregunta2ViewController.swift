@@ -62,6 +62,10 @@ class Pregunta2ViewController: UIViewController {
         }
         print("NumP \(numPregunta)")
         
+        if respuestaCorrecta == nil {
+            respuestaCorrecta = 0
+        }
+        
         
         if numPregunta >= 6 {
     
