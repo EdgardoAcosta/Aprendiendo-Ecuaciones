@@ -1175,6 +1175,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </view>
                     <connections>
                         <outlet property="btSiguiente" destination="WDY-dj-WYp" id="t2o-cZ-kkb"/>
+                        <outlet property="vista" destination="x1z-lY-ZGv" id="a7J-tM-d4S"/>
                         <outletCollection property="lbPreguntas" destination="SjR-1i-CNw" collectionClass="NSMutableArray" id="z1L-HK-Qgb"/>
                         <outletCollection property="lbPreguntas" destination="PcB-Lr-Gmt" collectionClass="NSMutableArray" id="b8T-mT-G2J"/>
                         <outletCollection property="lbPreguntas" destination="yg8-f6-C3K" collectionClass="NSMutableArray" id="38V-lT-PPM"/>
@@ -1379,9 +1380,9 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DYg-hI-JKJ"/>
-        <segue reference="6sz-5G-dHT"/>
-        <segue reference="ikl-xo-xux"/>
+        <segue reference="Jrn-xI-16i"/>
         <segue reference="eLQ-0I-PYs"/>
-        <segue reference="Zsf-4W-k2u"/>
+        <segue reference="0Fz-Us-0CR"/>
+        <segue reference="NkS-Lf-KiT"/>
     </inferredMetricsTieBreakers>
 </document>

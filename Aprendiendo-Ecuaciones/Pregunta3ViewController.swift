@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class Pregunta3ViewController: UIViewController {
     
@@ -17,17 +18,23 @@ class Pregunta3ViewController: UIViewController {
     
     @IBOutlet weak var btSiguiente: UIButton!
     
-    var arrPreguntas  = [String]()
-    var arrRespuesta = [Int]()
+    @IBOutlet var vista: UIView!
     
-    var arregloImagenes : [UIImage] = [UIImage(named: "linealR1")!,UIImage(named: "linealR0")!,UIImage(named: "linealR2")!,UIImage(named: "linealR3")!,UIImage(named: "linealR4")!]
+    var preguntas : [Pregunta]! = []
+    
+    var arregloImagenes : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
     
 
     let segues = ["quiz1", "quiz2"]
+    
     var indexSegue : Int!
     var segueName : String!
+    
     var numPregunta : Int!
     var preguntasCorrectas: Int!
+    
+    var selectedLabel : Int!
+    var imagePositions = [Int]()
     
     // MARK: - General
     override func viewDidLoad() {
@@ -47,6 +54,8 @@ class Pregunta3ViewController: UIViewController {
         
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
         segueName = segues[indexSegue]
+        
+        disableNext(boolean: false)
     
         setPreguntas()
     }
@@ -65,143 +74,149 @@ class Pregunta3ViewController: UIViewController {
     }
     
     func setPreguntas() {
-        var b, m : Int
-        var arreglo = [0, 1, 2, 3]
-		arreglo = revuelve(arr: arreglo)
+        var b, m : Int!
+        var indiceRespuesta : Int!
+        let posicionRespuestaImg = Int(arc4random_uniform(UInt32(3)))
+        var random : Int!
+        
+        //Crea las ecuaciones aleatorias
         for i in 0...3 {
-		
 			m = RandomInt(min: -5, max: 5)
 			b = RandomInt(min: -5, max: 5)
-			
-		
-			arrPreguntas.append("Y = (\(m)x) + (\(b))" );
-			
-			lbPreguntas[arreglo[i]].text = arrPreguntas[i]
-			
-			arrRespuesta.append( verificarRespuesta(m: m,b: b) )
-			imageRespuestas[i].image = arregloImagenes[arrRespuesta[i]]
-			
+            
+			lbPreguntas[i].text = "Y = (\(m!)x) + (\(b!))"
+            indiceRespuesta = verificarRespuesta(m: m, b: b)
+            
+            let pregunta = Pregunta(label: lbPreguntas[i], posicion: indiceRespuesta)
+            preguntas.append(pregunta)
+            
+            random = Int(arc4random_uniform(UInt32(7)))
+            print("Posicion random de imagenes: \(random!)")
+            imageRespuestas[i].image = arregloImagenes[random]
+            imagePositions.append(random)
 		}
+        
+        random = Int(arc4random_uniform(UInt32(3)))
+        print("Posicion de la imagen respuesta: \(posicionRespuestaImg)")
+        print("Imagen de respuesta: \(preguntas[random].posicionRespuesta)")
+        
+        imagePositions[posicionRespuestaImg] = preguntas[random].posicionRespuesta
+        imageRespuestas[posicionRespuestaImg].image = arregloImagenes[preguntas[random].posicionRespuesta]
     }
     
-    func verificarRespuesta(m :Int ,b :Int) -> Int {
+    func verificarRespuesta(m : Int, b : Int) -> Int {
         
         var pos : Int = 0
         if m > 0 && b == 0 {
             pos = 0
         }
         else if m > 0 && b > 0{
-            pos = 1
+            pos = 6
         }
         else if m > 0 && b < 0{
-            pos = 2
+            pos = 1
         }
         else if m < 0 && b == 0{
-            pos = 3
+            pos = 2
         }
         else if m == 0 && b > 0 {
             pos = 4
         }
+        else if m == 0 && b < 0 {
+            pos = 5
+        }
         else if m < 0 && b < 0{
-            ///FALTA IMAGEN DE ESTA GRAFICA
             pos = 3
         }
         else if m < 0 && b > 0 {
-            // FALTA IMAGEN DE ESTA GRAFICA
-            pos = 3
-            
+            pos = 7
         }
         
         return pos
-        
-    }
-	
-	//Metodo para revolver los valores de un arreglo aleatoriamente
-    func revuelve(arr: [Int]) -> [Int] {
-        var a = 0
-        var random, aux : Int
-        var arreglo = arr
-        while a < 4 {
-            random = Int (arc4random_uniform(UInt32(3 - a)))
-            aux = arreglo[random]
-            //Swap indices
-            arreglo[random] = arreglo[3 - a]
-            arreglo[3 - a] = aux
-            //Aumenta contador
-            a = a + 1
-        }
-        
-        return arreglo
-    }
-    
-    
-    func asignarImagen() {
-        //Iterador
-        var a = 0
-        
-        //Aux para swap de imagen
-        var auxImagePosition : UIImage
-        
-        //Arreglo con valores de posiciones
-        var arreglo = [0, 1, 2, 3]
-        
-        var random : Int!
-        //Auxiliar para swap
-        var aux : Int!
-    
-        while a < 4 {
-            random = Int (arc4random_uniform(UInt32(3 - a)))
-            aux = arreglo[random]
-            
-            //Swap imagenes
-            auxImagePosition = arregloImagenes[a]
-            arregloImagenes[a] = arregloImagenes[aux]
-            arregloImagenes[3 - a] = auxImagePosition
-            
-            //Swap indices
-            arreglo[random] = arreglo [3 - a]
-            arreglo[3 - a] = aux
-            
-            //Aumenta contador
-            a = a + 1
-            
-        }
-        
-        for i in 0...3{
-            imageRespuestas[i].image = arregloImagenes[arreglo[i]]
-        }
     }
     
     @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
+        selectedLabel = 0
+        print("update")
         disableLabel()
     }
     
     @IBAction func taplbRespuesta2(_ sender: UITapGestureRecognizer) {
+        selectedLabel = 1
+        print("update")
         disableLabel()
     }
     
     @IBAction func taplbRespuesta3(_ sender: UITapGestureRecognizer) {
+        selectedLabel = 2
+        print("update")
         disableLabel()
     }
     
     @IBAction func taplbRespuesta4(_ sender: UITapGestureRecognizer) {
+        selectedLabel = 3
+        print("update")
         disableLabel()
     }
     
     @IBAction func tapImage1(_ sender: UITapGestureRecognizer) {
+        if preguntas[selectedLabel].posicionRespuesta == imagePositions[0] {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+            preguntasCorrectas = preguntasCorrectas + 1
+        }
+        else {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+        }
+        
         disableImage()
+        disableNext(boolean: true)
     }
     
     @IBAction func tapImage2(_ sender: UITapGestureRecognizer) {
+        if preguntas[selectedLabel].posicionRespuesta == imagePositions[1] {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+            preguntasCorrectas = preguntasCorrectas + 1
+        }
+        else {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+        }
+        
         disableImage()
+        disableNext(boolean: true)
     }
     
     @IBAction func tapImage3(_ sender: UITapGestureRecognizer) {
+        if preguntas[selectedLabel].posicionRespuesta == imagePositions[2] {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+            preguntasCorrectas = preguntasCorrectas + 1
+        }
+        else {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+        }
+        
         disableImage()
+        disableNext(boolean: true)
     }
     
     @IBAction func tapImage4(_ sender: UITapGestureRecognizer) {
+        if preguntas[selectedLabel].posicionRespuesta == imagePositions[3] {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showSuccess()
+            preguntasCorrectas = preguntasCorrectas + 1
+        }
+        else {
+            KVNProgress.show(withStatus: "", on: vista)
+            KVNProgress.showError()
+        }
+        
         disableImage()
+        disableNext(boolean: true)
     }
     
     func disableLabel()  {
@@ -212,10 +227,14 @@ class Pregunta3ViewController: UIViewController {
     
     func disableImage() {
         for i in 0...3 {
-        imageRespuestas[i].isUserInteractionEnabled = false
-            
+            imageRespuestas[i].isUserInteractionEnabled = false
         }
     }
+    
+    func disableNext(boolean : Bool){
+        btSiguiente.isEnabled = boolean
+    }
+    
     
     // MARK: - Navigation
 
