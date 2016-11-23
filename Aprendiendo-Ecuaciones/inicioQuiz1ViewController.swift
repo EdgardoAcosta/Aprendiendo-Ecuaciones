@@ -19,7 +19,8 @@ class inicioQuiz1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if calificacion != nil {
-            lbCalificacion.text = "\(calificacion)"
+            calificacion = calificacion * 20
+            lbCalificacion.text = "\(calificacion!)%"
         }
         else {
             lbCalificacion.text = "pendiente"
