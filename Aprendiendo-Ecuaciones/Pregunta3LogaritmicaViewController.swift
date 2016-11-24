@@ -1,5 +1,5 @@
 //
-//  Pregunta3ExponencialViewController.swift
+//  Pregunta3LogaritmicaViewController.swift
 //  Aprendiendo-Ecuaciones
 //
 //  Created by Edgardo Acosta on 23/11/16.
@@ -9,7 +9,8 @@
 import UIKit
 import KVNProgress
 
-class Pregunta3ExponencialViewController: UIViewController {
+class Pregunta3LogaritmicaViewController: UIViewController {
+
     
     @IBOutlet var lbPreguntas: [UILabel]!
     
@@ -21,7 +22,7 @@ class Pregunta3ExponencialViewController: UIViewController {
     
     var preguntas : [Pregunta]! = []
     
-   var arregloImagenes : [UIImage] = [UIImage(named: "e1")!,UIImage(named: "e2")!,UIImage(named: "e3")!,UIImage(named: "e4")!,UIImage(named: "e5")!,UIImage(named: "e6")!]
+    var arregloImagenes : [UIImage] = [UIImage(named: "L1")!,UIImage(named: "L2")!,UIImage(named: "L3")!,UIImage(named: "L4")!,UIImage(named: "L5")!,UIImage(named: "L6")!,UIImage(named: "L7")!,UIImage(named: "L8")!,UIImage(named: "L9")!,UIImage(named: "L10")!,UIImage(named: "default")!]
     
     let segues = ["quiz1", "quiz2"]
     
@@ -33,13 +34,15 @@ class Pregunta3ExponencialViewController: UIViewController {
     
     var selectedLabel : Int!
     var imagePositions = [Int]()
+    var log : Bool = false
+
     
     // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
         //btSiguiente.isEnabled = false
         disableImage(boolean: false)
-
+        
         
         if numPregunta != nil {
             numPregunta = numPregunta + 1
@@ -91,13 +94,20 @@ class Pregunta3ExponencialViewController: UIViewController {
             
             a = RandomInt(min: -5, max: 5)
             
-            lbPreguntas[i].text = "Y = (\(x!)^x) + (\(a!))"
+            if Int(arc4random_uniform(UInt32(1))) == 1{
+                 lbPreguntas[i].text = "Y = (-log\(x!)) + (\(a!))"
+                log = true
+            }
+            else{
+                 lbPreguntas[i].text = "Y = (log\(x!)) + (\(a!))"
+            }
+            
             indiceRespuesta = verificarRespuesta(x: x, a: a)
             
             let pregunta = Pregunta(label: lbPreguntas[i], posicion: indiceRespuesta)
             preguntas.append(pregunta)
             
-            random = Int(arc4random_uniform(UInt32(5)))
+            random = Int(arc4random_uniform(UInt32(8)))
             print("Posicion random de imagenes: \(random!)")
             imageRespuestas[i].image = arregloImagenes[random]
             imagePositions.append(random)
@@ -114,34 +124,50 @@ class Pregunta3ExponencialViewController: UIViewController {
     func verificarRespuesta(x: Int, a: Int) -> Int {
         
         var pos : Int = 0
-        if x > 0 && a == 0 { //e1
+        if !log && x > 0 && a == 0 { //L1
             pos = 0
         }
-        else if x > 0 && a > 0{ //e2
+        else if log && x > 0 && a == 0{ //L2
             pos = 1
         }
-        else if x > 0 && a < 0{ //e3
+        else if !log && x < 0 && a == 0{ //L3
             pos = 2
         }
-        else if x < 0 && a == 0{ //e4
+        else if log && x < 0 && a > 0{ //L4
             pos = 3
         }
             
-        else if x < 0 && a < 0{ //e5
+        else if !log && x < 0 && a == 0{ //L5
             pos = 4
         }
-        else if x < 0 && a > 0 { //e6
+        else if log && x < 0 && a < 0 { //L6
             pos = 5
+        }
+        else if !log && x > 0 && a < 0 { //L7
+            pos = 6
+        }
+        else if !log && x > 0 && a > 0 { //L8
+            pos = 7
+        }
+        else if log && x > 0 && a > 0 { //L9
+            pos = 8
+        }
+        else if log && x < 0 && a < 0 { //L10
+            pos = 9
+        }
+        else  { //default
+            pos = 10
         }
         
         return pos
+
     }
     @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
         selectedLabel = 0
         //print("update")
         disableLabel()
         disableImage(boolean: true)
-
+        
     }
     
     @IBAction func taplbRespuesta2(_ sender: UITapGestureRecognizer) {
@@ -149,7 +175,7 @@ class Pregunta3ExponencialViewController: UIViewController {
         //print("update")
         disableLabel()
         disableImage(boolean: true)
-
+        
     }
     
     @IBAction func taplbRespuesta3(_ sender: UITapGestureRecognizer) {
@@ -157,7 +183,7 @@ class Pregunta3ExponencialViewController: UIViewController {
         //print("update")
         disableLabel()
         disableImage(boolean: true)
-
+        
     }
     
     @IBAction func taplbRespuesta4(_ sender: UITapGestureRecognizer) {
@@ -165,7 +191,7 @@ class Pregunta3ExponencialViewController: UIViewController {
         //print("update")
         disableLabel()
         disableImage(boolean: true)
-
+        
     }
     
     @IBAction func tapImage1(_ sender: UITapGestureRecognizer) {
@@ -260,21 +286,20 @@ class Pregunta3ExponencialViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "inicio" {
-            let viewDestino = segue.destination as! iniciarQuiz3ViewController
+            let viewDestino = segue.destination as! iniciarQuiz2ViewController
             viewDestino.calificacion = preguntasCorrectas!
         }
             
         else if( segue.identifier == "quiz1") {
-            let viewDestino = segue.destination as! Pregunta1ExponencialViewController
+            let viewDestino = segue.destination as! Pregunta1LogaritmicaViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
         else {
-            let viewDestino = segue.destination as! Pregunta2ExponencialViewController
+            let viewDestino = segue.destination as! Pregunta2LogaritmicaViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
     }
     
 }
-

@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A5276E45D8F10658B105706 /* Pods_Aprendiendo_EcuacionesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */; };
 		3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */; };
-		59150D791DB89F3D002FB669 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59150D781DB89F3D002FB669 /* Questions.storyboard */; };
 		7C29B89249DF803A2D146C72 /* Pods_Aprendiendo_Ecuaciones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12C16031743E3A687CA60FA /* Pods_Aprendiendo_Ecuaciones.framework */; };
-		84DF8E011DB88CA200D5851E /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DF8E001DB88CA200D5851E /* Initial.storyboard */; };
 		84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF8E021DB890C200D5851E /* InitialViewController.swift */; };
 		98BE4A193A59722CC8EB85C1 /* Pods_Aprendiendo_EcuacionesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */; };
 		E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */; };
@@ -29,6 +27,10 @@
 		E85F5E9A1DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E991DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift */; };
 		E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */; };
 		E87CD1CF1DDE346900F13103 /* Pregunta2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */; };
+		E88114F71DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88114F61DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift */; };
+		E88114F91DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88114F81DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift */; };
+		E88114FB1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88114FA1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift */; };
+		E88114FD1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88114FC1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift */; };
 		E8B4E07E1DDA46210016A716 /* Pregunta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4E07D1DDA46210016A716 /* Pregunta.swift */; };
 		E8CE4B231DC55C0700C081D3 /* Pregunta1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */; };
 		E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */; };
@@ -60,9 +62,7 @@
 		313A3CBEC3F3A6D59371F330 /* Pods-Aprendiendo-Ecuaciones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-Ecuaciones.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones.release.xcconfig"; sourceTree = "<group>"; };
 		3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = polinomialesPageVC.swift; sourceTree = "<group>"; };
 		48A7163F92954C0F649A0B38 /* Pods-Aprendiendo-Ecuaciones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-Ecuaciones.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-Ecuaciones/Pods-Aprendiendo-Ecuaciones.debug.xcconfig"; sourceTree = "<group>"; };
-		59150D781DB89F3D002FB669 /* Questions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
 		74C178E3F2E664FDEC0FAE2F /* Pods-Aprendiendo-EcuacionesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		84DF8E001DB88CA200D5851E /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		84DF8E021DB890C200D5851E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +88,10 @@
 		E85F5E991DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3ExponencialViewController.swift; sourceTree = "<group>"; };
 		E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3ViewController.swift; sourceTree = "<group>"; };
 		E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2ViewController.swift; sourceTree = "<group>"; };
+		E88114F61DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciarQuiz2ViewController.swift; sourceTree = "<group>"; };
+		E88114F81DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1LogaritmicaViewController.swift; sourceTree = "<group>"; };
+		E88114FA1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2LogaritmicaViewController.swift; sourceTree = "<group>"; };
+		E88114FC1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3LogaritmicaViewController.swift; sourceTree = "<group>"; };
 		E8B4E07D1DDA46210016A716 /* Pregunta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta.swift; sourceTree = "<group>"; };
 		E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1ViewController.swift; sourceTree = "<group>"; };
 		E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolinomialesTableViewController.swift; sourceTree = "<group>"; };
@@ -183,15 +187,17 @@
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
 				E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */,
 				E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */,
+				E88114F61DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift */,
+				E88114F81DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift */,
 				E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */,
+				E88114FA1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift */,
+				E88114FC1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift */,
 				E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */,
 				E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */,
 				E85F5E991DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift */,
 				3975858B1DC4744000DE10BB /* polinomialesPageVC.swift */,
-				59150D781DB89F3D002FB669 /* Questions.storyboard */,
 				E8CE4B221DC55C0700C081D3 /* Pregunta1ViewController.swift */,
 				E861023C1DD7A20100C1D5E0 /* Pregunta3ViewController.swift */,
-				84DF8E001DB88CA200D5851E /* Initial.storyboard */,
 				84DF8E021DB890C200D5851E /* InitialViewController.swift */,
 				E8F282811DB88687005CFE6E /* RadicalesTableViewController.swift */,
 				E8333A221DB8483A00DF0ACF /* Assets.xcassets */,
@@ -338,8 +344,6 @@
 				E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */,
 				E8333A231DB8483A00DF0ACF /* Assets.xcassets in Resources */,
 				E8333A211DB8483A00DF0ACF /* Main.storyboard in Resources */,
-				84DF8E011DB88CA200D5851E /* Initial.storyboard in Resources */,
-				59150D791DB89F3D002FB669 /* Questions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,16 +508,20 @@
 			files = (
 				E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */,
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
+				E88114FB1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift in Sources */,
 				E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */,
 				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
 				3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */,
 				E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */,
+				E88114FD1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift in Sources */,
 				E85F5E981DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift in Sources */,
 				E85F5E9A1DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift in Sources */,
 				E8F282821DB88687005CFE6E /* RadicalesTableViewController.swift in Sources */,
+				E88114F91DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift in Sources */,
 				E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */,
 				E8B4E07E1DDA46210016A716 /* Pregunta.swift in Sources */,
 				E8CE4B231DC55C0700C081D3 /* Pregunta1ViewController.swift in Sources */,
+				E88114F71DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift in Sources */,
 				E8F282801DB8866F005CFE6E /* ExponencialesTableViewController.swift in Sources */,
 				E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */,
 				E85F5E941DE6410700EB3554 /* iniciarQuiz3ViewController.swift in Sources */,

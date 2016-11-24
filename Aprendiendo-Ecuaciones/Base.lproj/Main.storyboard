@@ -9,60 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ecuaciones Logaritmicas-->
-        <scene sceneID="cQv-Lq-sVa">
-            <objects>
-                <tableViewController id="d8h-EG-Ycm" customClass="LogaritmicasTableViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dt0-mY-Ve2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.60392156862745094" green="0.9882352941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection id="PEQ-J4-44u">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="91O-IA-t8g" style="IBUITableViewCellStyleDefault" id="xaS-ba-M5b">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xaS-ba-M5b" id="plg-oR-AmR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Quizz General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="91O-IA-t8g">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.60392156862745094" green="0.9882352941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="d8h-EG-Ycm" id="jZt-pF-GLk"/>
-                            <outlet property="delegate" destination="d8h-EG-Ycm" id="gbm-y0-j5r"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Ecuaciones Logaritmicas" id="B6v-MT-dWI">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="cR3-PW-uHi">
-                            <connections>
-                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="AfI-w6-wcs"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="kzh-Lb-ZAo">
-                            <connections>
-                                <segue destination="p6T-Rf-qb2" kind="show" id="wnX-aD-zhw"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="veU-v5-r2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1065" y="-546"/>
-        </scene>
         <!--Ecuaciones Radicales-->
         <scene sceneID="dEc-SX-xHM">
             <objects>
@@ -115,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEt-zY-836" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1870" y="2245"/>
+            <point key="canvasLocation" x="-3876" y="1424"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qtP-Tm-qXq">
@@ -188,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ic2-iw-SyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1025" y="2245"/>
+            <point key="canvasLocation" x="-3031" y="1424"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8bR-B9-aEN">
@@ -260,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYL-7a-RnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="1357"/>
+            <point key="canvasLocation" x="5297" y="2081"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ooy-Fx-jPL">
@@ -335,7 +281,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeJ-rz-zJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="-546"/>
+            <point key="canvasLocation" x="903" y="-1297"/>
+        </scene>
+        <!--Iniciar Quiz2 View Controller-->
+        <scene sceneID="Z7m-CX-0I8">
+            <objects>
+                <viewController id="aUT-v4-2me" customClass="iniciarQuiz2ViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FdJ-nT-hzd"/>
+                        <viewControllerLayoutGuide type="bottom" id="xfN-k6-nGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oxn-Ia-ek5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWi-Ch-fqX">
+                                <rect key="frame" x="89" y="316" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calificacion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4R-mK-aeK">
+                                <rect key="frame" x="39" y="345" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kG-x8-eiS">
+                                <rect key="frame" x="230" y="345" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-Ox-8mC">
+                                <rect key="frame" x="160" y="223" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Incia el quiz"/>
+                                <connections>
+                                    <action selector="randomSegue:" destination="aUT-v4-2me" eventType="touchUpInside" id="a3W-YA-hcb"/>
+                                    <action selector="randomSegue:" destination="k36-3K-2os" eventType="touchUpInside" id="cld-0z-1VV"/>
+                                    <action selector="randomSegue:" destination="i7q-r6-DxC" eventType="touchUpInside" id="uR0-A5-1HT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65407222509384155" green="0.98261433839797974" blue="0.99977117776870728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1CU-0f-R5a">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="3ZG-vy-DyL">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="O1D-1o-16a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="O66-oD-zAE">
+                            <connections>
+                                <segue destination="p6T-Rf-qb2" kind="show" id="1fU-q8-Fba"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lbCalificacion" destination="9kG-x8-eiS" id="7QZ-v3-diX"/>
+                        <segue destination="jJe-Y4-7bM" kind="presentation" identifier="quiz1" id="Q9h-Q2-Lin"/>
+                        <segue destination="6R0-3f-V3G" kind="presentation" identifier="quiz2" id="Uvn-jr-dhE"/>
+                        <segue destination="iHc-SQ-3eC" kind="presentation" identifier="quiz3" id="DWw-2s-1Ox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmN-UO-MOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="-421"/>
         </scene>
         <!--Inicio Quiz1 View Controller-->
         <scene sceneID="zMC-9T-STg">
@@ -407,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Byv-yz-6iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1322.4000000000001" y="-1096.1019490254873"/>
+            <point key="canvasLocation" x="-4978" y="-1622"/>
         </scene>
         <!--Polinomiales PageVC-->
         <scene sceneID="Rgr-cW-2FF">
@@ -415,7 +430,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vBc-ZR-U2u" customClass="polinomialesPageVC" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8z4-CD-0vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-1682"/>
+            <point key="canvasLocation" x="-1959" y="-2209"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vHT-5z-gcf">
@@ -497,25 +512,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5n-WH-mTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="-2858"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="F2c-on-2S2">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kHq-hA-uzO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fri-1T-zu9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="d8h-EG-Ycm" kind="relationship" relationship="rootViewController" id="z8U-cl-Onr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x7Q-3o-xqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-129" y="-546"/>
+            <point key="canvasLocation" x="-2298" y="-3385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gAp-ID-xBD">
@@ -533,7 +530,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN6-ad-2td" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2700" y="2245"/>
+            <point key="canvasLocation" x="-4705" y="1424"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="oOm-98-m2y">
@@ -616,7 +613,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                         <rect key="frame" x="0.0" y="0.0" width="367" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="kHq-hA-uzO" kind="presentation" id="2Ce-va-8nh"/>
+                                            <segue destination="eaW-wA-BWg" kind="presentation" id="R7q-gY-qvG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -659,7 +656,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD5-yb-Ore" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1351.2" y="323.38830584707648"/>
+            <point key="canvasLocation" x="-1594" y="320"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U0P-wm-ouI">
@@ -730,7 +727,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUV-0L-Rlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="-2857"/>
+            <point key="canvasLocation" x="-1594" y="-3384"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="91T-3d-1Fk">
@@ -803,7 +800,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="649-rz-dcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="-2858"/>
+            <point key="canvasLocation" x="-908" y="-3385"/>
         </scene>
         <!--Pregunta1 View Controller-->
         <scene sceneID="QmC-P3-ePR">
@@ -945,7 +942,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-879" y="-2809"/>
+            <point key="canvasLocation" x="-4535" y="-3336"/>
         </scene>
         <!--Pregunta3 View Controller-->
         <scene sceneID="V0k-zX-YOe">
@@ -1121,7 +1118,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="314" y="-2076"/>
+            <point key="canvasLocation" x="-3343" y="-2603"/>
         </scene>
         <!--Pregunta2 View Controller-->
         <scene sceneID="MP6-RO-9ZH">
@@ -1239,7 +1236,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="281" y="-2858"/>
+            <point key="canvasLocation" x="-3375" y="-3385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aYr-Mt-3dB">
@@ -1257,7 +1254,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGe-e6-CX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2142" y="-1095"/>
+            <point key="canvasLocation" x="-5799" y="-1621"/>
         </scene>
         <!--Pregunta1 Exponencial View Controller-->
         <scene sceneID="cir-aa-lxT">
@@ -1399,7 +1396,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1916" y="323"/>
+            <point key="canvasLocation" x="7895" y="1053"/>
         </scene>
         <!--Pregunta3 Exponencial View Controller-->
         <scene sceneID="wgN-Lb-k1d">
@@ -1575,7 +1572,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1524" y="1462"/>
+            <point key="canvasLocation" x="7503" y="2191"/>
         </scene>
         <!--Pregunta2 Exponencial View Controller-->
         <scene sceneID="dl7-aI-fxs">
@@ -1693,7 +1690,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3223" y="955"/>
+            <point key="canvasLocation" x="9202" y="1684"/>
         </scene>
         <!--Iniciar Quiz3 View Controller-->
         <scene sceneID="OHx-l6-f8l">
@@ -1761,7 +1758,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUQ-BZ-q0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="633"/>
+            <point key="canvasLocation" x="6044" y="1357"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HIu-LY-Hlw">
@@ -1779,7 +1776,461 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTK-Is-MkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="633"/>
+            <point key="canvasLocation" x="5201" y="1357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MGe-Ja-M7P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eaW-wA-BWg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6M-Z8-j5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aUT-v4-2me" kind="relationship" relationship="rootViewController" id="4tS-kt-qO7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zup-bI-wos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="-421"/>
+        </scene>
+        <!--Pregunta1 Logaritmica View Controller-->
+        <scene sceneID="4GF-yx-cIh">
+            <objects>
+                <viewController id="jJe-Y4-7bM" customClass="Pregunta1LogaritmicaViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ivI-xe-sfJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ct8-sp-RaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9DR-z0-1vj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxS-yT-lff">
+                                <rect key="frame" x="148" y="526" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siguiente &gt;"/>
+                                <connections>
+                                    <action selector="randomSegue:" destination="jJe-Y4-7bM" eventType="touchUpInside" id="0P0-nr-Ojt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-gv-CYb">
+                                <rect key="frame" x="296" y="600" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salir"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNr-Vy-wb9">
+                                <rect key="frame" x="34" y="600" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver a inicio"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cy5-7Q-FAS">
+                                <rect key="frame" x="216" y="339" width="143" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efR-15-UmZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CTU-fk-hWT" appends="YES" id="ovL-4G-c4M"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bbl-sS-zeb">
+                                <rect key="frame" x="34" y="339" width="143" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-Dr-Ade">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mJm-Dg-Nth" appends="YES" id="XIR-38-8FK"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxB-uZ-g9l">
+                                <rect key="frame" x="216" y="151" width="143" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNx-vw-f2r">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="JJp-Ug-Qxb" appends="YES" id="Uv2-qB-kFh"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-dG-Nx9">
+                                <rect key="frame" x="34" y="151" width="143" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrE-UH-MGg">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UaK-eJ-2lR" appends="YES" id="rdf-ua-UUi"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBb-8Y-G3q">
+                                <rect key="frame" x="0.0" y="56" width="375" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KPj-ao-G8R"/>
+                    <connections>
+                        <outlet property="btSiguiente" destination="BxS-yT-lff" id="bFF-qq-Zmv"/>
+                        <outlet property="lbPregunta" destination="kBb-8Y-G3q" id="c2S-qN-cOY"/>
+                        <outlet property="vista" destination="9DR-z0-1vj" id="5Mo-fs-nr1"/>
+                        <outletCollection property="arregloViews" destination="YCb-dG-Nx9" collectionClass="NSMutableArray" id="x3M-D9-qSg"/>
+                        <outletCollection property="arregloViews" destination="gxB-uZ-g9l" collectionClass="NSMutableArray" id="1LL-I7-w9K"/>
+                        <outletCollection property="arregloViews" destination="Bbl-sS-zeb" collectionClass="NSMutableArray" id="VZ8-AW-PpH"/>
+                        <outletCollection property="arregloViews" destination="cy5-7Q-FAS" collectionClass="NSMutableArray" id="p6W-yV-w9u"/>
+                        <outletCollection property="arregloImagenes" destination="ZrE-UH-MGg" collectionClass="NSMutableArray" id="2nB-zD-EeA"/>
+                        <outletCollection property="arregloImagenes" destination="lNx-vw-f2r" collectionClass="NSMutableArray" id="YSx-vk-zs7"/>
+                        <outletCollection property="arregloImagenes" destination="vHK-Dr-Ade" collectionClass="NSMutableArray" id="6ax-cL-0h0"/>
+                        <outletCollection property="arregloImagenes" destination="efR-15-UmZ" collectionClass="NSMutableArray" id="wXd-dr-sRz"/>
+                        <segue destination="aUT-v4-2me" kind="presentation" identifier="inicio" id="CmU-yO-8CQ"/>
+                        <segue destination="6R0-3f-V3G" kind="presentation" identifier="quiz2" id="zwl-94-6lY"/>
+                        <segue destination="iHc-SQ-3eC" kind="presentation" identifier="quiz3" id="I20-y5-eeR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrJ-zl-6my" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UaK-eJ-2lR">
+                    <connections>
+                        <action selector="tapImagen1:" destination="jJe-Y4-7bM" id="WXk-5B-1Ax"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JJp-Ug-Qxb">
+                    <connections>
+                        <action selector="tapImagen2:" destination="jJe-Y4-7bM" id="cHJ-hr-Pw3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mJm-Dg-Nth">
+                    <connections>
+                        <action selector="tapImagen3:" destination="jJe-Y4-7bM" id="ShF-3a-Lr9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CTU-fk-hWT">
+                    <connections>
+                        <action selector="tapImagen4:" destination="jJe-Y4-7bM" id="cAY-cs-kVe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2586" y="-1101"/>
+        </scene>
+        <!--Pregunta3 Logaritmica View Controller-->
+        <scene sceneID="GBZ-kE-j9P">
+            <objects>
+                <viewController id="iHc-SQ-3eC" customClass="Pregunta3LogaritmicaViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfD-A5-7rM"/>
+                        <viewControllerLayoutGuide type="bottom" id="nD7-L9-aA4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="svJ-9j-DcL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Relacionar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qK-9k-eRP">
+                                <rect key="frame" x="152" y="28" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzP-ru-v6Z">
+                                <rect key="frame" x="33" y="147" width="146" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vS3-CC-lCe" appends="YES" id="5oz-g4-oup"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLY-n4-A90">
+                                <rect key="frame" x="33" y="252" width="146" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AXc-SJ-Bou" appends="YES" id="Lbx-33-bwE"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbM-3a-n6y">
+                                <rect key="frame" x="33" y="357" width="146" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xPT-Eq-GMK" appends="YES" id="pxq-RL-ili"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcW-NZ-cE4">
+                                <rect key="frame" x="33" y="466" width="146" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QtI-ls-Rm5" appends="YES" id="Gqb-N9-mTI"/>
+                                </connections>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQd-IV-UTa">
+                                <rect key="frame" x="219" y="332" width="124" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wEJ-3M-4Uo" appends="YES" id="5rJ-rQ-ksH"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-ZR-unU">
+                                <rect key="frame" x="219" y="227" width="124" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wLi-aX-AHK" appends="YES" id="ehp-aV-fem"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VRA-7d-Na9">
+                                <rect key="frame" x="219" y="122" width="124" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FjT-yJ-SFH" appends="YES" id="TnJ-ZH-P5y"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-iq-0pB">
+                                <rect key="frame" x="219" y="441" width="124" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VPa-ri-RGl" appends="YES" id="xcZ-o6-UzR"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-wl-twX">
+                                <rect key="frame" x="156" y="530" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siguiente &gt;"/>
+                                <connections>
+                                    <action selector="randomSegue:" destination="iHc-SQ-3eC" eventType="touchUpInside" id="Ib7-1w-Tgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGi-fx-gdN">
+                                <rect key="frame" x="304" y="604" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salir"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z8-RM-QJT">
+                                <rect key="frame" x="42" y="604" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver a inicio"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btSiguiente" destination="yBp-wl-twX" id="5ec-BV-4O7"/>
+                        <outlet property="vista" destination="svJ-9j-DcL" id="Qib-j4-Es2"/>
+                        <outletCollection property="lbPreguntas" destination="nzP-ru-v6Z" collectionClass="NSMutableArray" id="KMT-Od-Mh8"/>
+                        <outletCollection property="lbPreguntas" destination="sLY-n4-A90" collectionClass="NSMutableArray" id="UW0-vT-ybd"/>
+                        <outletCollection property="lbPreguntas" destination="JbM-3a-n6y" collectionClass="NSMutableArray" id="Vg2-gx-rje"/>
+                        <outletCollection property="lbPreguntas" destination="lcW-NZ-cE4" collectionClass="NSMutableArray" id="i0p-Sk-MCa"/>
+                        <outletCollection property="imageRespuestas" destination="VRA-7d-Na9" collectionClass="NSMutableArray" id="zeQ-9k-zUs"/>
+                        <outletCollection property="imageRespuestas" destination="RLu-ZR-unU" collectionClass="NSMutableArray" id="XmY-Ck-MNB"/>
+                        <outletCollection property="imageRespuestas" destination="fQd-IV-UTa" collectionClass="NSMutableArray" id="MJW-8Q-Ldg"/>
+                        <outletCollection property="imageRespuestas" destination="TjT-iq-0pB" collectionClass="NSMutableArray" id="O8X-I9-KeB"/>
+                        <segue destination="aUT-v4-2me" kind="presentation" identifier="inicio" id="xOX-G4-6je"/>
+                        <segue destination="jJe-Y4-7bM" kind="presentation" identifier="quiz1" id="eDm-4b-BMq"/>
+                        <segue destination="6R0-3f-V3G" kind="presentation" identifier="quiz2" id="RxW-R2-yR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWu-VH-ShO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vS3-CC-lCe">
+                    <connections>
+                        <action selector="taplbRespuesta1:" destination="iHc-SQ-3eC" id="2dL-WE-IeS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="AXc-SJ-Bou">
+                    <connections>
+                        <action selector="taplbRespuesta2:" destination="iHc-SQ-3eC" id="Enh-QM-ufO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xPT-Eq-GMK">
+                    <connections>
+                        <action selector="taplbRespuesta3:" destination="iHc-SQ-3eC" id="1xB-ZX-FRy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QtI-ls-Rm5">
+                    <connections>
+                        <action selector="taplbRespuesta4:" destination="iHc-SQ-3eC" id="fnH-qf-Pel"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FjT-yJ-SFH">
+                    <connections>
+                        <action selector="tapImage1:" destination="iHc-SQ-3eC" id="6GG-OV-lEk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wLi-aX-AHK">
+                    <connections>
+                        <action selector="tapImage2:" destination="iHc-SQ-3eC" id="5kR-wd-AFh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wEJ-3M-4Uo">
+                    <connections>
+                        <action selector="tapImage3:" destination="iHc-SQ-3eC" id="9ZT-xO-5fe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VPa-ri-RGl">
+                    <connections>
+                        <action selector="tapImage4:" destination="iHc-SQ-3eC" id="Hx8-bt-5VS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2660" y="-4"/>
+        </scene>
+        <!--Pregunta2 Logaritmica View Controller-->
+        <scene sceneID="o92-hm-1h7">
+            <objects>
+                <viewController id="6R0-3f-V3G" customClass="Pregunta2LogaritmicaViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lUZ-nq-Udz"/>
+                        <viewControllerLayoutGuide type="bottom" id="dyC-dv-ckS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wfT-OQ-lYJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-9G-EAU">
+                                <rect key="frame" x="67" y="51" width="253" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nic-WO-x2T">
+                                <rect key="frame" x="22" y="336" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xg1-dk-ogF" appends="YES" id="zW3-dL-OXO"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-dr-wjA">
+                                <rect key="frame" x="22" y="432" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eNo-me-8Ho" appends="YES" id="5IZ-UM-4rV"/>
+                                </connections>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH1-Eb-ML8">
+                                <rect key="frame" x="155" y="524" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siguiente &gt;"/>
+                                <connections>
+                                    <action selector="randomSegue:" destination="6R0-3f-V3G" eventType="touchUpInside" id="j5u-MY-Vyf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-Lz-gBl">
+                                <rect key="frame" x="303" y="598" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salir"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-eq-z9N">
+                                <rect key="frame" x="41" y="598" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Volver a inicio"/>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb5-rP-5ra">
+                                <rect key="frame" x="190" y="432" width="162" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mbs-Ff-4kb" appends="YES" id="bxb-q2-Zzo"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5G-ZT-I62">
+                                <rect key="frame" x="190" y="336" width="162" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="urL-vu-Q7g" appends="YES" id="ybG-0k-956"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btSiguiente" destination="UH1-Eb-ML8" id="vYW-Lm-z8v"/>
+                        <outlet property="imagePregunta" destination="qaW-9G-EAU" id="dbR-vX-Z6u"/>
+                        <outlet property="vista" destination="wfT-OQ-lYJ" id="TUd-vi-yBn"/>
+                        <outletCollection property="lbPreguntas" destination="nic-WO-x2T" collectionClass="NSMutableArray" id="gKq-B6-Qrn"/>
+                        <outletCollection property="lbPreguntas" destination="y5G-ZT-I62" collectionClass="NSMutableArray" id="Yo9-ir-lDL"/>
+                        <outletCollection property="lbPreguntas" destination="2LS-dr-wjA" collectionClass="NSMutableArray" id="tw2-mO-Ui7"/>
+                        <outletCollection property="lbPreguntas" destination="Qb5-rP-5ra" collectionClass="NSMutableArray" id="k33-dE-xS0"/>
+                        <segue destination="aUT-v4-2me" kind="presentation" identifier="inicio" id="kUS-vu-v9h"/>
+                        <segue destination="jJe-Y4-7bM" kind="presentation" identifier="quiz1" id="Ubi-DC-cSe"/>
+                        <segue destination="iHc-SQ-3eC" kind="presentation" identifier="quiz3" id="bnT-G2-a74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kj1-l8-AWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xg1-dk-ogF">
+                    <connections>
+                        <action selector="taplbRespuesta1:" destination="6R0-3f-V3G" id="SuY-h0-dql"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="urL-vu-Q7g">
+                    <connections>
+                        <action selector="taplbRespuesta2:" destination="6R0-3f-V3G" id="Dqk-eu-7p9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eNo-me-8Ho">
+                    <connections>
+                        <action selector="taplbRespuesta3:" destination="6R0-3f-V3G" id="hrf-yf-91d"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mbs-Ff-4kb">
+                    <connections>
+                        <action selector="taplbRespuesta4:" destination="6R0-3f-V3G" id="Ats-TK-gO2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3878" y="-700"/>
         </scene>
     </scenes>
     <resources>
@@ -1791,14 +2242,18 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8OM-L2-l9v"/>
-        <segue reference="R5g-Rh-tZp"/>
+        <segue reference="CmU-yO-8CQ"/>
+        <segue reference="Q9h-Q2-Lin"/>
+        <segue reference="O1D-1o-16a"/>
+        <segue reference="DWw-2s-1Ox"/>
+        <segue reference="Uvn-jr-dhE"/>
         <segue reference="XIZ-sY-DH2"/>
+        <segue reference="6sz-5G-dHT"/>
+        <segue reference="eLQ-0I-PYs"/>
+        <segue reference="Zsf-4W-k2u"/>
+        <segue reference="2y7-sY-B7n"/>
         <segue reference="OeJ-JC-v4x"/>
         <segue reference="VHk-sW-P0m"/>
         <segue reference="GBG-Fl-3RD"/>
-        <segue reference="MH2-vl-ECA"/>
-        <segue reference="JuJ-nQ-3XP"/>
-        <segue reference="2mA-XG-egq"/>
     </inferredMetricsTieBreakers>
 </document>

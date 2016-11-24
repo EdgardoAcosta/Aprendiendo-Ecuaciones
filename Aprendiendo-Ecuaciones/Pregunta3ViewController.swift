@@ -39,6 +39,8 @@ class Pregunta3ViewController: UIViewController {
     // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
+        disableImage(boolean: false)
+
         //btSiguiente.isEnabled = false
         
         if numPregunta != nil {
@@ -91,14 +93,14 @@ class Pregunta3ViewController: UIViewController {
             preguntas.append(pregunta)
             
             random = Int(arc4random_uniform(UInt32(7)))
-            print("Posicion random de imagenes: \(random!)")
+            //print("Posicion random de imagenes: \(random!)")
             imageRespuestas[i].image = arregloImagenes[random]
             imagePositions.append(random)
 		}
         
         random = Int(arc4random_uniform(UInt32(3)))
-        print("Posicion de la imagen respuesta: \(posicionRespuestaImg)")
-        print("Imagen de respuesta: \(preguntas[random].posicionRespuesta)")
+        //print("Posicion de la imagen respuesta: \(posicionRespuestaImg)")
+        //print("Imagen de respuesta: \(preguntas[random].posicionRespuesta)")
         
         imagePositions[posicionRespuestaImg] = preguntas[random].posicionRespuesta
         imageRespuestas[posicionRespuestaImg].image = arregloImagenes[preguntas[random].posicionRespuesta]
@@ -137,26 +139,34 @@ class Pregunta3ViewController: UIViewController {
     
     @IBAction func taplbRespuesta1(_ sender: UITapGestureRecognizer) {
         selectedLabel = 0
-        print("update")
+        //print("update")
         disableLabel()
+        disableImage(boolean: true)
+
     }
     
     @IBAction func taplbRespuesta2(_ sender: UITapGestureRecognizer) {
         selectedLabel = 1
-        print("update")
+        //print("update")
         disableLabel()
+        disableImage(boolean: true)
+
     }
     
     @IBAction func taplbRespuesta3(_ sender: UITapGestureRecognizer) {
         selectedLabel = 2
-        print("update")
+        //print("update")
         disableLabel()
+        disableImage(boolean: true)
+
     }
     
     @IBAction func taplbRespuesta4(_ sender: UITapGestureRecognizer) {
         selectedLabel = 3
-        print("update")
+        //print("update")
         disableLabel()
+        disableImage(boolean: true)
+
     }
     
     @IBAction func tapImage1(_ sender: UITapGestureRecognizer) {
@@ -170,7 +180,7 @@ class Pregunta3ViewController: UIViewController {
             KVNProgress.showError()
         }
         
-        disableImage()
+        disableImage(boolean: false)
         disableNext(boolean: true)
     }
     
@@ -185,7 +195,7 @@ class Pregunta3ViewController: UIViewController {
             KVNProgress.showError()
         }
         
-        disableImage()
+        disableImage(boolean: false)
         disableNext(boolean: true)
     }
     
@@ -200,7 +210,7 @@ class Pregunta3ViewController: UIViewController {
             KVNProgress.showError()
         }
         
-        disableImage()
+        disableImage(boolean: false)
         disableNext(boolean: true)
     }
     
@@ -215,7 +225,7 @@ class Pregunta3ViewController: UIViewController {
             KVNProgress.showError()
         }
         
-        disableImage()
+        disableImage(boolean: false)
         disableNext(boolean: true)
     }
     
@@ -225,9 +235,9 @@ class Pregunta3ViewController: UIViewController {
         }
     }
     
-    func disableImage() {
+    func disableImage(boolean : Bool) {
         for i in 0...3 {
-            imageRespuestas[i].isUserInteractionEnabled = false
+            imageRespuestas[i].isUserInteractionEnabled = boolean
         }
     }
     
