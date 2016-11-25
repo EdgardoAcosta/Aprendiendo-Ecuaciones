@@ -21,6 +21,10 @@
 		E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8333A241DB8483A00DF0ACF /* LaunchScreen.storyboard */; };
 		E8333A311DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A301DB8483B00DF0ACF /* Aprendiendo_EcuacionesTests.swift */; };
 		E8333A3C1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */; };
+		E84E28251DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E28241DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift */; };
+		E84E28271DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E28261DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift */; };
+		E84E28291DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E28281DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift */; };
+		E84E282B1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */; };
 		E85F5E941DE6410700EB3554 /* iniciarQuiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */; };
 		E85F5E961DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */; };
 		E85F5E981DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */; };
@@ -82,6 +86,10 @@
 		E8333A371DB8483B00DF0ACF /* Aprendiendo-EcuacionesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aprendiendo-EcuacionesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A3B1DB8483B00DF0ACF /* Aprendiendo_EcuacionesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aprendiendo_EcuacionesUITests.swift; sourceTree = "<group>"; };
 		E8333A3D1DB8483B00DF0ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84E28241DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciarQuiz4ViewController.swift; sourceTree = "<group>"; };
+		E84E28261DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1radicalesViewController.swift; sourceTree = "<group>"; };
+		E84E28281DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2radicalesViewController.swift; sourceTree = "<group>"; };
+		E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3radicalesViewController.swift; sourceTree = "<group>"; };
 		E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciarQuiz3ViewController.swift; sourceTree = "<group>"; };
 		E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1ExponencialViewController.swift; sourceTree = "<group>"; };
 		E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2ExponencialViewController.swift; sourceTree = "<group>"; };
@@ -190,8 +198,12 @@
 				E88114F61DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift */,
 				E88114F81DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift */,
 				E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */,
+				E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */,
+				E84E28241DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift */,
 				E88114FA1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift */,
+				E84E28281DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift */,
 				E88114FC1DE6A48700B2C8C9 /* Pregunta3LogaritmicaViewController.swift */,
+				E84E28261DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift */,
 				E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */,
 				E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */,
 				E85F5E991DE641AB00EB3554 /* Pregunta3ExponencialViewController.swift */,
@@ -507,9 +519,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E861023D1DD7A20100C1D5E0 /* Pregunta3ViewController.swift in Sources */,
+				E84E282B1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift in Sources */,
 				E8333A1E1DB8483A00DF0ACF /* SecondViewController.swift in Sources */,
 				E88114FB1DE6A47900B2C8C9 /* Pregunta2LogaritmicaViewController.swift in Sources */,
 				E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */,
+				E84E28251DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift in Sources */,
 				E8F2827E1DB8864C005CFE6E /* LogaritmicasTableViewController.swift in Sources */,
 				3975858C1DC4744000DE10BB /* polinomialesPageVC.swift in Sources */,
 				E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */,
@@ -525,9 +539,11 @@
 				E8F282801DB8866F005CFE6E /* ExponencialesTableViewController.swift in Sources */,
 				E8F2827C1DB8861F005CFE6E /* PolinomialesTableViewController.swift in Sources */,
 				E85F5E941DE6410700EB3554 /* iniciarQuiz3ViewController.swift in Sources */,
+				E84E28291DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift in Sources */,
 				84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */,
 				E87CD1CF1DDE346900F13103 /* Pregunta2ViewController.swift in Sources */,
 				E85F5E961DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift in Sources */,
+				E84E28271DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
