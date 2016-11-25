@@ -21,6 +21,9 @@ class Pregunta2radicalesViewController: UIViewController {
     @IBOutlet var vista: UIView!
     
     @IBOutlet weak var btSiguiente: UIButton!
+
+    @IBOutlet weak var btTerminar: UIButton!
+
     
     
     var arrRespuesta = [Int]()
@@ -83,6 +86,12 @@ class Pregunta2radicalesViewController: UIViewController {
         a1 = RandomInt(min: -5, max: 5)        //Posicion de la imagen dentro del arreglo de imagenes
         index = verificarRespuesta(x: x1,a: a1)
         
+        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
+
         //Set de la imagen
         imagePregunta.image = arregloImagenes[index]
         
@@ -248,14 +257,13 @@ class Pregunta2radicalesViewController: UIViewController {
     
     func disableNext(boolean : Bool){
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
+
     }
     
     // MARK: - Navigation
     @IBAction func randomSegue(_ sender: UIButton) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
     }

@@ -87,6 +87,12 @@ class Pregunta2ViewController: UIViewController {
             btTerminar.isHidden = false
         }
         
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
+
+        
         //Se generan el resto de ecuaciones aleatorias
         setPreguntas()
     }
@@ -271,7 +277,6 @@ class Pregunta2ViewController: UIViewController {
             viewDestino.numPregunta = numPregunta!
         }
         else {
-            print(preguntasCorrectas)
             let viewDestino = segue.destination as! inicioQuiz1ViewController
             viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
         }

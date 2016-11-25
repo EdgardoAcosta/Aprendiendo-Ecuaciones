@@ -38,4 +38,8 @@ class iniciarQuiz4ViewController: UIViewController {
         self.performSegue(withIdentifier: segueName, sender: self)
     }
     
+    @IBAction func unwindStart(sender : UIStoryboardSegue) {
+        
+    }
+    
 }

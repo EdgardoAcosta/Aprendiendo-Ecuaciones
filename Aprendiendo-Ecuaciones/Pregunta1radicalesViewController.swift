@@ -35,6 +35,8 @@ class Pregunta1radicalesViewController: UIViewController {
     //Pregunta de la view
     @IBOutlet weak var lbPregunta: UILabel!
     
+    @IBOutlet weak var btTerminar: UIButton!
+    
     //Valores de la ecuacion
     var x : Int = 0
     var a : Int = 0
@@ -87,8 +89,11 @@ class Pregunta1radicalesViewController: UIViewController {
         
         a = RandomInt(min: -5, max: 5)
         
-        //Set de la ecuacion
-        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
+
         //Posicion del indice de la imagen respuesta
         respuesta = verificarRespuesta()
         
@@ -254,14 +259,12 @@ class Pregunta1radicalesViewController: UIViewController {
     
     func disableNext(boolean : Bool) {
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
     }
     
     // MARK: - Navigation
     @IBAction func randomSegue(_ sender: UIButton) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
         

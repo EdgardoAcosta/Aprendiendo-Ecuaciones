@@ -36,5 +36,8 @@ class iniciarQuiz2ViewController: UIViewController {
         let segueName = segues[index]
         self.performSegue(withIdentifier: segueName, sender: self)
     }
+    @IBAction func unwindStart(sender : UIStoryboardSegue) {
+        
+    }
     
 }

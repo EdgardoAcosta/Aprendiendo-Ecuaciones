@@ -23,6 +23,7 @@ class Pregunta2LogaritmicaViewController: UIViewController {
     
     @IBOutlet weak var btSiguiente: UIButton!
     
+    @IBOutlet weak var btTerminar: UIButton!
     
     var arrRespuesta = [Int]()
     //Arreglo de pool de imagenes a elegir para la pregunta
@@ -86,6 +87,12 @@ class Pregunta2LogaritmicaViewController: UIViewController {
         a1 = RandomInt(min: -5, max: 5)        //Posicion de la imagen dentro del arreglo de imagenes
         index = verificarRespuesta(x: x1,a: a1)
         
+        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
+
         //Set de la imagen
         imagePregunta.image = arregloImagenes[index]
         
@@ -281,14 +288,13 @@ class Pregunta2LogaritmicaViewController: UIViewController {
     
     func disableNext(boolean : Bool){
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
+
     }
     
     // MARK: - Navigation
     @IBAction func randomSegue(_ sender: UIButton) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
     }
@@ -297,10 +303,10 @@ class Pregunta2LogaritmicaViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "inicio" {
-            let viewDestino = segue.destination as! iniciarQuiz2ViewController
-            viewDestino.calificacion = preguntasCorrectas!
-        }
+        if segue.identifier == "quiz3" {
+            let viewDestino = segue.destination as! Pregunta3LogaritmicaViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!        }
         else if segue.identifier == "quiz1" {
             let viewDestino = segue.destination as! Pregunta1LogaritmicaViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
@@ -308,9 +314,9 @@ class Pregunta2LogaritmicaViewController: UIViewController {
         }
             
         else {
-            let viewDestino = segue.destination as! Pregunta3LogaritmicaViewController
-            viewDestino.preguntasCorrectas = preguntasCorrectas!
-            viewDestino.numPregunta = numPregunta!
+            let viewDestino = segue.destination as! iniciarQuiz2ViewController
+            viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
+
         }
     }
     

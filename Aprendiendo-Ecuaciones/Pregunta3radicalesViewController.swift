@@ -18,6 +18,8 @@ class Pregunta3radicalesViewController: UIViewController {
     
     @IBOutlet var vista: UIView!
     
+    @IBOutlet weak var btTerminar: UIButton!
+
     var preguntas : [Pregunta]! = []
     
     var arregloImagenes : [UIImage] = [UIImage(named: "e1")!,UIImage(named: "e2")!,UIImage(named: "e3")!,UIImage(named: "e4")!,UIImage(named: "e5")!,UIImage(named: "e6")!]
@@ -49,6 +51,12 @@ class Pregunta3radicalesViewController: UIViewController {
         
         if preguntasCorrectas == nil {
             preguntasCorrectas = 0
+        }
+        
+        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
         }
         
         indexSegue = Int(arc4random_uniform(UInt32(segues.count)))
@@ -240,17 +248,15 @@ class Pregunta3radicalesViewController: UIViewController {
     }
     func disableNext(boolean : Bool){
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
+
     }
     
     
     // MARK: - Navigation
     
     @IBAction func randomSegue(_ sender: Any) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-            
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
     }

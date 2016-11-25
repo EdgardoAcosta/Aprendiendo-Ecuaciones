@@ -280,7 +280,6 @@ class Pregunta1ViewController: UIViewController {
             viewDestino.numPregunta = numPregunta!
         }
         else {
-            print(preguntasCorrectas)
             let viewDestino = segue.destination as! inicioQuiz1ViewController
             viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
         }

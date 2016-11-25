@@ -35,6 +35,8 @@ class Pregunta1ExponencialViewController: UIViewController {
     //Pregunta de la view
     @IBOutlet weak var lbPregunta: UILabel!
     
+    @IBOutlet weak var btTerminar: UIButton!
+    
     //Valores de la ecuacion
     var x : Int = 0
     var a : Int = 0
@@ -84,6 +86,12 @@ class Pregunta1ExponencialViewController: UIViewController {
        
         a = RandomInt(min: -5, max: 5)
         
+        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
+
         //Set de la ecuacion
         lbPregunta.text = "Y = (\(x)^x) + (\(a))"
         
@@ -252,14 +260,12 @@ class Pregunta1ExponencialViewController: UIViewController {
     
     func disableNext(boolean : Bool) {
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
     }
     
     // MARK: - Navigation
     @IBAction func randomSegue(_ sender: UIButton) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
         
@@ -269,9 +275,11 @@ class Pregunta1ExponencialViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if segue.identifier == "inicio" {
-            let viewDestino = segue.destination as! iniciarQuiz3ViewController
-            viewDestino.calificacion = preguntasCorrectas!
+        if segue.identifier == "quiz3" {
+            let viewDestino = segue.destination as! Pregunta3ExponencialViewController
+            viewDestino.preguntasCorrectas = preguntasCorrectas!
+            viewDestino.numPregunta = numPregunta!
+
         }
             
         else if segue.identifier == "quiz2" {
@@ -281,9 +289,9 @@ class Pregunta1ExponencialViewController: UIViewController {
         }
             
         else {
-            let viewDestino = segue.destination as! Pregunta3ExponencialViewController
-            viewDestino.preguntasCorrectas = preguntasCorrectas!
-            viewDestino.numPregunta = numPregunta!
+            let viewDestino = segue.destination as! iniciarQuiz3ViewController
+            viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
+
         }
     }
     
