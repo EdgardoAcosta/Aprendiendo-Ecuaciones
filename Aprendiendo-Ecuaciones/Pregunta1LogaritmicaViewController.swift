@@ -20,7 +20,7 @@ class Pregunta1LogaritmicaViewController: UIViewController {
     
     //Arreglo que contiene el pool de imagenes
     //Todas las psoibles respuestas que se relacionan a ecuaciones
-    var arregloRespuestas : [UIImage] = [UIImage(named: "L1")!,UIImage(named: "L2")!,UIImage(named: "L3")!,UIImage(named: "L4")!,UIImage(named: "L5")!,UIImage(named: "L6")!,UIImage(named: "L7")!,UIImage(named: "L8")!,UIImage(named: "L9")!,UIImage(named: "L10")!,UIImage(named: "default")!]
+    var arregloRespuestas : [UIImage] = [UIImage(named: "L1")!,UIImage(named: "L2")!,UIImage(named: "L3")!,UIImage(named: "L4")!,UIImage(named: "L5")!,UIImage(named: "L6")!,UIImage(named: "L7")!,UIImage(named: "L8")!,UIImage(named: "L9")!,UIImage(named: "L10")!,UIImage(named: "L11")!,UIImage(named: "L12")!]
     
     //Arreglo de imagenes escogidas para la vista principal
     @IBOutlet var arregloImagenes: [UIImageView]!
@@ -142,7 +142,7 @@ class Pregunta1LogaritmicaViewController: UIViewController {
             pos = 3
         }
             
-        else if !log && x < 0 && a == 0{ //L5
+        else if log && x > 0 && a < 0{ //L5
             pos = 4
         }
         else if log && x < 0 && a < 0 { //L6
@@ -157,11 +157,14 @@ class Pregunta1LogaritmicaViewController: UIViewController {
         else if log && x > 0 && a > 0 { //L9
             pos = 8
         }
-        else if log && x < 0 && a < 0 { //L10
+        else if log && x < 0 && a == 0 { //L10
             pos = 9
         }
-        else  { //default
+        else  if !log && x < 0 && a > 0{ //L11
             pos = 10
+        }
+        else if !log && x < 0 && a < 0 { //L12
+            pos = 11
         }
         
         return pos
@@ -184,7 +187,7 @@ class Pregunta1LogaritmicaViewController: UIViewController {
                 pregunta = Pregunta(label: lbPregunta, posicion: respuesta)
             }
             else {
-                aux = Int (arc4random_uniform(UInt32(8)))
+                aux = Int (arc4random_uniform(UInt32(11)))
                 arregloImagenes[i].image = arregloRespuestas[aux]
                 pregunta = Pregunta(label: lbPregunta, posicion: aux)
             }

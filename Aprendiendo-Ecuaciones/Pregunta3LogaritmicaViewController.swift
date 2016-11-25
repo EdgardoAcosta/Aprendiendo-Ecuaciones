@@ -27,7 +27,7 @@ class Pregunta3LogaritmicaViewController: UIViewController {
     
     var preguntas : [Pregunta]! = []
     
-    var arregloImagenes : [UIImage] = [UIImage(named: "L1")!,UIImage(named: "L2")!,UIImage(named: "L3")!,UIImage(named: "L4")!,UIImage(named: "L5")!,UIImage(named: "L6")!,UIImage(named: "L7")!,UIImage(named: "L8")!,UIImage(named: "L9")!,UIImage(named: "L10")!,UIImage(named: "default")!]
+    var arregloImagenes : [UIImage] = [UIImage(named: "L1")!,UIImage(named: "L2")!,UIImage(named: "L3")!,UIImage(named: "L4")!,UIImage(named: "L5")!,UIImage(named: "L6")!,UIImage(named: "L7")!,UIImage(named: "L8")!,UIImage(named: "L9")!,UIImage(named: "L10")!,UIImage(named: "L11")!,UIImage(named: "L12")!]
     
     let segues = ["quiz1", "quiz2"]
     
@@ -118,17 +118,13 @@ class Pregunta3LogaritmicaViewController: UIViewController {
             let pregunta = Pregunta(label: lbPreguntas[i], posicion: indiceRespuesta)
             preguntas.append(pregunta)
             
-            random = Int(arc4random_uniform(UInt32(8)))
-            print("Posicion random de imagenes: \(random!)")
+            random = Int(arc4random_uniform(UInt32(11)))
             imageRespuestas[i].image = arregloImagenes[random]
             imagePositions.append(random)
         }
         
         random = Int(arc4random_uniform(UInt32(3)))
-        print("Posicion de la imagen respuesta: \(posicionRespuestaImg)")
-        print("Imagen de respuesta: \(preguntas[random].posicionRespuesta)")
-        
-        imagePositions[posicionRespuestaImg] = preguntas[random].posicionRespuesta
+                imagePositions[posicionRespuestaImg] = preguntas[random].posicionRespuesta
         imageRespuestas[posicionRespuestaImg].image = arregloImagenes[preguntas[random].posicionRespuesta]
     }
     
@@ -148,7 +144,7 @@ class Pregunta3LogaritmicaViewController: UIViewController {
             pos = 3
         }
             
-        else if !log && x < 0 && a == 0{ //L5
+        else if log && x > 0 && a < 0{ //L5
             pos = 4
         }
         else if log && x < 0 && a < 0 { //L6
@@ -163,11 +159,14 @@ class Pregunta3LogaritmicaViewController: UIViewController {
         else if log && x > 0 && a > 0 { //L9
             pos = 8
         }
-        else if log && x < 0 && a < 0 { //L10
+        else if log && x < 0 && a == 0 { //L10
             pos = 9
         }
-        else  { //default
+        else  if !log && x < 0 && a > 0{ //L11
             pos = 10
+        }
+        else if !log && x < 0 && a < 0 { //L12
+            pos = 11
         }
         
         return pos
