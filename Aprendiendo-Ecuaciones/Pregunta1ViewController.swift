@@ -269,7 +269,6 @@ class Pregunta1ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "quiz2" {
             let viewDestino = segue.destination as! Pregunta2ViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
@@ -280,12 +279,11 @@ class Pregunta1ViewController: UIViewController {
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
-    }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: UIButton?) {
-        let viewDestino = segue.destination as! inicioQuiz1ViewController
-        print(preguntasCorrectas)
-        viewDestino.calificacion = preguntasCorrectas!
+        else {
+            print(preguntasCorrectas)
+            let viewDestino = segue.destination as! inicioQuiz1ViewController
+            viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
+        }
     }
 
 }

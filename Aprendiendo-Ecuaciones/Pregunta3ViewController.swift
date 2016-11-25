@@ -273,13 +273,11 @@ class Pregunta3ViewController: UIViewController {
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
-    }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: UIButton?) {
-        
-        let viewDestino = segue.destination as! inicioQuiz1ViewController
-        print(preguntasCorrectas)
-        viewDestino.calificacion = preguntasCorrectas!
+        else {
+            print(preguntasCorrectas)
+            let viewDestino = segue.destination as! inicioQuiz1ViewController
+            viewDestino.lbCalificacion.text = "\(preguntasCorrectas * 20)%"
+        }
     }
 
 }

@@ -43,9 +43,9 @@ class inicioQuiz1ViewController: UIViewController {
     }
     
     @IBAction func unwindStart(sender : UIStoryboardSegue) {
-        lbCalificacion.text = "\(calificacion)%"
-    }
     
+    }
+  
     
    
 }
