@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class inicioQuiz1ViewController: UIViewController {
 
     
@@ -17,7 +18,9 @@ class inicioQuiz1ViewController: UIViewController {
     var calificacion : Int!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         if calificacion != nil {
             calificacion = calificacion * 20
             lbCalificacion.text = "\(calificacion!)%"
@@ -38,5 +41,11 @@ class inicioQuiz1ViewController: UIViewController {
         let segueName = segues[index]
         self.performSegue(withIdentifier: segueName, sender: self)
     }
+    
+    @IBAction func unwindStart(sender : UIStoryboardSegue) {
+        lbCalificacion.text = "\(calificacion)%"
+    }
+    
+    
    
 }

@@ -17,6 +17,7 @@ class Pregunta3ViewController: UIViewController {
     @IBOutlet var imageRespuestas: [UIImageView]!
     
     @IBOutlet weak var btSiguiente: UIButton!
+    @IBOutlet weak var btTerminar: UIButton!
     
     @IBOutlet var vista: UIView!
     
@@ -38,6 +39,7 @@ class Pregunta3ViewController: UIViewController {
     
     // MARK: - General
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         disableImage(boolean: false)
 
@@ -58,6 +60,11 @@ class Pregunta3ViewController: UIViewController {
         segueName = segues[indexSegue]
         
         disableNext(boolean: false)
+        
+        if numPregunta == 5 {
+            btSiguiente.isHidden = true
+            btTerminar.isHidden = false
+        }
     
         setPreguntas()
     }
@@ -243,39 +250,36 @@ class Pregunta3ViewController: UIViewController {
     
     func disableNext(boolean : Bool){
         btSiguiente.isEnabled = boolean
+        btTerminar.isEnabled = boolean
     }
     
     
     // MARK: - Navigation
 
     @IBAction func randomSegue(_ sender: Any) {
-        if numPregunta == 5 {
-            self.performSegue(withIdentifier: "inicio", sender: self)
-        }
-            
-        else {
+        if numPregunta != 5 {
             self.performSegue(withIdentifier: segueName, sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "inicio" {
-            let viewDestino = segue.destination as! inicioQuiz1ViewController
-            viewDestino.calificacion = preguntasCorrectas!
-        }
-            
-        else if( segue.identifier == "quiz1") {
+        if segue.identifier == "quiz1" {
             let viewDestino = segue.destination as! Pregunta1ViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
-        else {
+        else if segue.identifier == "quiz2" {
             let viewDestino = segue.destination as! Pregunta2ViewController
             viewDestino.preguntasCorrectas = preguntasCorrectas!
             viewDestino.numPregunta = numPregunta!
         }
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: UIButton?) {
+        
+        let viewDestino = segue.destination as! inicioQuiz1ViewController
+        print(preguntasCorrectas)
+        viewDestino.calificacion = preguntasCorrectas!
     }
 
 }
