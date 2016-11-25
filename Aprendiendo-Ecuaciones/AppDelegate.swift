@@ -10,12 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setStoryboard()
         return true
     }
 
@@ -40,6 +41,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+    //MARK: - Metods para varios storyboard
+    
+    func setStoryboard() {
+        let storyboard : UIStoryboard = self.grabStoryboard()
+        
+        self.setInitialScreen (storyboard)
+    }
+    
+    func grabStoryboard() -> UIStoryboard{
+        
+        let screenHeight = Int(UIScreen.main.bounds.size.height)
+        var storyboard : UIStoryboard
+        
+        switch screenHeight {
+        case 568:
+            storyboard = UIStoryboard(name: "MainIphone5", bundle: nil)
+            break;
+        case 667:
+            storyboard = UIStoryboard(name: "MainIphone6", bundle: nil)
+            break;
+            
+            
+        case 736:
+            storyboard = UIStoryboard(name: "MainIphone6Plus", bundle: nil)
+            break;
+        case 1024:
+            storyboard = UIStoryboard(name: "MainIpad", bundle: nil)
+            break;
+            
+        default:
+            storyboard = UIStoryboard(name: "MainIphone5", bundle: nil)
+            break;
+        }
+        return storyboard
+        
+    }
+    
+    
+    func setInitialScreen(_ storyboard : UIStoryboard){
+        var initViewController : UIViewController
+        
+        initViewController = storyboard.instantiateViewController(withIdentifier: "First")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        self.window?.rootViewController = initViewController
+        
+        self.window?.makeKeyAndVisible()
+        
+    }
+
 
 
 }

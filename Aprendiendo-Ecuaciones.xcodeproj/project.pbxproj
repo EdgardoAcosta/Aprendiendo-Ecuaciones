@@ -25,6 +25,10 @@
 		E84E28271DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E28261DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift */; };
 		E84E28291DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E28281DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift */; };
 		E84E282B1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */; };
+		E84E28341DE7F89900AD8F75 /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84E282C1DE7F89800AD8F75 /* MainIpad.storyboard */; };
+		E84E28351DE7F89900AD8F75 /* MainIphone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84E282E1DE7F89800AD8F75 /* MainIphone5.storyboard */; };
+		E84E28361DE7F89900AD8F75 /* MainIphone6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84E28301DE7F89900AD8F75 /* MainIphone6.storyboard */; };
+		E84E28371DE7F89900AD8F75 /* MainIphone6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84E28321DE7F89900AD8F75 /* MainIphone6Plus.storyboard */; };
 		E85F5E941DE6410700EB3554 /* iniciarQuiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */; };
 		E85F5E961DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */; };
 		E85F5E981DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */; };
@@ -90,6 +94,10 @@
 		E84E28261DE7B35B00AD8F75 /* Pregunta1radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1radicalesViewController.swift; sourceTree = "<group>"; };
 		E84E28281DE7B36800AD8F75 /* Pregunta2radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2radicalesViewController.swift; sourceTree = "<group>"; };
 		E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta3radicalesViewController.swift; sourceTree = "<group>"; };
+		E84E282D1DE7F89800AD8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIpad.storyboard; sourceTree = "<group>"; };
+		E84E282F1DE7F89800AD8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIphone5.storyboard; sourceTree = "<group>"; };
+		E84E28311DE7F89900AD8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIphone6.storyboard; sourceTree = "<group>"; };
+		E84E28331DE7F89900AD8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIphone6Plus.storyboard; sourceTree = "<group>"; };
 		E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciarQuiz3ViewController.swift; sourceTree = "<group>"; };
 		E85F5E951DE6418F00EB3554 /* Pregunta1ExponencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta1ExponencialViewController.swift; sourceTree = "<group>"; };
 		E85F5E971DE6419E00EB3554 /* Pregunta2ExponencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregunta2ExponencialViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 		E8333A181DB8483A00DF0ACF /* Aprendiendo-Ecuaciones */ = {
 			isa = PBXGroup;
 			children = (
+				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
 				E8333A191DB8483A00DF0ACF /* AppDelegate.swift */,
 				E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */,
 				E8F2827B1DB8861F005CFE6E /* PolinomialesTableViewController.swift */,
@@ -192,11 +201,14 @@
 				E8B4E07D1DDA46210016A716 /* Pregunta.swift */,
 				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
 				E8F2827F1DB8866F005CFE6E /* ExponencialesTableViewController.swift */,
-				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
 				E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */,
 				E85F5E931DE6410700EB3554 /* iniciarQuiz3ViewController.swift */,
 				E88114F61DE6A2BC00B2C8C9 /* iniciarQuiz2ViewController.swift */,
 				E88114F81DE6A46900B2C8C9 /* Pregunta1LogaritmicaViewController.swift */,
+				E84E282C1DE7F89800AD8F75 /* MainIpad.storyboard */,
+				E84E282E1DE7F89800AD8F75 /* MainIphone5.storyboard */,
+				E84E28301DE7F89900AD8F75 /* MainIphone6.storyboard */,
+				E84E28321DE7F89900AD8F75 /* MainIphone6Plus.storyboard */,
 				E87CD1CE1DDE346900F13103 /* Pregunta2ViewController.swift */,
 				E84E282A1DE7B37600AD8F75 /* Pregunta3radicalesViewController.swift */,
 				E84E28241DE7AB4A00AD8F75 /* iniciarQuiz4ViewController.swift */,
@@ -354,7 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */,
+				E84E28341DE7F89900AD8F75 /* MainIpad.storyboard in Resources */,
+				E84E28371DE7F89900AD8F75 /* MainIphone6Plus.storyboard in Resources */,
 				E8333A231DB8483A00DF0ACF /* Assets.xcassets in Resources */,
+				E84E28361DE7F89900AD8F75 /* MainIphone6.storyboard in Resources */,
+				E84E28351DE7F89900AD8F75 /* MainIphone5.storyboard in Resources */,
 				E8333A211DB8483A00DF0ACF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +609,38 @@
 				E8333A251DB8483A00DF0ACF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E84E282C1DE7F89800AD8F75 /* MainIpad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84E282D1DE7F89800AD8F75 /* Base */,
+			);
+			name = MainIpad.storyboard;
+			sourceTree = "<group>";
+		};
+		E84E282E1DE7F89800AD8F75 /* MainIphone5.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84E282F1DE7F89800AD8F75 /* Base */,
+			);
+			name = MainIphone5.storyboard;
+			sourceTree = "<group>";
+		};
+		E84E28301DE7F89900AD8F75 /* MainIphone6.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84E28311DE7F89900AD8F75 /* Base */,
+			);
+			name = MainIphone6.storyboard;
+			sourceTree = "<group>";
+		};
+		E84E28321DE7F89900AD8F75 /* MainIphone6Plus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84E28331DE7F89900AD8F75 /* Base */,
+			);
+			name = MainIphone6Plus.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
