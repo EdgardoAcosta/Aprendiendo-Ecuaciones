@@ -326,6 +326,7 @@
 				TargetAttributes = {
 					E8333A151DB8483A00DF0ACF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HTCBUUDVD2;
 						ProvisioningStyle = Automatic;
 					};
 					E8333A2B1DB8483B00DF0ACF = {
@@ -742,6 +743,7 @@
 			baseConfigurationReference = 48A7163F92954C0F649A0B38 /* Pods-Aprendiendo-Ecuaciones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTCBUUDVD2;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edgardoacosta.Aprendiendo-Ecuaciones";
@@ -756,6 +758,7 @@
 			baseConfigurationReference = 313A3CBEC3F3A6D59371F330 /* Pods-Aprendiendo-Ecuaciones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTCBUUDVD2;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edgardoacosta.Aprendiendo-Ecuaciones";
