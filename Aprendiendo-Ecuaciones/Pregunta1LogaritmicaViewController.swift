@@ -60,6 +60,10 @@ class Pregunta1LogaritmicaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //KVNProgress.configuration().minimumDisplayTime = 0.2
+        
+        
         if numPregunta != nil {
             numPregunta = numPregunta + 1
         }
@@ -263,6 +267,7 @@ class Pregunta1LogaritmicaViewController: UIViewController {
         arregloImagenes[3].alpha = 0.4
         
         if respuestas[3].posicionRespuesta == respuesta {
+           
             KVNProgress.show(withStatus: "", on: vista)
             KVNProgress.showSuccess()
             

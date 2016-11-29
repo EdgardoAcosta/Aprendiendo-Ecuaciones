@@ -45,6 +45,8 @@ class Pregunta3LogaritmicaViewController: UIViewController {
     // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
+        //KVNProgress.configuration().minimumDisplayTime = 0.2
+
         //btSiguiente.isEnabled = false
         disableImage(boolean: false)
         

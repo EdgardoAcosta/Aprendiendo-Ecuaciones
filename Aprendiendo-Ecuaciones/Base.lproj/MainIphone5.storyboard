@@ -510,22 +510,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eie-X5-1l3">
-                                <rect key="frame" x="16" y="192" width="295" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">-Su gráfica es una línea recta
--Signo de “b” provoca un movimiento vertical
--Signo de “m” provoca que la función sea creciente, decreciente o constante
--La gráfica cruza al eje “y” en el punto (0,b), que es uno de los valores al origen
-La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al origen, es decir si y=0 entonces el valor de x es la solución de la ecuación
-                                         0=mx + b
-                                        -b=mx
-                                          x=-b / m
--La pendiente de esta recta es m
--Los extremos de su gráfica van en sentidos opuestos</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZA7-OT-Cdr">
                                 <rect key="frame" x="67" y="-26" width="228" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -563,6 +547,22 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <rect key="frame" x="35" y="399" width="276" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eie-X5-1l3">
+                                <rect key="frame" x="13" y="192" width="295" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">-Su gráfica es una línea recta
+-Signo de “b” provoca un movimiento vertical
+-Signo de “m” provoca que la función sea creciente, decreciente o constante
+-La gráfica cruza al eje “y” en el punto (0,b), que es uno de los valores al origen
+La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al origen, es decir si y=0 entonces el valor de x es la solución de la ecuación
+                                         0=mx + b
+                                        -b=mx
+                                          x=-b / m
+-La pendiente de esta recta es m
+-Los extremos de su gráfica van en sentidos opuestos</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -921,20 +921,20 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
-                                <rect key="frame" x="157" y="598" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Terminar"/>
-                                <connections>
-                                    <segue destination="Tpp-Cs-776" kind="unwind" unwindAction="unwindStartWithSender:" id="CD5-Ih-yvf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ld-N4-31p">
-                                <rect key="frame" x="121" y="518" width="78" height="30"/>
+                                <rect key="frame" x="121" y="486" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente &gt;"/>
                                 <connections>
                                     <action selector="randomSegue:" destination="3BJ-sZ-xya" eventType="touchUpInside" id="1QR-xh-TCT"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
+                                <rect key="frame" x="130" y="516" width="61" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Terminar"/>
+                                <connections>
+                                    <segue destination="Tpp-Cs-776" kind="unwind" unwindAction="unwindStartWithSender:" id="CD5-Ih-yvf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1072,16 +1072,8 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="8iF-u2-deU" appends="YES" id="YTJ-mL-w2B"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDY-dj-WYp">
-                                <rect key="frame" x="121" y="518" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Siguiente &gt;"/>
-                                <connections>
-                                    <action selector="randomSegue:" destination="Kzv-Fn-Ooc" eventType="touchUpInside" id="3lV-o3-QA3"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
-                                <rect key="frame" x="157" y="603" width="61" height="30"/>
+                                <rect key="frame" x="130" y="517" width="61" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
                                 <connections>
@@ -1095,6 +1087,14 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDY-dj-WYp">
+                                <rect key="frame" x="122" y="489" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siguiente &gt;"/>
+                                <connections>
+                                    <action selector="randomSegue:" destination="Kzv-Fn-Ooc" eventType="touchUpInside" id="3lV-o3-QA3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1158,7 +1158,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-3610" y="71"/>
+            <point key="canvasLocation" x="-3611.25" y="70.774647887323951"/>
         </scene>
         <!--Pregunta2 View Controller-->
         <scene sceneID="MP6-RO-9ZH">
@@ -1221,7 +1221,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </connections>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
-                                <rect key="frame" x="164" y="599" width="61" height="30"/>
+                                <rect key="frame" x="130" y="518" width="61" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
                                 <connections>
@@ -1229,7 +1229,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdL-ru-u0W">
-                                <rect key="frame" x="121" y="518" width="78" height="30"/>
+                                <rect key="frame" x="121" y="500" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente &gt;"/>
                                 <connections>
@@ -2757,22 +2757,22 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jMr-cA-tv2"/>
-        <segue reference="0Fz-Us-0CR"/>
-        <segue reference="eLQ-0I-PYs"/>
-        <segue reference="Zsf-4W-k2u"/>
-        <segue reference="6sz-5G-dHT"/>
-        <segue reference="eDm-4b-BMq"/>
+        <segue reference="xOX-G4-6je"/>
         <segue reference="bnT-G2-a74"/>
         <segue reference="RxW-R2-yR0"/>
-        <segue reference="xOX-G4-6je"/>
-        <segue reference="9Si-SY-ZOy"/>
-        <segue reference="MZ7-pS-Spo"/>
-        <segue reference="1RG-Fp-5Er"/>
+        <segue reference="eDm-4b-BMq"/>
         <segue reference="Cgo-oB-pns"/>
-        <segue reference="2y7-sY-B7n"/>
+        <segue reference="MZ7-pS-Spo"/>
+        <segue reference="9Si-SY-ZOy"/>
+        <segue reference="1RG-Fp-5Er"/>
+        <segue reference="GBG-Fl-3RD"/>
         <segue reference="OeJ-JC-v4x"/>
         <segue reference="VHk-sW-P0m"/>
-        <segue reference="GBG-Fl-3RD"/>
+        <segue reference="2y7-sY-B7n"/>
+        <segue reference="RQD-Xu-na5"/>
+        <segue reference="JuJ-nQ-3XP"/>
+        <segue reference="2mA-XG-egq"/>
+        <segue reference="MH2-vl-ECA"/>
+        <segue reference="jMr-cA-tv2"/>
     </inferredMetricsTieBreakers>
 </document>

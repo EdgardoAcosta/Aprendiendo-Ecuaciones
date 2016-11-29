@@ -57,6 +57,8 @@ class Pregunta2LogaritmicaViewController: UIViewController {
     // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
+        //KVNProgress.configuration().minimumDisplayTime = 0.2
+
         if numPregunta != nil {
             numPregunta = numPregunta + 1
         }

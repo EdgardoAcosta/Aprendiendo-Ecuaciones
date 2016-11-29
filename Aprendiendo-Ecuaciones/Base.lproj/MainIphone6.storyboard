@@ -572,7 +572,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             </objects>
             <point key="canvasLocation" x="-2567.1999999999998" y="-711.09445277361328"/>
         </scene>
-        <!--Creditos View Controller-->
+        <!--Creditos-->
         <scene sceneID="KTQ-AF-hia">
             <objects>
                 <viewController id="z6e-C5-SCh" customClass="creditosViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
@@ -602,12 +602,19 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Creditos" id="O48-rf-7BH">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="hsv-Em-vMB">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="showDetail" id="TGn-D5-PPT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDz-4A-817" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186.40000000000001" y="895.50224887556226"/>
+            <point key="canvasLocation" x="-58" y="858"/>
         </scene>
-        <!--Instrucciones View Controller-->
+        <!--Manual de usuario-->
         <scene sceneID="hwS-O9-nEj">
             <objects>
                 <viewController id="K5m-Pd-6Zk" customClass="instruccionesViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
@@ -618,12 +625,29 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     <view key="view" contentMode="scaleToFill" id="cjC-cE-Jau">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-FG-Qqo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Manual de usuario" id="hsG-nI-WE4">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="QKB-YB-UZN">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="Hdi-v8-rmc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfView" destination="MBu-FG-Qqo" id="3GX-ue-F5X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZa-8H-3Ed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="1306"/>
+            <point key="canvasLocation" x="-84" y="-12"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="oOm-98-m2y">
@@ -666,12 +690,12 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                             <navigationItem title="Menu" id="AnH-EE-tEa">
                                                 <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="Kev-iO-8p0">
                                                     <connections>
-                                                        <segue destination="K5m-Pd-6Zk" kind="presentation" id="1eM-jU-Ceg"/>
+                                                        <segue destination="2WY-gA-3yA" kind="presentation" id="1eM-jU-Ceg"/>
                                                     </connections>
                                                 </barButtonItem>
                                                 <barButtonItem key="rightBarButtonItem" systemItem="compose" id="vZq-NY-KNb">
                                                     <connections>
-                                                        <segue destination="z6e-C5-SCh" kind="presentation" id="JZa-zJ-pWJ"/>
+                                                        <segue destination="4Ht-9Q-zBu" kind="presentation" id="JZa-zJ-pWJ"/>
                                                     </connections>
                                                 </barButtonItem>
                                             </navigationItem>
@@ -1000,7 +1024,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
                                 <rect key="frame" x="157" y="586" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1158,7 +1182,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="Kzv-Fn-Ooc" eventType="touchUpInside" id="3lV-o3-QA3"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
                                 <rect key="frame" x="157" y="609" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1299,7 +1323,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="G9T-Za-kPW" appends="YES" id="122-Uz-hYw"/>
                                 </connections>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
                                 <rect key="frame" x="157" y="587" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1354,7 +1378,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GCM-UO-xVF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YNR-gF-fB6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YNR-gF-fB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1454,7 +1478,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-4T-W8X">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-4T-W8X">
                                 <rect key="frame" x="157" y="597" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1507,7 +1531,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8832.7999999999993" y="1052.9235382308846"/>
+            <point key="canvasLocation" x="10711.200000000001" y="1052.9235382308846"/>
         </scene>
         <!--Pregunta3 Exponencial View Controller-->
         <scene sceneID="wgN-Lb-k1d">
@@ -1612,7 +1636,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="g0O-0Y-6ho" eventType="touchUpInside" id="YO9-bX-rwF"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPh-xg-zR3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPh-xg-zR3">
                                 <rect key="frame" x="157" y="598" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1753,7 +1777,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="hRE-sp-B6b" appends="YES" id="pOB-Gy-PDf"/>
                                 </connections>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-v0-uJS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-v0-uJS">
                                 <rect key="frame" x="157" y="592" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1894,7 +1918,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EhJ-nz-GiZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tB8-31-tEx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tB8-31-tEx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1912,7 +1936,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eaW-wA-BWg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6M-Z8-j5J">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q6M-Z8-j5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2012,7 +2036,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-gv-CYb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-gv-CYb">
                                 <rect key="frame" x="157" y="599" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2241,7 +2265,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4764" y="124"/>
+            <point key="canvasLocation" x="6642.3999999999996" y="123.68815592203899"/>
         </scene>
         <!--Pregunta2 Logaritmica View Controller-->
         <scene sceneID="o92-hm-1h7">
@@ -2311,7 +2335,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="urL-vu-Q7g" appends="YES" id="ybG-0k-956"/>
                                 </connections>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-Lz-gBl">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-Lz-gBl">
                                 <rect key="frame" x="164" y="586" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2366,7 +2390,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9va-8p-ahB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="irR-3Y-tPV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="irR-3Y-tPV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2815,6 +2839,42 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             </objects>
             <point key="canvasLocation" x="-1559.2" y="2793.5532233883059"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rsj-KH-tAb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2WY-gA-3yA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lhc-pj-jHT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K5m-Pd-6Zk" kind="relationship" relationship="rootViewController" id="jxj-Zp-1hu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXU-Vy-D5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="-131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kmc-Du-OHZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Ht-9Q-zBu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1xT-8L-538">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z6e-C5-SCh" kind="relationship" relationship="rootViewController" id="jnG-Fy-l91"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IT7-rC-JLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583.20000000000005" y="523.98800599700155"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cuadratica1" width="753" height="534"/>
@@ -2828,22 +2888,22 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sle-ib-yka"/>
-        <segue reference="Pvt-zm-uic"/>
-        <segue reference="0vA-mt-9f9"/>
-        <segue reference="9B6-V3-HzX"/>
-        <segue reference="8OM-L2-l9v"/>
-        <segue reference="CmU-yO-8CQ"/>
-        <segue reference="Ubi-DC-cSe"/>
-        <segue reference="zwl-94-6lY"/>
+        <segue reference="Hdi-v8-rmc"/>
+        <segue reference="eDm-4b-BMq"/>
         <segue reference="I20-y5-eeR"/>
-        <segue reference="Jrn-xI-16i"/>
-        <segue reference="MH2-vl-ECA"/>
+        <segue reference="RxW-R2-yR0"/>
+        <segue reference="xOX-G4-6je"/>
+        <segue reference="RQD-Xu-na5"/>
         <segue reference="NkS-Lf-KiT"/>
-        <segue reference="0Fz-Us-0CR"/>
+        <segue reference="MH2-vl-ECA"/>
+        <segue reference="2mA-XG-egq"/>
+        <segue reference="xCI-f2-o5P"/>
         <segue reference="1RG-Fp-5Er"/>
         <segue reference="KfS-Gt-EjA"/>
-        <segue reference="xCI-f2-o5P"/>
         <segue reference="ukw-LQ-t03"/>
+        <segue reference="GBG-Fl-3RD"/>
+        <segue reference="OeJ-JC-v4x"/>
+        <segue reference="VHk-sW-P0m"/>
+        <segue reference="2y7-sY-B7n"/>
     </inferredMetricsTieBreakers>
 </document>

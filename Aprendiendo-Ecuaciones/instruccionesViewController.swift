@@ -9,19 +9,26 @@
 import UIKit
 
 class instruccionesViewController: UIViewController {
+    
+    
+    @IBOutlet weak var pdfView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let url = Bundle.main.url(forResource: "Alice_In_Wonderland", withExtension: "pdf")
         
-        if let url = url {
-            let webView = UIWebView(frame: self.view.frame)
-            let urlRequest = NSURLRequest(url: url)
-            webView.loadRequest(urlRequest as URLRequest)
+        //MOSTRAR PDF
+        /*
+        if let pdf = Bundle.main.url(forResource: "myPDF", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+            let req = NSURLRequest(url: pdf)
+            let webView = UIWebView(frame: CGRect(x: 10, y: 10, width: 200, height: 200))
             
-            view.addSubview(webView)
-    }
+            
+            webView.loadRequest(req as URLRequest)
+            self.view.addSubview(webView)
+            
+ 
+        }
+         */
     }
 
     override func didReceiveMemoryWarning() {
