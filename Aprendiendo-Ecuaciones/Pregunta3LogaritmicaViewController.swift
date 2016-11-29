@@ -267,6 +267,8 @@ class Pregunta3LogaritmicaViewController: UIViewController {
     func disableLabel()  {
         for i in 0...3 {
             lbPreguntas[i].isEnabled = false
+            lbPreguntas[i].isUserInteractionEnabled = false
+
         }
     }
     
