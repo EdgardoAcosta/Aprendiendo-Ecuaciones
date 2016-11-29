@@ -572,6 +572,59 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             </objects>
             <point key="canvasLocation" x="-2567.1999999999998" y="-711.09445277361328"/>
         </scene>
+        <!--Creditos View Controller-->
+        <scene sceneID="KTQ-AF-hia">
+            <objects>
+                <viewController id="z6e-C5-SCh" customClass="creditosViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a5T-5M-4N1"/>
+                        <viewControllerLayoutGuide type="bottom" id="LDY-HE-slg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A98-7K-RgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creditos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyS-1l-Blm">
+                                <rect key="frame" x="155" y="28" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1TY-Po-WMN">
+                                <rect key="frame" x="16" y="97" width="343" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">El desarrollo de esta aplicacion fue realizada por los alumnos de la clase de Aplicaciones Moviles del Tecnologico de Monterrey Campus Monterrey por los alumnos:  Julio Aguilar A00 y Edgardo Acosta A00. Con ayuda de Sofia Mendoza en la parte del diseño                               </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDz-4A-817" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186.40000000000001" y="895.50224887556226"/>
+        </scene>
+        <!--Instrucciones View Controller-->
+        <scene sceneID="hwS-O9-nEj">
+            <objects>
+                <viewController id="K5m-Pd-6Zk" customClass="instruccionesViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRb-ql-OiK"/>
+                        <viewControllerLayoutGuide type="bottom" id="fOi-kR-iav"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjC-cE-Jau">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZa-8H-3Ed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="1306"/>
+        </scene>
         <!--Initial View Controller-->
         <scene sceneID="oOm-98-m2y">
             <objects>
@@ -585,7 +638,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Tz-iaK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
@@ -593,24 +646,42 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
-                                        <rect key="frame" x="139" y="23" width="96" height="20.5"/>
+                                        <rect key="frame" x="139" y="35" width="96" height="20.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
-                                        <rect key="frame" x="0.0" y="14.5" width="367" height="135.5"/>
+                                        <rect key="frame" x="0.0" y="35" width="367" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="GCM-UO-xVF" kind="presentation" id="3vX-J2-LrV"/>
                                         </connections>
                                     </button>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkZ-J5-ngp">
+                                        <rect key="frame" x="0.0" y="-9" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem title="Menu" id="AnH-EE-tEa">
+                                                <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="Kev-iO-8p0">
+                                                    <connections>
+                                                        <segue destination="K5m-Pd-6Zk" kind="presentation" id="1eM-jU-Ceg"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" systemItem="compose" id="vZq-NY-KNb">
+                                                    <connections>
+                                                        <segue destination="z6e-C5-SCh" kind="presentation" id="JZa-zJ-pWJ"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
                                 </subviews>
                                 <color key="backgroundColor" red="0.53934360560000005" green="1" blue="0.52470946969999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-96-5oG">
-                                <rect key="frame" x="0.0" y="493" width="375" height="174"/>
+                                <rect key="frame" x="0.0" y="520" width="375" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-wm-KbI">
@@ -635,7 +706,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="1" green="0.25487169980000002" blue="0.31627548220000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4a-v8-blC">
-                                <rect key="frame" x="0.0" y="150" width="375" height="172"/>
+                                <rect key="frame" x="0.0" y="179" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-mI-BE8">
@@ -660,7 +731,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <color key="backgroundColor" red="0.60368474920000004" green="0.989730679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-Hg-X9I">
-                                <rect key="frame" x="0.0" y="321" width="375" height="172"/>
+                                <rect key="frame" x="0.0" y="349" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0M-HQ-lPq">
@@ -696,7 +767,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD5-yb-Ore" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="1178.8605697151424"/>
+            <point key="canvasLocation" x="1674.4000000000001" y="1181.5592203898052"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U0P-wm-ouI">
@@ -2757,22 +2828,22 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CmU-yO-8CQ"/>
-        <segue reference="Ubi-DC-cSe"/>
-        <segue reference="zwl-94-6lY"/>
-        <segue reference="I20-y5-eeR"/>
         <segue reference="sle-ib-yka"/>
         <segue reference="Pvt-zm-uic"/>
         <segue reference="0vA-mt-9f9"/>
         <segue reference="9B6-V3-HzX"/>
-        <segue reference="jMr-cA-tv2"/>
-        <segue reference="0Fz-Us-0CR"/>
+        <segue reference="8OM-L2-l9v"/>
+        <segue reference="CmU-yO-8CQ"/>
+        <segue reference="Ubi-DC-cSe"/>
+        <segue reference="zwl-94-6lY"/>
+        <segue reference="I20-y5-eeR"/>
+        <segue reference="Jrn-xI-16i"/>
         <segue reference="MH2-vl-ECA"/>
         <segue reference="NkS-Lf-KiT"/>
-        <segue reference="Jrn-xI-16i"/>
-        <segue reference="xCI-f2-o5P"/>
+        <segue reference="0Fz-Us-0CR"/>
         <segue reference="1RG-Fp-5Er"/>
         <segue reference="KfS-Gt-EjA"/>
+        <segue reference="xCI-f2-o5P"/>
         <segue reference="ukw-LQ-t03"/>
     </inferredMetricsTieBreakers>
 </document>
