@@ -612,7 +612,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDz-4A-817" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="858"/>
+            <point key="canvasLocation" x="-758" y="567"/>
         </scene>
         <!--Manual de usuario-->
         <scene sceneID="hwS-O9-nEj">
@@ -647,7 +647,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZa-8H-3Ed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="-12"/>
+            <point key="canvasLocation" x="-297" y="-54"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="oOm-98-m2y">
@@ -791,7 +791,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD5-yb-Ore" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674.4000000000001" y="1181.5592203898052"/>
+            <point key="canvasLocation" x="2588" y="966"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U0P-wm-ouI">
@@ -1378,7 +1378,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GCM-UO-xVF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YNR-gF-fB6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YNR-gF-fB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1918,7 +1918,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EhJ-nz-GiZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tB8-31-tEx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tB8-31-tEx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1936,7 +1936,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eaW-wA-BWg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q6M-Z8-j5J">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6M-Z8-j5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2390,7 +2390,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9va-8p-ahB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="irR-3Y-tPV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="irR-3Y-tPV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2844,7 +2844,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2WY-gA-3yA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lhc-pj-jHT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lhc-pj-jHT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2855,14 +2855,14 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXU-Vy-D5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="-131"/>
+            <point key="canvasLocation" x="310" y="208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kmc-Du-OHZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Ht-9Q-zBu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1xT-8L-538">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1xT-8L-538">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2873,7 +2873,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IT7-rC-JLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583.20000000000005" y="523.98800599700155"/>
+            <point key="canvasLocation" x="-1281" y="234"/>
         </scene>
     </scenes>
     <resources>
@@ -2889,21 +2889,21 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Hdi-v8-rmc"/>
-        <segue reference="eDm-4b-BMq"/>
-        <segue reference="I20-y5-eeR"/>
+        <segue reference="bnT-G2-a74"/>
         <segue reference="RxW-R2-yR0"/>
+        <segue reference="eDm-4b-BMq"/>
         <segue reference="xOX-G4-6je"/>
-        <segue reference="RQD-Xu-na5"/>
-        <segue reference="NkS-Lf-KiT"/>
+        <segue reference="0Fz-Us-0CR"/>
         <segue reference="MH2-vl-ECA"/>
-        <segue reference="2mA-XG-egq"/>
+        <segue reference="NkS-Lf-KiT"/>
+        <segue reference="Jrn-xI-16i"/>
         <segue reference="xCI-f2-o5P"/>
         <segue reference="1RG-Fp-5Er"/>
         <segue reference="KfS-Gt-EjA"/>
         <segue reference="ukw-LQ-t03"/>
-        <segue reference="GBG-Fl-3RD"/>
-        <segue reference="OeJ-JC-v4x"/>
-        <segue reference="VHk-sW-P0m"/>
-        <segue reference="2y7-sY-B7n"/>
+        <segue reference="sle-ib-yka"/>
+        <segue reference="Pvt-zm-uic"/>
+        <segue reference="0vA-mt-9f9"/>
+        <segue reference="9B6-V3-HzX"/>
     </inferredMetricsTieBreakers>
 </document>

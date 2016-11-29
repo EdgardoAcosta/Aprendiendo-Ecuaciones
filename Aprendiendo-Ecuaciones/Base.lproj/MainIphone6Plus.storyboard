@@ -585,27 +585,45 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Tz-iaK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-h8-f8S">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
-                                        <rect key="frame" x="155" y="21" width="104" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-lG-JIt">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="GCM-UO-xVF" kind="presentation" id="3vX-J2-LrV"/>
                                         </connections>
                                     </button>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1M-Il-RHa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem title="Menu" id="YLB-gy-B84">
+                                                <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="pV7-mg-DUy">
+                                                    <connections>
+                                                        <segue destination="4NK-eS-h7n" kind="presentation" id="dal-IZ-W21"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" systemItem="search" id="Har-ob-z0f">
+                                                    <connections>
+                                                        <segue destination="sew-GX-T3X" kind="presentation" id="Dzn-h4-BKW"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Polinomiales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-yf-PC3">
+                                        <rect key="frame" x="155" y="44" width="104" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.53934360560000005" green="1" blue="0.52470946969999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -899,14 +917,6 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
-                                <rect key="frame" x="177" y="644" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Terminar"/>
-                                <connections>
-                                    <segue destination="Tpp-Cs-776" kind="unwind" unwindAction="unwindStartWithSender:" id="CD5-Ih-yvf"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2od-TP-yIQ">
                                 <rect key="frame" x="44" y="340" width="153" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -937,6 +947,14 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-d3-APW">
+                                <rect key="frame" x="177" y="644" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Terminar"/>
+                                <connections>
+                                    <segue destination="Tpp-Cs-776" kind="unwind" unwindAction="unwindStartWithSender:" id="CD5-Ih-yvf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1009,14 +1027,6 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <state key="normal" title="Siguiente &gt;"/>
                                 <connections>
                                     <action selector="randomSegue:" destination="Kzv-Fn-Ooc" eventType="touchUpInside" id="3lV-o3-QA3"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
-                                <rect key="frame" x="178" y="663" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Terminar"/>
-                                <connections>
-                                    <segue destination="JRG-Yb-6R0" kind="unwind" unwindAction="unwindStartWithSender:" id="Is7-aL-aKl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-1i-CNw">
@@ -1095,6 +1105,14 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="8iF-u2-deU" appends="YES" id="YTJ-mL-w2B"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-yS-MaX">
+                                <rect key="frame" x="177" y="663" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Terminar"/>
+                                <connections>
+                                    <segue destination="JRG-Yb-6R0" kind="unwind" unwindAction="unwindStartWithSender:" id="Is7-aL-aKl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1228,7 +1246,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="G9T-Za-kPW" appends="YES" id="122-Uz-hYw"/>
                                 </connections>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-O7-bCc">
                                 <rect key="frame" x="177" y="647" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1383,7 +1401,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="j4h-tv-JgP" eventType="touchUpInside" id="onl-cF-Ubd"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-4T-W8X">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-4T-W8X">
                                 <rect key="frame" x="177" y="607" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1541,7 +1559,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="g0O-0Y-6ho" eventType="touchUpInside" id="YO9-bX-rwF"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPh-xg-zR3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPh-xg-zR3">
                                 <rect key="frame" x="177" y="650" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1682,7 +1700,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="ovI-hV-I0P" eventType="touchUpInside" id="9kZ-bU-CVS"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-v0-uJS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-v0-uJS">
                                 <rect key="frame" x="177" y="624" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -1911,7 +1929,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-gv-CYb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-gv-CYb">
                                 <rect key="frame" x="177" y="637" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2232,7 +2250,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <outletCollection property="gestureRecognizers" destination="urL-vu-Q7g" appends="YES" id="ybG-0k-956"/>
                                 </connections>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-Lz-gBl">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-Lz-gBl">
                                 <rect key="frame" x="177" y="664" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2365,7 +2383,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69V-je-arc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69V-je-arc">
                                 <rect key="frame" x="177" y="614" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2545,7 +2563,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="rVA-47-LZ2" eventType="touchUpInside" id="Hif-Do-fdn"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPu-gE-NWI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPu-gE-NWI">
                                 <rect key="frame" x="177" y="635" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2650,7 +2668,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                     <action selector="randomSegue:" destination="B7C-6k-HEE" eventType="touchUpInside" id="Cz1-iI-tT0"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE2-cy-Wmg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE2-cy-Wmg">
                                 <rect key="frame" x="177" y="596" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Terminar"/>
@@ -2744,6 +2762,119 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
             </objects>
             <point key="canvasLocation" x="-1559.4202898550725" y="2793.75"/>
         </scene>
+        <!--Creditos-->
+        <scene sceneID="oI4-X0-t56">
+            <objects>
+                <viewController id="N4x-Ty-ULm" customClass="creditosViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fd0-5q-G1U"/>
+                        <viewControllerLayoutGuide type="bottom" id="tdf-7W-7Ut"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YPr-um-vBq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creditos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbF-TL-JfJ">
+                                <rect key="frame" x="155" y="28" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SaP-cb-41G">
+                                <rect key="frame" x="16" y="97" width="378" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">El desarrollo de esta aplicacion fue realizada por los alumnos de la clase de Aplicaciones Moviles del Tecnologico de Monterrey Campus Monterrey por los alumnos:  Julio Aguilar A00 y Edgardo Acosta A00. Con ayuda de Sofia Mendoza en la parte del diseño                               </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Creditos" id="cN4-rD-Bnw">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="Fkc-j1-gke">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="dhY-Nh-js4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LK1-yD-UQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="340"/>
+        </scene>
+        <!--Manual de usuario-->
+        <scene sceneID="IpN-h4-C3T">
+            <objects>
+                <viewController id="7Fp-Dj-dwV" customClass="instruccionesViewController" customModule="Aprendiendo_Ecuaciones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LrI-zC-Bgn"/>
+                        <viewControllerLayoutGuide type="bottom" id="bFS-1O-uAF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdq-7t-hs1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUa-CZ-bCy">
+                                <rect key="frame" x="20" y="64" width="374" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Manual de usuario" id="Oho-F2-s43">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="5e6-cm-NXC">
+                            <connections>
+                                <segue destination="uOZ-i0-7Eb" kind="presentation" id="JH5-b5-yhm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfView" destination="PUa-CZ-bCy" id="Luc-sc-rZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ely-tK-IKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="-414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="74s-v4-2bF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4NK-eS-h7n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3S-p6-3Em">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Fp-Dj-dwV" kind="relationship" relationship="rootViewController" id="EUi-si-uDg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jq9-FC-21B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-457"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ueq-g2-a8h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sew-GX-T3X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tEf-mq-Qyb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N4x-Ty-ULm" kind="relationship" relationship="rootViewController" id="zm9-y1-G6I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vl-eu-c4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="633"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cuadratica1" width="753" height="534"/>
@@ -2757,22 +2888,22 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
         <image name="radical1" width="542" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sle-ib-yka"/>
-        <segue reference="Pvt-zm-uic"/>
-        <segue reference="0vA-mt-9f9"/>
-        <segue reference="9B6-V3-HzX"/>
-        <segue reference="I20-y5-eeR"/>
-        <segue reference="eDm-4b-BMq"/>
-        <segue reference="zwl-94-6lY"/>
-        <segue reference="CmU-yO-8CQ"/>
-        <segue reference="Fp5-E3-Ixg"/>
-        <segue reference="xCI-f2-o5P"/>
-        <segue reference="T0w-UO-zwk"/>
-        <segue reference="ukw-LQ-t03"/>
-        <segue reference="KfS-Gt-EjA"/>
-        <segue reference="ikl-xo-xux"/>
-        <segue reference="Jrn-xI-16i"/>
+        <segue reference="0Fz-Us-0CR"/>
         <segue reference="Kwb-nJ-seU"/>
-        <segue reference="JuJ-nQ-3XP"/>
+        <segue reference="Jrn-xI-16i"/>
+        <segue reference="NkS-Lf-KiT"/>
+        <segue reference="xOX-G4-6je"/>
+        <segue reference="bnT-G2-a74"/>
+        <segue reference="RxW-R2-yR0"/>
+        <segue reference="eDm-4b-BMq"/>
+        <segue reference="GBG-Fl-3RD"/>
+        <segue reference="OeJ-JC-v4x"/>
+        <segue reference="VHk-sW-P0m"/>
+        <segue reference="2y7-sY-B7n"/>
+        <segue reference="dhY-Nh-js4"/>
+        <segue reference="Cgo-oB-pns"/>
+        <segue reference="KfS-Gt-EjA"/>
+        <segue reference="1RG-Fp-5Er"/>
+        <segue reference="9Si-SY-ZOy"/>
     </inferredMetricsTieBreakers>
 </document>
