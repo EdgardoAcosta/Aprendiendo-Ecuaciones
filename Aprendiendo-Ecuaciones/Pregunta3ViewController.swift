@@ -23,7 +23,7 @@ class Pregunta3ViewController: UIViewController {
     
     var preguntas : [Pregunta]! = []
     
-    var arregloImagenes : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
+    var arregloImagenes : [UIImage] = [UIImage(named: "p1")!,UIImage(named: "p2")!,UIImage(named: "p3")!,UIImage(named: "p4")!,UIImage(named: "p5")!,UIImage(named: "p6")!,UIImage(named: "p7")!,UIImage(named: "p8")!]
     
 
     let segues = ["quiz1", "quiz2"]

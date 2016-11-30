@@ -21,7 +21,7 @@ class Pregunta1ViewController: UIViewController {
     
     //Arreglo que contiene el pool de imagenes
     //Todas las psoibles respuestas que se relacionan a ecuaciones
-    var arregloRespuestas : [UIImage] = [UIImage(named: "r1")!,UIImage(named: "r2")!,UIImage(named: "r3")!,UIImage(named: "r4")!,UIImage(named: "r5")!,UIImage(named: "r6")!,UIImage(named: "r7")!,UIImage(named: "r8")!]
+    var arregloRespuestas : [UIImage] = [UIImage(named: "p1")!,UIImage(named: "p2")!,UIImage(named: "p3")!,UIImage(named: "p4")!,UIImage(named: "p5")!,UIImage(named: "p6")!,UIImage(named: "p7")!,UIImage(named: "p8")!]
     
     //Arreglo de imagenes escogidas para la vista principal
     @IBOutlet var arregloImagenes: [UIImageView]!
