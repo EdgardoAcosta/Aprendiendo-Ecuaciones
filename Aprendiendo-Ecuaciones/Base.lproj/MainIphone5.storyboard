@@ -691,7 +691,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                                 <segue destination="WJv-C3-jQt" kind="presentation" id="CdW-fy-JHv"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="m9L-1v-kJ6">
+                                        <barButtonItem key="rightBarButtonItem" title="Acerca" style="plain" id="m9L-1v-kJ6">
                                             <connections>
                                                 <segue destination="fB7-MH-Aab" kind="presentation" id="SLX-1y-VAb"/>
                                             </connections>

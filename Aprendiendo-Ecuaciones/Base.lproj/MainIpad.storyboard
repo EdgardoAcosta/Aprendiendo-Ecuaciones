@@ -694,7 +694,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                                 <segue destination="11U-OK-a78" kind="presentation" id="QSV-FF-NeI"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="a1x-6V-20P">
+                                        <barButtonItem key="rightBarButtonItem" title="Acerca" style="plain" id="a1x-6V-20P">
                                             <connections>
                                                 <segue destination="df8-si-2gq" kind="presentation" id="YFS-DB-dTR"/>
                                             </connections>
@@ -2804,7 +2804,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <frame key="frameInset" minX="20" minY="100" width="728" height="708"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">El desarrollo de esta aplicacion fue realizada por los alumnos de la clase de Aplicaciones Moviles del Tecnologico de Monterrey Campus Monterrey por los alumnos:  Julio Aguilar A00 y Edgardo Acosta A00. Con ayuda de Sofia Mendoza en la parte del diseño                               </string>
+                                <string key="text">El desarrollo de esta aplicacion fue realizada por alumnos de la clase de Aplicaciones Móviles del Tecnologico de Monterrey Campus Monterrey. Alumnos:  Julio Aguilar A01152537 y Edgardo Acosta A00. Con la colaboración de Sofia Mendoza en la parte del diseño.                               </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
