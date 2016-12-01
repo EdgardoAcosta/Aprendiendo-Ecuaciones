@@ -2804,7 +2804,7 @@ La gráfica cruza al eje “x” en el punto (-b/m,0), que es el otro valor al o
                                 <frame key="frameInset" minX="20" minY="100" width="728" height="708"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">El desarrollo de esta aplicacion fue realizada por alumnos de la clase de Aplicaciones Móviles del Tecnologico de Monterrey Campus Monterrey. Alumnos:  Julio Aguilar A01152537 y Edgardo Acosta A00. Con la colaboración de Sofia Mendoza en la parte del diseño.                               </string>
+                                <string key="text">El desarrollo de esta aplicacion fue realizada por alumnos de la clase de Aplicaciones Móviles del Tecnologico de Monterrey Campus Monterrey. Alumnos:  Julio Aguilar A01152537 y Edgardo Acosta A00813103. Con la colaboración de Sofia Mendoza en la parte del diseño.                               </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
