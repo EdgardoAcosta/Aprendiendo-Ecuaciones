@@ -12,6 +12,7 @@
 		7C29B89249DF803A2D146C72 /* Pods_Aprendiendo_Ecuaciones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12C16031743E3A687CA60FA /* Pods_Aprendiendo_Ecuaciones.framework */; };
 		84DF8E031DB890C200D5851E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF8E021DB890C200D5851E /* InitialViewController.swift */; };
 		98BE4A193A59722CC8EB85C1 /* Pods_Aprendiendo_EcuacionesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */; };
+		E80823CD1DEFF4FE008E9EFA /* manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E80823CC1DEFF4FE008E9EFA /* manual.pdf */; };
 		E83199281DE27402008807E1 /* inicioQuiz1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */; };
 		E8333A1A1DB8483A00DF0ACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A191DB8483A00DF0ACF /* AppDelegate.swift */; };
 		E8333A1C1DB8483A00DF0ACF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8333A1B1DB8483A00DF0ACF /* FirstViewController.swift */; };
@@ -77,6 +78,7 @@
 		8B18421E5221850AD324AAE7 /* Pods_Aprendiendo_EcuacionesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D64DB0A6E6504B4C7830D33 /* Pods_Aprendiendo_EcuacionesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aprendiendo_EcuacionesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3823849D874EF6A780AF15 /* Pods-Aprendiendo-EcuacionesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aprendiendo-EcuacionesTests/Pods-Aprendiendo-EcuacionesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E80823CC1DEFF4FE008E9EFA /* manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = manual.pdf; sourceTree = "<group>"; };
 		E83199271DE27402008807E1 /* inicioQuiz1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inicioQuiz1ViewController.swift; sourceTree = "<group>"; };
 		E8333A161DB8483A00DF0ACF /* Aprendiendo-Ecuaciones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aprendiendo-Ecuaciones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8333A191DB8483A00DF0ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				84DF8E021DB890C200D5851E /* InitialViewController.swift */,
 				E8D0C8671DED3788008FA1CB /* instruccionesViewController.swift */,
 				E8333A241DB8483A00DF0ACF /* LaunchScreen.storyboard */,
+				E80823CC1DEFF4FE008E9EFA /* manual.pdf */,
 				E8F2827D1DB8864C005CFE6E /* LogaritmicasTableViewController.swift */,
 				E8333A1F1DB8483A00DF0ACF /* Main.storyboard */,
 				E84E282C1DE7F89800AD8F75 /* MainIpad.storyboard */,
@@ -372,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80823CD1DEFF4FE008E9EFA /* manual.pdf in Resources */,
 				E8333A261DB8483A00DF0ACF /* LaunchScreen.storyboard in Resources */,
 				E84E28341DE7F89900AD8F75 /* MainIpad.storyboard in Resources */,
 				E84E28371DE7F89900AD8F75 /* MainIphone6Plus.storyboard in Resources */,
@@ -753,6 +757,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HTCBUUDVD2;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edgardoacosta.Aprendiendo-Ecuaciones";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -768,6 +773,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HTCBUUDVD2;
 				INFOPLIST_FILE = "Aprendiendo-Ecuaciones/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edgardoacosta.Aprendiendo-Ecuaciones";
 				PRODUCT_NAME = "$(TARGET_NAME)";

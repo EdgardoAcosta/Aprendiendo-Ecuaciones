@@ -12,26 +12,25 @@ class instruccionesViewController: UIViewController {
     
     
     @IBOutlet weak var pdfView: UIWebView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //MOSTRAR PDF
-        /*
-        if let pdf = Bundle.main.url(forResource: "myPDF", withExtension: "pdf", subdirectory: nil, localization: nil)  {
-            let req = NSURLRequest(url: pdf)
-            let webView = UIWebView(frame: CGRect(x: 10, y: 10, width: 200, height: 200))
-            
-            
-            webView.loadRequest(req as URLRequest)
-            self.view.addSubview(webView)
-            
- 
-        }
-         */
-    }
 
-    override func didReceiveMemoryWarning() {
+       let path = Bundle.main.path(forResource: "manual", ofType: "pdf")!
+        
+        let req = NSURL.fileURL(withPath: path) //NSURLRequest(url: path as URL)
+        
+        self.pdfView.loadRequest(NSURLRequest(url: req) as URLRequest)
+        
+    }
+    
+
+
+
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
