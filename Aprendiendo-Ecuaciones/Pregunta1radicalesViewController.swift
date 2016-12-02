@@ -49,6 +49,7 @@ class Pregunta1radicalesViewController: UIViewController {
     var segueName : String!
     var numPregunta : Int!
     var preguntasCorrectas : Int!
+    var tipoLabel = Int!
     
     
     //Arreglo de tipo pregunta para guardar posiciones de las imagenes seleccionadas
@@ -78,14 +79,8 @@ class Pregunta1radicalesViewController: UIViewController {
         //Genera para la ecuacion de pregunta
         x = RandomInt(min: -5, max: 5)
 
-        if Int(arc4random_uniform(UInt32(1))) == 1{
-            lbPregunta.text = "Y = (SQR(x\(x) ) + (\(a))"
+        lbPregunta.text = setLabel()
 
-        }
-        else{
-            lbPregunta.text = "Y = (SQR(x\(x) ) )"
-
-        }
         
         a = RandomInt(min: -5, max: 5)
         
@@ -113,30 +108,135 @@ class Pregunta1radicalesViewController: UIViewController {
         if max < min { return min }
         return Int(arc4random_uniform(UInt32((max - min) + 1))) + min
     }
+    func setLabel()-> String{
+        let random = Int(arc4random_uniform(UInt32(3)))
+        tipoLabel = random
+        switch random {
+        case 0:
+            return "Y = SQRT(x + (\(x)) + (\(a))"
+        case 1:
+            return "Y = SQRT(-x + (\(x)) + (\(a))"
+        case 2:
+            return "Y = -SQRT(x + (\(x)) + (\(a))"
+        case 3:
+            return "Y = -SQRT(-x + (\(x)) + (\(a))"
+            
+        default:
+            return "Y = SQRT(x + (\(x))  + (\(a))"
+            
+        }
+        
+        
+    }
+
     
     //Devuelve el indice de la imagen que corresponde a la respuesta de una ecuacion dados sus valores m y b
     func verificarRespuesta() -> Int {
         
         var pos : Int = 0
-        if x > 0 && a == 0 { //e1
+        if tipoLabel == 0 && x == 0 && a == 0 { //
             pos = 0
         }
-        else if x > 0 && a > 0{ //e2
+        else if tipoLabel == 0 && x > 0 && a == 0{ //
             pos = 1
         }
-        else if x > 0 && a < 0{ //e3
+        else if tipoLabel == 0 && x < 0 && a == 0{ //
             pos = 2
         }
-        else if x < 0 && a == 0{ //e4
+        else if tipoLabel == 0 && x > 0 && a > 0{ //
             pos = 3
         }
             
-        else if x < 0 && a < 0{ //e5
+        else if tipoLabel == 0 && x > 0 && a < 0{ //
             pos = 4
         }
-        else if x < 0 && a > 0 { //e6
+        else if tipoLabel == 0 && x == 0 && a < 0 { //
             pos = 5
         }
+        else if tipoLabel == 0 && x == 0 && a > 0 { //
+            pos = 5
+        }
+
+        
+        
+        
+        
+        if tipoLabel == 1 && x == 0 && a == 0 { //
+            pos = 0
+        }
+        else if tipoLabel == 1 && x > 0 && a == 0{ //
+            pos = 1
+        }
+        else if tipoLabel == 1 && x < 0 && a == 0{ //
+            pos = 2
+        }
+        else if tipoLabel == 1 && x > 0 && a > 0{ //
+            pos = 3
+        }
+            
+        else if tipoLabel == 1 && x > 0 && a < 0{ //
+            pos = 4
+        }
+        else if tipoLabel == 1 && x == 0 && a < 0 { //
+            pos = 5
+        }
+        else if tipoLabel == 1 && x == 0 && a > 0 { //
+            pos = 5
+        }
+        
+        
+        
+        
+        if tipoLabel == 2 && x == 0 && a == 0 { //
+            pos = 0
+        }
+        else if tipoLabel == 2 && x > 0 && a == 0{ //
+            pos = 1
+        }
+        else if tipoLabel == 2 && x < 0 && a == 0{ //
+            pos = 2
+        }
+        else if tipoLabel == 2 && x > 0 && a > 0{ //
+            pos = 3
+        }
+            
+        else if tipoLabel == 2 && x > 0 && a < 0{ //
+            pos = 4
+        }
+        else if tipoLabel == 2 && x == 0 && a < 0 { //
+            pos = 5
+        }
+        else if tipoLabel == 2 && x == 0 && a > 0 { //
+            pos = 5
+        }
+
+        
+        if tipoLabel == 3 && x == 0 && a == 0 { //
+            pos = 0
+        }
+        else if tipoLabel == 3 && x > 0 && a == 0{ //
+            pos = 1
+        }
+        else if tipoLabel == 3 && x < 0 && a == 0{ //
+            pos = 2
+        }
+        else if tipoLabel == 3 && x > 0 && a > 0{ //
+            pos = 3
+        }
+            
+        else if tipoLabel == 3 && x > 0 && a < 0{ //
+            pos = 4
+        }
+        else if tipoLabel == 3 && x == 0 && a < 0 { //
+            pos = 5
+        }
+        else if tipoLabel == 3 && x == 0 && a > 0 { //
+            pos = 5
+        }
+        
+
+        
+         
         
         return pos
     }
